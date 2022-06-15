@@ -1,0 +1,549 @@
+## Document Header
+SPDXVersion: SPDX-2.1
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: DAGGERBOARD-1.0-SBOM
+DocumentNamespace: http://daggerboard.dev.sdo.nyp.org/
+Creator: Organization: NewYork-Presbyterian Hospital
+Created: 2022-05-20T16:00:00Z
+CreatorComment: <text></text>
+## Packages
+## 2.4 Primary Component (described by the SBOM)
+PackageName: DaggerBoard
+SPDXID: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b
+PackageComment: <text>PURL is pkg:supplier/NewYork-Presbyterian%20Hospital/DaggerBoard@1.0  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/NewYork-Presbyterian%20Hospital/DaggerBoard@1.0
+PackageVersion: 1.0
+PackageSupplier: Organization: NewYork-Presbyterian Hospital
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS NONE
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: asgiref
+SPDXID: SPDXRef-f5f005d8-2ed5-681f-1dbd-4f54f875ecf2
+PackageComment:  <text>PURL is pkg:supplier/Django%20Software%20Foundation/asgiref@3.4.1 Warning: Package version was pinned to 3.4.1, latest is 3.5.2</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Django%20Software%20Foundation/asgiref@3.4.1	
+PackageVersion: 3.4.1
+PackageSupplier: Organization: Django Software Foundation
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-f5f005d8-2ed5-681f-1dbd-4f54f875ecf2
+Relationship: SPDXRef-f5f005d8-2ed5-681f-1dbd-4f54f875ecf2 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: beautifulsoup4
+SPDXID: SPDXRef-16baee88-665e-9ad2-4c9e-9d9f1a97a61e
+PackageComment:  <text>PURL is pkg:supplier/Leonard%20Richardson/beautifulsoup4@4.10.0 Warning: Package version was pinned to 4.10.0, latest is 4.11.1</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Leonard%20Richardson/beautifulsoup4@4.10.0	
+PackageVersion: 4.10.0
+PackageSupplier: Organization: Leonard Richardson
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-16baee88-665e-9ad2-4c9e-9d9f1a97a61e
+Relationship: SPDXRef-16baee88-665e-9ad2-4c9e-9d9f1a97a61e CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: certifi
+SPDXID: SPDXRef-0c3437ba-87a2-90b1-f7da-012606cc9bdd
+PackageComment:  <text>PURL is pkg:supplier/Kenneth%20Reitz/certifi@2021.5.30 Warning: Package version was pinned to 2021.5.30, latest is 2022.5.18.1</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Kenneth%20Reitz/certifi@2021.5.30	
+PackageVersion: 2021.5.30
+PackageSupplier: Organization: Kenneth Reitz
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-0c3437ba-87a2-90b1-f7da-012606cc9bdd
+Relationship: SPDXRef-0c3437ba-87a2-90b1-f7da-012606cc9bdd CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: charset-normalizer
+SPDXID: SPDXRef-a77586a3-bdb7-01e3-8373-99e61e36ed76
+PackageComment:  <text>PURL is pkg:supplier/Ahmed%20TAHRI%20%40Ousret/charset-normalizer@2.0.6 Warning: Package version was pinned to 2.0.6, latest is 2.0.12</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Ahmed%20TAHRI%20%40Ousret/charset-normalizer@2.0.6	
+PackageVersion: 2.0.6
+PackageSupplier: Organization: Ahmed TAHRI @Ousret
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-a77586a3-bdb7-01e3-8373-99e61e36ed76
+Relationship: SPDXRef-a77586a3-bdb7-01e3-8373-99e61e36ed76 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: django-appconf
+SPDXID: SPDXRef-49173aa7-2cca-969b-b964-da5c4deb4753
+PackageComment:  <text>PURL is pkg:supplier/Jannis%20Leidel/django-appconf@1.0.4 Warning: Package version was pinned to 1.0.4, latest is 1.0.5</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Jannis%20Leidel/django-appconf@1.0.4	
+PackageVersion: 1.0.4
+PackageSupplier: Organization: Jannis Leidel
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-49173aa7-2cca-969b-b964-da5c4deb4753
+Relationship: SPDXRef-49173aa7-2cca-969b-b964-da5c4deb4753 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: django-auth-ldap
+SPDXID: SPDXRef-0a7cc6d2-eb0b-e164-10f2-13860dc42182
+PackageComment:  <text>PURL is pkg:supplier/Peter%20Sagerson/django-auth-ldap@3.0.0 Warning: Package version was pinned to 3.0.0, latest is 4.1.0</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Peter%20Sagerson/django-auth-ldap@3.0.0	
+PackageVersion: 3.0.0
+PackageSupplier: Organization: Peter Sagerson
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-0a7cc6d2-eb0b-e164-10f2-13860dc42182
+Relationship: SPDXRef-0a7cc6d2-eb0b-e164-10f2-13860dc42182 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: django-compressor
+SPDXID: SPDXRef-33566c60-9f78-3553-e9ee-a2369cfd162e
+PackageComment:  <text>PURL is pkg:supplier/Jannis%20Leidel/django-compressor@2.4.1 Warning: Package version was pinned to 2.4.1, latest is 4.0</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Jannis%20Leidel/django-compressor@2.4.1	
+PackageVersion: 2.4.1
+PackageSupplier: Organization: Jannis Leidel
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-33566c60-9f78-3553-e9ee-a2369cfd162e
+Relationship: SPDXRef-33566c60-9f78-3553-e9ee-a2369cfd162e CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: django-cors-headers
+SPDXID: SPDXRef-e9d35d44-7cc7-95c8-f6f3-e8430d16f1dd
+PackageComment:  <text>PURL is pkg:supplier/Otto%20Yiu/django-cors-headers@3.11.0 Warning: Package version was pinned to 3.11.0, latest is 3.12.0</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Otto%20Yiu/django-cors-headers@3.11.0	
+PackageVersion: 3.11.0
+PackageSupplier: Organization: Otto Yiu
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-e9d35d44-7cc7-95c8-f6f3-e8430d16f1dd
+Relationship: SPDXRef-e9d35d44-7cc7-95c8-f6f3-e8430d16f1dd CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: django-csp
+SPDXID: SPDXRef-b0711f5d-93f2-1ef9-a719-bbc8660451e5
+PackageComment:  <text>PURL is pkg:supplier/James%20Socol/django-csp@3.7  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/James%20Socol/django-csp@3.7	
+PackageVersion: 3.7
+PackageSupplier: Organization: James Socol
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-b0711f5d-93f2-1ef9-a719-bbc8660451e5
+Relationship: SPDXRef-b0711f5d-93f2-1ef9-a719-bbc8660451e5 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: django-env
+SPDXID: SPDXRef-5362449f-a99a-99c6-f3b5-a9dc03875e57
+PackageComment:  <text>PURL is pkg:supplier/Tomek%20Czy%C5%BC/django-env@0.2.1  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Tomek%20Czy%C5%BC/django-env@0.2.1	
+PackageVersion: 0.2.1
+PackageSupplier: Organization: Tomek Czyż
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-5362449f-a99a-99c6-f3b5-a9dc03875e57
+Relationship: SPDXRef-5362449f-a99a-99c6-f3b5-a9dc03875e57 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: django-environ
+SPDXID: SPDXRef-23eaaef3-bb65-a052-76c7-79b47d5e43f1
+PackageComment:  <text>PURL is pkg:supplier/Daniele%20Faraglia/django-environ@0.8.1  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Daniele%20Faraglia/django-environ@0.8.1	
+PackageVersion: 0.8.1
+PackageSupplier: Organization: Daniele Faraglia
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-23eaaef3-bb65-a052-76c7-79b47d5e43f1
+Relationship: SPDXRef-23eaaef3-bb65-a052-76c7-79b47d5e43f1 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: django-libsass
+SPDXID: SPDXRef-6dd01cc5-6ba1-00e6-aab6-75e2cdbf6565
+PackageComment:  <text>PURL is pkg:supplier/Matt%20Westcott/django-libsass@0.9  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Matt%20Westcott/django-libsass@0.9	
+PackageVersion: 0.9
+PackageSupplier: Organization: Matt Westcott
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-6dd01cc5-6ba1-00e6-aab6-75e2cdbf6565
+Relationship: SPDXRef-6dd01cc5-6ba1-00e6-aab6-75e2cdbf6565 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: django-rq
+SPDXID: SPDXRef-94b4fc97-1242-f56b-59a1-76f19fb476d4
+PackageComment:  <text>PURL is pkg:supplier/Selwin%20Ong/django-rq@2.5.1  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Selwin%20Ong/django-rq@2.5.1	
+PackageVersion: 2.5.1
+PackageSupplier: Organization: Selwin Ong
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-94b4fc97-1242-f56b-59a1-76f19fb476d4
+Relationship: SPDXRef-94b4fc97-1242-f56b-59a1-76f19fb476d4 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: Django
+SPDXID: SPDXRef-37525830-ecea-13b4-3925-cec12fc8a1f1
+PackageComment:  <text>PURL is pkg:supplier/Django%20Software%20Foundation/Django@3.2.10 Warning: Package version was pinned to 3.2.10, latest is 4.0.4</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Django%20Software%20Foundation/Django@3.2.10	
+PackageVersion: 3.2.10
+PackageSupplier: Organization: Django Software Foundation
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-37525830-ecea-13b4-3925-cec12fc8a1f1
+Relationship: SPDXRef-37525830-ecea-13b4-3925-cec12fc8a1f1 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: idna
+SPDXID: SPDXRef-4279236b-1792-6e5f-2b5f-d1397d2872e6
+PackageComment:  <text>PURL is pkg:supplier/Kim%20Davies/idna@3.2 Warning: Package version was pinned to 3.2, latest is 3.3</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Kim%20Davies/idna@3.2	
+PackageVersion: 3.2
+PackageSupplier: Organization: Kim Davies
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-4279236b-1792-6e5f-2b5f-d1397d2872e6
+Relationship: SPDXRef-4279236b-1792-6e5f-2b5f-d1397d2872e6 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: libsass
+SPDXID: SPDXRef-1042cfd4-b1dc-5a03-858e-1e326b837f5a
+PackageComment:  <text>PURL is pkg:supplier/Hong%20Minhee/libsass@0.21.0  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Hong%20Minhee/libsass@0.21.0	
+PackageVersion: 0.21.0
+PackageSupplier: Organization: Hong Minhee
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-1042cfd4-b1dc-5a03-858e-1e326b837f5a
+Relationship: SPDXRef-1042cfd4-b1dc-5a03-858e-1e326b837f5a CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: lxml
+SPDXID: SPDXRef-15824b1c-3fd5-ad96-b7df-dfea6d8b468f
+PackageComment:  <text>PURL is pkg:supplier/lxml%20dev%20team/lxml@4.7.1 Warning: Package version was pinned to 4.7.1, latest is 4.8.0</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/lxml%20dev%20team/lxml@4.7.1	
+PackageVersion: 4.7.1
+PackageSupplier: Organization: lxml dev team
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-15824b1c-3fd5-ad96-b7df-dfea6d8b468f
+Relationship: SPDXRef-15824b1c-3fd5-ad96-b7df-dfea6d8b468f CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: mariadb
+SPDXID: SPDXRef-15ece6fb-29fd-b3ab-247b-c7201ea1e016
+PackageComment:  <text>PURL is pkg:supplier/Georg%20Richter/mariadb@1.0.9 Warning: Package version was pinned to 1.0.9, latest is 1.0.11</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Georg%20Richter/mariadb@1.0.9	
+PackageVersion: 1.0.9
+PackageSupplier: Organization: Georg Richter
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-15ece6fb-29fd-b3ab-247b-c7201ea1e016
+Relationship: SPDXRef-15ece6fb-29fd-b3ab-247b-c7201ea1e016 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: mysqlclient
+SPDXID: SPDXRef-d2f52463-4e35-cef7-959d-d965c5041e24
+PackageComment:  <text>PURL is pkg:supplier/Inada%20Naoki/mysqlclient@2.0.3 Warning: Package version was pinned to 2.0.3, latest is 2.1.0</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Inada%20Naoki/mysqlclient@2.0.3	
+PackageVersion: 2.0.3
+PackageSupplier: Organization: Inada Naoki
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-d2f52463-4e35-cef7-959d-d965c5041e24
+Relationship: SPDXRef-d2f52463-4e35-cef7-959d-d965c5041e24 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: numpy
+SPDXID: SPDXRef-0fb60e86-a14f-c5b7-3a5b-ecf6b226345f
+PackageComment:  <text>PURL is pkg:supplier/Travis%20E.%20Oliphant%20et%20al./numpy@1.21.3 Warning: Package version was pinned to 1.21.3, latest is 1.22.4</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Travis%20E.%20Oliphant%20et%20al./numpy@1.21.3	
+PackageVersion: 1.21.3
+PackageSupplier: Organization: Travis E. Oliphant et al.
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-0fb60e86-a14f-c5b7-3a5b-ecf6b226345f
+Relationship: SPDXRef-0fb60e86-a14f-c5b7-3a5b-ecf6b226345f CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: pandas
+SPDXID: SPDXRef-6c823574-9056-1a84-b294-c5e49edbe99a
+PackageComment:  <text>PURL is pkg:supplier/The%20Pandas%20Development%20Team/pandas@1.3.4 Warning: Package version was pinned to 1.3.4, latest is 1.4.2</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/The%20Pandas%20Development%20Team/pandas@1.3.4	
+PackageVersion: 1.3.4
+PackageSupplier: Organization: The Pandas Development Team
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-6c823574-9056-1a84-b294-c5e49edbe99a
+Relationship: SPDXRef-6c823574-9056-1a84-b294-c5e49edbe99a CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: pdfkit
+SPDXID: SPDXRef-95ccc7c5-92f2-cd6e-1217-98f91e8f01c4
+PackageComment:  <text>PURL is pkg:supplier/Golovanov%20Stanislav/pdfkit@1.0.0  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Golovanov%20Stanislav/pdfkit@1.0.0	
+PackageVersion: 1.0.0
+PackageSupplier: Organization: Golovanov Stanislav
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-95ccc7c5-92f2-cd6e-1217-98f91e8f01c4
+Relationship: SPDXRef-95ccc7c5-92f2-cd6e-1217-98f91e8f01c4 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: Pillow
+SPDXID: SPDXRef-ceb2d688-7036-3e2d-01c5-7fb79080be71
+PackageComment:  <text>PURL is pkg:supplier/Alex%20Clark%20(PIL%20Fork%20Author)/Pillow@9.0.0 Warning: Package version was pinned to 9.0.0, latest is 9.1.1</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Alex%20Clark%20(PIL%20Fork%20Author)/Pillow@9.0.0	
+PackageVersion: 9.0.0
+PackageSupplier: Organization: Alex Clark (PIL Fork Author)
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-ceb2d688-7036-3e2d-01c5-7fb79080be71
+Relationship: SPDXRef-ceb2d688-7036-3e2d-01c5-7fb79080be71 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: pyaes
+SPDXID: SPDXRef-c6915f71-c478-03b8-0f8f-b4655170a511
+PackageComment:  <text>PURL is pkg:supplier/Richard%20Moore/pyaes@1.6.1  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Richard%20Moore/pyaes@1.6.1	
+PackageVersion: 1.6.1
+PackageSupplier: Organization: Richard Moore
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-c6915f71-c478-03b8-0f8f-b4655170a511
+Relationship: SPDXRef-c6915f71-c478-03b8-0f8f-b4655170a511 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: python-dateutil
+SPDXID: SPDXRef-0e15696b-afed-e838-0ae4-724a5d212d5b
+PackageComment:  <text>PURL is pkg:supplier/Gustavo%20Niemeyer/python-dateutil@2.8.2  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Gustavo%20Niemeyer/python-dateutil@2.8.2	
+PackageVersion: 2.8.2
+PackageSupplier: Organization: Gustavo Niemeyer
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-0e15696b-afed-e838-0ae4-724a5d212d5b
+Relationship: SPDXRef-0e15696b-afed-e838-0ae4-724a5d212d5b CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: pytz
+SPDXID: SPDXRef-7440da19-9ba1-c944-0b97-63873f42a889
+PackageComment:  <text>PURL is pkg:supplier/Stuart%20Bishop/pytz@2021.1 Warning: Package version was pinned to 2021.1, latest is 2022.1</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Stuart%20Bishop/pytz@2021.1	
+PackageVersion: 2021.1
+PackageSupplier: Organization: Stuart Bishop
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-7440da19-9ba1-c944-0b97-63873f42a889
+Relationship: SPDXRef-7440da19-9ba1-c944-0b97-63873f42a889 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: rcssmin
+SPDXID: SPDXRef-5da3b66b-7dad-8b0c-b78e-5c38bcc17536
+PackageComment:  <text>PURL is pkg:supplier/Andr%C3%A9%20Malo/rcssmin@1.0.6 Warning: Package version was pinned to 1.0.6, latest is 1.1.0</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Andr%C3%A9%20Malo/rcssmin@1.0.6	
+PackageVersion: 1.0.6
+PackageSupplier: Organization: André Malo
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-5da3b66b-7dad-8b0c-b78e-5c38bcc17536
+Relationship: SPDXRef-5da3b66b-7dad-8b0c-b78e-5c38bcc17536 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: redis
+SPDXID: SPDXRef-ab309e81-00b4-4790-a335-4be7395e853e
+PackageComment:  <text>PURL is pkg:supplier/Redis%20Inc./redis@4.1.2 Warning: Package version was pinned to 4.1.2, latest is 4.3.1</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Redis%20Inc./redis@4.1.2	
+PackageVersion: 4.1.2
+PackageSupplier: Organization: Redis Inc.
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-ab309e81-00b4-4790-a335-4be7395e853e
+Relationship: SPDXRef-ab309e81-00b4-4790-a335-4be7395e853e CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: reportlab
+SPDXID: SPDXRef-04d5b7d8-6051-adce-f701-9ac91f800d96
+PackageComment:  <text>PURL is pkg:supplier/Andy%20Robinson%2C%20Robin%20Becker%2C%20the%20ReportLab%20team%20and%20the%20community/reportlab@3.6.5 Warning: Package version was pinned to 3.6.5, latest is 3.6.9</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Andy%20Robinson%2C%20Robin%20Becker%2C%20the%20ReportLab%20team%20and%20the%20community/reportlab@3.6.5	
+PackageVersion: 3.6.5
+PackageSupplier: Organization: Andy Robinson, Robin Becker, the ReportLab team and the community
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-04d5b7d8-6051-adce-f701-9ac91f800d96
+Relationship: SPDXRef-04d5b7d8-6051-adce-f701-9ac91f800d96 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: requests
+SPDXID: SPDXRef-ca43414f-acbd-f2b4-e26b-cb4773b73187
+PackageComment:  <text>PURL is pkg:supplier/Kenneth%20Reitz/requests@2.26.0 Warning: Package version was pinned to 2.26.0, latest is 2.27.1</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Kenneth%20Reitz/requests@2.26.0	
+PackageVersion: 2.26.0
+PackageSupplier: Organization: Kenneth Reitz
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-ca43414f-acbd-f2b4-e26b-cb4773b73187
+Relationship: SPDXRef-ca43414f-acbd-f2b4-e26b-cb4773b73187 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: rjsmin
+SPDXID: SPDXRef-d221cff6-4cb5-d263-a904-9441bbde4d69
+PackageComment:  <text>PURL is pkg:supplier/Andr%C3%A9%20Malo/rjsmin@1.1.0 Warning: Package version was pinned to 1.1.0, latest is 1.2.0</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Andr%C3%A9%20Malo/rjsmin@1.1.0	
+PackageVersion: 1.1.0
+PackageSupplier: Organization: André Malo
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-d221cff6-4cb5-d263-a904-9441bbde4d69
+Relationship: SPDXRef-d221cff6-4cb5-d263-a904-9441bbde4d69 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: rq
+SPDXID: SPDXRef-0c7dc262-bb4a-1e04-7413-80752dd4c404
+PackageComment:  <text>PURL is pkg:supplier/Vincent%20Driessen/rq@1.10.1  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Vincent%20Driessen/rq@1.10.1	
+PackageVersion: 1.10.1
+PackageSupplier: Organization: Vincent Driessen
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-0c7dc262-bb4a-1e04-7413-80752dd4c404
+Relationship: SPDXRef-0c7dc262-bb4a-1e04-7413-80752dd4c404 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: six
+SPDXID: SPDXRef-a53cfaa2-73a4-43b0-b6e7-b98ed299b254
+PackageComment:  <text>PURL is pkg:supplier/Benjamin%20Peterson/six@1.16.0  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Benjamin%20Peterson/six@1.16.0	
+PackageVersion: 1.16.0
+PackageSupplier: Organization: Benjamin Peterson
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-a53cfaa2-73a4-43b0-b6e7-b98ed299b254
+Relationship: SPDXRef-a53cfaa2-73a4-43b0-b6e7-b98ed299b254 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: soupsieve
+SPDXID: SPDXRef-a100d95c-a900-2f1f-dae1-c69ba266cae4
+PackageComment:  <text>PURL is pkg:supplier/Isaac%20Muse/soupsieve@2.3 Warning: Package version was pinned to 2.3, latest is 2.3.2.post1</text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Isaac%20Muse/soupsieve@2.3	
+PackageVersion: 2.3
+PackageSupplier: Person: Isaac Muse
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-a100d95c-a900-2f1f-dae1-c69ba266cae4
+Relationship: SPDXRef-a100d95c-a900-2f1f-dae1-c69ba266cae4 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+## 2.4 All-Levels Components
+##
+PackageName: sqlparse
+SPDXID: SPDXRef-42990abd-0a0c-0758-282a-39faac2d1186
+PackageComment:  <text>PURL is pkg:supplier/Andi%20Albrecht/sqlparse@0.4.2  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Andi%20Albrecht/sqlparse@0.4.2	
+PackageVersion: 0.4.2
+PackageSupplier: Organization: Andi Albrecht
+Relationship: SPDXRef-db10dedd-1dd7-29dd-8faa-84b7ca45805b CONTAINS SPDXRef-42990abd-0a0c-0758-282a-39faac2d1186
+Relationship: SPDXRef-42990abd-0a0c-0758-282a-39faac2d1186 CONTAINS NOASSERTION	
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION

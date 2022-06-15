@@ -1,0 +1,111 @@
+{% load static %}
+<!-- start nav -->
+<nav class="navbar navbar-expand-xl navbar-dark desktop-header" id="desktop-nav">
+    <div class="container-fluid d-inline-block">
+        <!-- navbar links top right -->
+        <div class="container-fluid d-flex justify-content-end">
+            <div class="row align-items-end">
+                <div class="col-lg-12">
+                    {% block header_usersetting %}
+                        <div class="d-flex flex-row justify-content-center menu-links">
+                            <div class="mx-1"><i class="fas fa-user-circle"></i> Hello {{ user.get_username }} |</div>
+                            {% if user.is_superuser %}<div class="mx-1"> <i class="fas fa-cog"></i>
+                                <a href="/admin" class="header-nav-settings pr-1">settings </a>| </div>{% endif %}
+                          <div class="dropdown dropstart">
+        <a class="dropdown-toggle header-nav-settings" href="#" role="button" id="upload_navbar"
+           data-bs-toggle="dropdown" aria-expanded="false">
+           Uploads
+        </a>
+        <div class="dropdown-menu p-0" aria-labelledby="upload_navbar" id="upload-list">
+        <ul class="list-group active-upload-status" id="upload_list_status">
+            <li class="card-header dropdown-header">
+                Upload Status
+            </li>
+        {% if current_upload_status.upload_queue %}
+            {% else %}
+            <li><div class="dropdown-header text-truncate text-wrap">No uploads in progress</div></li>
+        {% endif %}
+        {% if current_upload_status.results|length > 0 %}
+                        {% for result_k,result_v in current_upload_status.results.items %}
+
+                    {% if result_v.status == 'failed' or result_v.status == 'invalid'  or result_v.status == 'cancelled' or result_v.status_code > 1 %}
+                            <li class="list-group-item list-group-item-danger" id="{{ result_k }}"><div class="d-flex align-items-center">
+                <div class="me-3">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div>
+                    <div class="text-truncate text-truncate text-wrap small">{{ result_v.filename }}</div>
+                    <div class="small text-muted text-truncate text-wrap" id="upload-sbom-body"> {% if result_v.status_code > 1 or result_v.status == 'failed' %}<span class="text-truncate text-wrap fw-bold">Failed </span>{% else %}{{ result_v.status }}{% endif %} {{ result_v.error_code }}</div>
+                </div>
+            </div></li>
+                        {% else %}
+                                    <li class="list-group-item list-group-item-success" id="{{ result_k }}"><div class="d-flex align-items-center">
+                <div class="me-3">
+                {% if result.status == 'queued' %}
+                    <div class="spinner-border spinner-border-sm" role="status"></div>{% else %}
+                    <i class="far fa-check-circle"></i>
+                    {% endif %}
+                </div>
+                <div>
+                    <div class="text-truncate text-truncate text-wrap small">{{ result_v.filename }}</div>
+                    <div class="small text-muted text-truncate text-wrap" id="upload-sbom-body">{% if result_v.status_code == 1 %}<span class="text-truncate text-wrap"><span class="fw-bold">Finished: </span>{{ result_v.error_code }} </span>{% else %}{{ result_v.status }}{% endif %}</div>
+                </div>
+            </div></li>
+                        {% endif %}
+            {% endfor %}
+        {% endif %}</ul>
+            {% if upload_history %}
+                <h6 class="card-header dropdown-header">Recent SBOM Uploads</h6>
+                {% for file in upload_history %}
+            <li class="list-group-item"><div class="d-flex align-items-center">
+                <div>
+                <div class="text-truncate text-truncate text-wrap small">{{ file.sbomid_sbomupload__documentname }}</div>
+                <div class="small text-muted text-truncate text-wrap">Time: {{ file.uploadtime }}</div>
+                    </div>
+            </div></li>
+                {% endfor %}
+                {% else %}
+                <li><div class="dropdown-header text-truncate text-wrap">No recent upload history</div></li>
+            {% endif %}
+        </div>
+    </div>
+                            <div class="mx-1">| <i class="fas fa-sign-out-alt "></i> <a class="header-nav-settings"
+                                                                        href="{% url 'logout' %}">logout</a></div>
+                        </div>
+                    {% endblock header_usersetting %}
+                </div>
+            </div>
+        </div>
+        <!-- end top right links -->
+        <div class="row ml-4">
+            <div class="col-lg-12">
+                <div class="navbar-brand ms-1 mb-0 pb-0"><img class="float-start me-2"
+                                                              src="{% static 'images/daggerboard_icon.png' %}"
+                                                              alt="Daggerboard Icon" width="60">
+                    <h1>Daggerboard</h1>
+                </div>
+                <h2 class="nav-subtitle">SBOM Utility</h2>
+            </div>
+        </div>
+        <!-- selection div -->
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    {% block navbar_options %}
+                        <ul class="navbar-nav">
+                            <li class="nav-item {% if request.path == homepage %} active {% endif %}">
+                                <a class="nav-link" href="{{ homepage }}"> Dashboard</a>
+                            </li>
+                            <li class="nav-item {% if request.path == sbom_sc %} active {% endif %}">
+                                <a class="nav-link" href="{{ sbom_sc }}">SBOMS</a>
+                            </li>
+                            <li class="nav-item {% if request.path == vendor_sc %} active {% endif %}">
+                                <a class="nav-link" href="{{ vendor_sc }}">Vendors</a>
+                            </li>
+                        </ul>
+                    {% endblock navbar_options %}
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,304 @@
+{% extends "base.html" %}
+{% load daggerboard_templatetags %}
+{% block body_container %}
+{% load static %}
+
+<div class="row mt-2 d-flex px-2">
+    {% for message in messages %}
+    <div class="toast-container position-absolute top-0 start-0 p-3">
+        <div class="toast {{ message.tags }} alert-{{ message.tags }} show" role="alert">
+            <div class="d-flex">
+                <div class="toast-body {{ message.tags }} alert-{{ message.tags }}">
+                    {{ message | safe }}
+                </div>
+                <div class="{{ message.tags }} alert-{{ message.tags }}">
+                    <meta http-equiv="refresh" content="2" />
+                    <button type="button" class="btn-close " data-bs-dismiss="toast" aria-label="Close">X
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row mt-2 d-flex px-2">
+    <div class="col-8 d-flex justify-content-start p-2 align-items-center">
+        <h1>SBOM Analysis</h1>
+    </div>
+    <div class="col d-flex justify-content-end py-4">
+        <!-- Upload SBOM button / collapse -->
+        <button type="button" class="btn sbom-btn mx-2 p-2 text-nowrap" data-bs-toggle="collapse"
+            data-bs-target="#upload_collapse">
+            <i class="fas fa-upload"></i>
+            Upload
+        </button>
+        <!-- end upload SBOM collapse button -->
+        {% if not ss_populate_dropdown %}
+        {% else %}
+        <form id="gen_sbomcsv" name="gen_sbomcsv" action="{% url 'genreport' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="gen_sbomcsv" value="{{ sbomsummary_table.sbom_id }}">
+            <button class="btn sbom-btn ml-3 text-nowrap p-2" type="submit" formid="gen_sbomcsv"><i
+                    class="fas fa-download"></i> Export
+            </button>
+        </form>
+        {% endif %}
+    </div>
+</div>
+
+<div class="row mb-4 d-flex px-2">
+    <div class="col">
+        <div class=" d-flex flex-col">
+            {% if not ss_populate_dropdown %}
+        </div>
+        {% else %}
+        <div class="col-12 d-flex flex-row justify-content-center align-self-center align-items-center">
+            <!-- Select vendor Dropdown -->
+            <div class="input-group d-flex align-self-center w-100">
+                <form class="form w-100" id="sbomsubmit" method="post" action="{% url 'sbom_scorecard' %}"
+                    name="sbomsubmit">
+                    {% csrf_token %}
+                    <div class="form-outline">
+                        <select id="select_sbom" name="select_sbom" class="form-select" aria-label="Select An SBOM">
+                            <option selected disabled> Select an SBOM</option>
+                            {% for ven_name, ven_vals in ss_populate_dropdown.items %}
+                            <optgroup label="{{ ven_name }}">
+                                {% for opt in ven_vals %}
+                                <option value="{{ opt.0 }}"
+                                    {% if sbomsummary_table.state == 'selected' and sbomsummary_table.sbom_name == opt.1 %}selected{% endif %}>
+                                    {{ opt.1 }},
+                                    uploaded: {{ opt.2|date:"Y-m-d_G:i" }} </option>
+                                {% endfor %}
+                            </optgroup>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+<!-- end select vendor dropdown -->
+</div>
+
+<!-- upload SBOM collapse area -->
+<div class="collapse {% if not ss_populate_dropdown %} show {% endif %}" id="upload_collapse">
+    <div class="row my-2 d-flex p-2">
+        <div class="col d-flex flex-col">
+            <div class="card w-100 align-items-center">
+                {% if not ss_populate_dropdown %}
+                <div class="card-header w-100">Upload an SBOM to get started:</div> {% endif %}
+                <div class=" card-body align-items-center w-25">
+                    <form class="form" id="sbom_uploadform" method="post" name="sbom_uploadform"
+                        enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ sbomform.as_p }}
+                        <!-- file upload -->
+                        <div class="input-group mb-3">
+                            <input type="file" name="uploaded_sbom" class="form-control" id="sbom_uploadform"
+                                aria-describedby="sbom_submitbutton" aria-label="Upload" accept=".spdx,.xml,.cyclonedx"
+                                multiple>
+                        </div>
+                        <div class="col-12 d-flex flex-column justify-content-center">
+                            <button class="btn sbom-btn mx-2 align-self-center" id="sbom_submitbutton" type="submit">
+                                Submit
+                            </button>
+                        </div>
+                        <!-- end file upload and button -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end upload SBOM collapse area -->
+
+<!-- sbom name -->
+<div class="row d-flex vendor_heading mt-4">
+    {% if not ss_populate_dropdown %}
+</div>
+{% else %}
+<h1 class="vendor-sc-heading">{{ sbomsummary_table.sbom_name }}</h1>
+</div>
+
+<!-- Overview Card -->
+<div class="row my-2 d-flex p-2">
+    <div class="col d-flex flex-col">
+        <div class="card o-card w-25 p-2 text-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <div class="card-text fs-3 width-fit display-card-font text-wrap text-break">
+                    {{ sbomsummary_table.ven_name }}</div>
+            </div>
+            <div class="card-footer text-muted"> VENDOR NAME</div>
+        </div>
+        <div class="card o-card w-25 p-2 text-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <div class="card-text fs-4 width-fit display-card-font text-wrap text-break">
+                    {{ sbomsummary_table.sbom_name }}</div>
+            </div>
+            <div class="card-footer text-muted">SBOM NAME</div>
+        </div>
+        <div class="card o-card w-25 p-2 text-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <div class="card-text display-card-font">
+                    {% if sbomsummary_table.grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_F" %}
+                    <div class="card-text display-card-font db-danger">F</div>
+                    {% elif sbomsummary_table.grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_D" and sbomsummary_table.grade < letterGradeThresholds|get_item:"less_than_threshold_grade_D" %}
+                    <div class="card-text display-card-font db-secondary">D</div>
+                    {% elif sbomsummary_table.grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_C" and sbomsummary_table.grade < letterGradeThresholds|get_item:"less_than_threshold_grade_C" %}
+                    <div class="card-text display-card-font db-warn">C</div>
+                    {% elif sbomsummary_table.grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_B" and sbomsummary_table.grade < letterGradeThresholds|get_item:"less_than_threshold_grade_B" %}
+                    <div class="card-text display-card-font db-info">B</div>
+                    {% elif sbomsummary_table.grade < letterGradeThresholds|get_item:"less_than_threshold_grade_A" %}
+                    <div class="card-text display-card-font db-success">A</div>
+                    {% else %}
+                    <div class="card-text display-card-font">-</div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="card-footer text-muted">GRADE</div>
+        </div>
+        <div class="card o-card w-25 p-2 text-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <div class="card-text display-card-font">{{ sbomsummary_table.total_vuln }}</div>
+            </div>
+            <div class="card-footer text-muted">TOTAL VULNERABILITIES</div>
+        </div>
+        <div class="card o-card w-25 p-2 text-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <div class="card-text display-card-font">{{ sbomsummary_table.avg_cvss|floatformat:1 }}</div>
+            </div>
+            <div class="card-footer text-muted">AVG CVSS3 SCORE</div>
+        </div>
+    </div>
+</div>
+<div class="row my-2 d-flex p-2">
+    {% if not spider_vals and not severity_values_y %}
+    {% else %}
+    <div class="col">
+        <div class="card text-center">
+            <div class="card-header">Vulnerability Impacts</div>
+            <div class="card-body">
+                <canvas id="sbom_cvss_vector_chart" class="chart-size"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card text-center">
+            <div class="card-header">SEVERITY DISTRIBUTION</div>
+            <div class="card-body">
+                <canvas id="severity_dist_chart" class="chart-size"></canvas>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+<!-- start nav tabs for package/vuln views -->
+<div class="row my-2 d-flex p-2">
+    <ul class="nav nav-tabs px-3" id="detailTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button id="package-tab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#packageSection"
+                role="tab" aria-selected="true" aria-controls="packageDetails">Package Analysis
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="vuln-tab" data-bs-toggle="tab" data-bs-target="#vulnerabilitySection"
+                role="tab" aria-selected="false" aria-controls="vulnerabilityDetails">Vulnerability Details
+            </button>
+        </li>
+    </ul>
+    <!-- end navtab -->
+    <!-- tab content -->
+    <div class="tab-content" id="sbomTabContent">
+        <div class="tab-pane fade" id="vulnerabilitySection" role="tabpanel" aria-labelledby="vuln-tab">
+            <!-- Vulnerability list table -->
+            <div class="row my-2 d-flex p-2">
+                <div class="table-responsive">
+                    <table id="vulnerabilityDetails" class="align-middle display">
+                        <thead>
+                            <tr class="dbtb_header">
+                                <th>Package Name</th>
+                                <th>Package Version</th>
+                                <th>CVE</th>
+                                <th>Vulnerability Description</th>
+                                <th>CVSS3 Score</th>
+                                <th>Severity</th>
+                                <th>Exploit Available</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in cve_table %}
+                            <tr>
+                                <td> {{ i.packagename|safe }}</td>
+                                <td>{{ i.packageversion|safe }}</td>
+                                <td>{{ i.cves_package__cve|safe }}</td>
+                                <td>{{ i.cves_package__cve_sum|safe }}</td>
+                                <td>{{ i.cves_package__cvss3_score }}</td>
+                                {% if i.cves_package__cvss3_score|floatformat:1 >= "0.1" and i.cves_package__cvss3_score|floatformat:1 <= "3.9" %}
+                                <td class="db-success-bg">Low</td>
+                                {% elif i.cves_package__cvss3_score|floatformat:1 >= "4.0" and i.cves_package__cvss3_score|floatformat:1 <= "6.9"%}
+                                <td class="db-info-bg">Medium</td>
+                                {% elif i.cves_package__cvss3_score|floatformat:1 >= "7.0" and i.cves_package__cvss3_score|floatformat:1 <= "8.9" %}
+                                <td class="db-secondary-bg">High</td>
+                                {% elif i.cves_package__cvss3_score|floatformat:1 >= "9.0" and i.cves_package__cvss3_score|floatformat:1 <= "10.0" %}
+                                <td class="db-danger-bg">Critical</td>
+                                {% else  %}
+                                <td>N/A</td>
+                                {% endif %}
+                                <td>{% if i.cves_package__cve_exploit == 'exploit_not_found' %}
+                                    No{% elif i.cves_package__cve_exploit == 'NONE' %}No{% else %}
+                                    {{ i.cves_package__cve_exploit|safe }}{% endif %}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- end SBOM list table-->
+        </div>
+        <!-- Vulnerability list table end -->
+        <div class="tab-pane fade show active" id="packageSection" role="tabpanel" aria-labelledby="package-tab">
+            <!-- Package list table -->
+            <div class="row my-2 d-flex p-2">
+                <div class="table-responsive">
+                    <table id="packageDetails" class="align-middle display">
+                        <thead>
+                            <tr class="dbtb_header">
+                                <th>Package Name</th>
+                                <th>Package Version</th>
+                                <th>Total Vulnerabilities</th>
+                                <th>Package Comment</th>
+                                <th>Package CPE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in package_table %}
+                            <tr>
+                                <td> {{ i.packagename|safe }}</td>
+                                <td>{{ i.packageversion|safe }}</td>
+                                <td>{{ i.total_cves|safe }}</td>
+                                <td>{{ i.packagecomment|safe }}</td>
+                                <td>{{ i.cpes_package__cpe|safe }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% endif %}
+            <!-- end SBOM list table-->
+        </div>
+    </div>
+</div>
+
+{% block js_script_content %}
+
+{{ spider_vals|json_script:"spider_vals" }}
+{{ severity_dist_chart|json_script:"severity_values_y" }}
+<script src="{% static 'js/sbomscorecard.js' %}"></script>
+
+{% endblock js_script_content %}
+
+{% endblock body_container %}

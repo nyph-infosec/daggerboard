@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% include 'head.html'%}
+</head>
+
+<body class="loginBody">
+  <section class="loginbg vh-100">
+    <div class="box container justify-content-md-center py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <img class="loginfade loginDBicon mx-auto d-block" src="/static/images/daggerboard_icon.png" alt="Daggerboard Icon">
+          <div class="col-12 col-md-12 col-lg-12 col-xl-12 p-4 text-center">
+            <h1 class="loginfade loginHeader">DaggerBoard</h1>
+            <h2 class="loginfade login-SubHeader">SBOM Utility</h2>
+          </div>
+          <form class="loginfade" method="POST" action="">
+            {% csrf_token %}
+            <div class="form-outline mb-4">
+              <label class="loginlabel" for="username">Username</label>
+              <input class="logininput" type="username" id="username" name='username' required>
+            </div>
+            <div class="form-outline mb-4">
+              <label class="loginlabel" for="password">Password</label>
+              <input class="logininput" type="password" id="password" name='password' required>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <input class="btn btn-outline-light btn-lg px-5" type="submit" id="loginsubmit" value="Login">
+            </div>
+          </form>
+          {% for message in messages %}
+            <div class="text-center mt-3">
+                <p class="login-error-msg">{{ message }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

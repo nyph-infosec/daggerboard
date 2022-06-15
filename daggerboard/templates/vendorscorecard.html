@@ -1,0 +1,227 @@
+{% extends "base.html" %}
+{% block body_container %}
+{% load daggerboard_templatetags %}
+{% load static %}
+
+<div class="row mt-2 d-flex px-2">
+    <div class="col-8 d-flex justify-content-start pt-2 pl-2 pr-2 align-items-center">
+        <h1>Vendor Analysis</h1>
+    </div>
+    <div class="col d-flex justify-content-end py-4">{% if not vs_populate_dropdown %}
+    </div>{% else %}
+    <form id="gen_vendorcsv" name="gen_vendorcsv" action="{% url 'genreport' %}" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="gen_vendorcsv" value="{{ vendorsummary_table.ven_name }}">
+        {% if vs_populate_dropdown %}
+        <button class="btn sbom-btn  text-nowrap p-2" type="submit" formid="gen_vendorcsv"><i
+                class="fas fa-download"></i> Export
+        </button>{% endif %}
+    </form>
+</div>
+{% endif %}
+
+</div>{% if not vs_populate_dropdown %}
+<div class="d-flex flex-col justify-content-center align-items-center">
+    <div class="card mb-3 w-100">
+        <div class="card-header"> Vendor Analysis Unavailable</div>
+        <div class="card-body db-danger text-center d-flex justify-content-center align-items-center">
+            <p>No SBOM data available for analysis. Upload an SBOM to get started.</p>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="row mb-4 d-flex px-2">
+    <div class="col">
+        <div class="d-flex flex-col justify-content-center align-items-center">
+            <div class="col-12 d-flex flex-row justify-content-center align-self-center align-items-center">
+                <!-- Select vendor Dropdown -->
+                <div class="input-group d-flex align-self-center w-100">
+                    <form class="form w-100 mb-2" id="vendorsubmit" method="post" action="{% url 'vendor_scorecard' %}"
+                        name="vendorsubmit">
+                        {% csrf_token %}
+                        <div class="form-outline">
+                            <select id="select_vendor" name="select_vendor" class="form-control "
+                                aria-label="Select a Vendor">
+                                <option selected disabled> Select a Vendor</option>
+                                {% for ven_name in vs_populate_dropdown %}
+                                <option value="{{ ven_name }}"
+                                    {% if vendorsummary_table.state == 'selected' and vendorsummary_table.ven_name == ven_name %}selected{% endif %}>
+                                    {{ ven_name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <!-- end select vendor dropdown -->
+            </div>
+        </div>
+    </div>
+    <!-- end select vendor dropdown -->
+</div>
+<!-- vendor name -->
+<div class="row d-flex vendor_heading ">
+    <h1 class="vendor-sc-heading">{{ vendorsummary_table.ven_name }}</h1>
+</div>
+
+<!-- Overview Card -->
+<div class="row my-2 d-flex p-2">
+    <div class="col d-flex flex-col">
+        <div class="card o-card w-25 p-2 text-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <div class="card-text fs-3 width-fit display-card-font text-wrap text-break">
+                    {{ vendorsummary_table.ven_name }}</div>
+            </div>
+            <div class="card-footer text-muted">VENDOR NAME</div>
+        </div>
+        <div class="card o-card w-25 p-2 text-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <div class="card-text display-card-font">{{ vendorsummary_table.total_sbom }}</div>
+            </div>
+            <div class="card-footer text-muted">TOTAL SBOMS</div>
+        </div>
+        <div class="card o-card w-25 p-2 text-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                {% if vendorsummary_table.ven_grade > letterGradeThresholds|get_item:"greater_eq_threshold_grade_F" %}
+                <div class="card-text display-card-font db-danger">F</div>
+                {% elif vendorsummary_table.ven_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_D" and vendorsummary_table.ven_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_D" %}
+                <div class="card-text display-card-font db-secondary">D</div>
+                {% elif vendorsummary_table.ven_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_C" and vendorsummary_table.ven_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_C" %}
+                <div class="card-text display-card-font db-warn">C</div>
+                {% elif vendorsummary_table.ven_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_B" and vendorsummary_table.ven_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_B" %}
+                <div class="card-text display-card-font db-info">B</div>
+                {% elif vendorsummary_table.ven_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_A" %}
+                <div class="card-text display-card-font db-success">A</div>
+                {% else %}
+                <div class="card-text display-card-font">-</div>
+                {% endif %}
+            </div>
+            <div class="card-footer text-muted">GRADE</div>
+        </div>
+        <div class="card o-card w-25 p-2 text-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <div class="card-text display-card-font">{{ vendorsummary_table.total_vuln }}</div>
+            </div>
+            <div class="card-footer text-muted">TOTAL VULNERABILITIES</div>
+        </div>
+        <div class="card o-card w-25 p-2 text-center">
+            <div class="card-body d-flex justify-content-center align-items-center">
+                {% if vendorsummary_table.avg_cvss == 0 %}
+                <div class="card-text display-card-font">{{ vendorsummary_table.avg_cvss }}</div>
+                {% else %}
+                <div class="card-text display-card-font">{{ vendorsummary_table.avg_cvss|floatformat:1 }}</div>
+                {% endif %}
+            </div>
+            <div class="card-footer text-muted">AVG CVSS SCORE</div>
+        </div>
+    </div>
+</div>
+
+<!-- Graphs -->
+<div class="row my-2 d-flex p-2">
+    <div class="col">
+        <div class="card text-center">
+            <div class="card-header">SBOM Upload History</div>
+            <div class="card-body">
+                <canvas id="sbom-history-chart" class="vendor-severity-dist"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card text-center">
+            <div class="card-header">SEVERITY DISTRIBUTION</div>
+            <div class="card-body">
+                <canvas id="vendor_severity_dist_chart" class="vendor-severity-dist"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- most recent SBOM -->
+<!-- Overview Card -->
+<div class="row my-2 d-flex p-2">
+    <div class="col">
+        <div class="card-header d-flex flex-row">Last Analyzed SBOM</div>
+        <div class="col flex-row d-flex">
+            <div class="card o-card w-25 p-2 d-flex text-center">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <div class="card-text fs-3 width-fit display-card-font text-wrap text-break">
+                        {{ most_recent_sbom.ven_name }}</div>
+                </div>
+                <div class="card-footer text-muted">Vendor & Platform</div>
+            </div>
+            <div class="card o-card w-25 p-2 d-flex text-center">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <div class="card-text fs-3 width-fit display-card-font text-wrap text-break">
+                        {{ most_recent_sbom.sbom_name }}</div>
+                </div>
+                <div class="card-footer text-muted">SBOM NAME</div>
+            </div>
+            <div class="card o-card w-25 p-2 d-flex text-center">
+                <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <div class="card-text display-card-font">{{ most_recent_sbom.total_vuln }}</div>
+                </div>
+                <div class="card-footer text-muted">TOTAL VULNERABILITIES</div>
+            </div>
+            <div class="card o-card w-50 p-2 text-center">
+                <div class="card-body">
+                    <div class="card-text fs-1">
+                        <canvas id="recent-sbom-chart" class="vendor-severity-dist"></canvas>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">SEVERITY DISTRIBUTION</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end most recent SBOMS -->
+
+<!-- SBOM list table -->
+<div class="row my-2 d-flex p-2">
+    <div class="table-responsive">
+        <table id="sbomSummary" class="align-middle display">
+            <thead>
+                <tr class="dbtb_header">
+                    <th>SBOM Name</th>
+                    <th>Upload Date</th>
+                    <th>Vulnerability Total</th>
+                    <th>Total Exploits</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in all_sbom_table %}
+                <tr>
+                    <td> {{ i.documentname|safe }}</td>
+                    <td>{{ i.uploadtime|safe }}</td>
+                    <td>{{ i.total_cves|safe }}</td>
+                    <td>{{ i.total_exploits|safe }}</td>
+                    {% if i.sbom_grade > letterGradeThresholds|get_item:"greater_eq_threshold_grade_F" %}
+                    <td class="db-danger">F</td>
+                    {% elif i.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_D" and i.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_D" %}
+                    <td class="db-secondary">D</td>
+                    {% elif i.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_C" and i.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_C" %}
+                    <td class="db-warn">C</td>
+                    {% elif i.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_B" and i.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_B" %}
+                    <td class="db-info">B</td>
+                    {% elif i.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_A" %}
+                    <td class="db-success">A</td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endif %}
+<!-- end SBOM list table-->
+{% block js_script_content %}
+<script src="{% static 'js/slimselect.js' %}"></script>
+{{ sbom_history_table|json_script:"sbom_history_table" }}
+{{ vendor_severity_dist|json_script:"vendor_severity_dist" }}
+{{ most_recent_sbom.severity_dist|json_script:"most_recent_sbom" }}
+<script src="{% static 'js/vendorscorecard.js' %}"></script>
+
+
+{% endblock js_script_content %}
+
+{% endblock body_container %}

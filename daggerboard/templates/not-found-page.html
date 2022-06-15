@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include 'head.html'%}
+</head>
+
+<body class="loginBody">
+  <section class="br-background vh-100">
+    <div class="container justify-content-md-center py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5 br-border">
+          <div class="col-12 col-md-12 col-lg-12 col-xl-12 p-5 text-center">
+            <h1 class="br-header">{{headerMsg}}</h1>
+            <h2 class="br-message">{{bodyMsg}}</h2>
+            <br>
+            <form action="{% url 'home' %}" method="post">
+              {% csrf_token %}
+              <input class="btn btn-outline-light btn-lg px-5" type="submit" value="Go to Homepage">
+            </form>
+          </div>
+          <img class="br-icon mx-auto d-block" src="{% static 'images/daggerboard_icon.png' %}"
+            alt="Daggerboard Broken">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

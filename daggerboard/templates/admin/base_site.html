@@ -1,0 +1,15 @@
+{% extends "admin/base.html" %}
+{% load i18n static %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} |
+    {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+
+
+    <h1 id="site-name" class="d-inline-block"><a href="{% url 'admin:index' %}"> <img class="d-inline-block"
+         src="{% static 'images/daggerboard_icon.png' %}"
+         alt="Daggerboard Icon" width="50"> {{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

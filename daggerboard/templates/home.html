@@ -1,0 +1,294 @@
+{% extends "base.html" %}
+{% block body_container %}
+{% load static %}
+{% load daggerboard_templatetags %}
+
+<div class="row my-2 d-flex p-2">
+    <div class="col-8 d-flex justify-content-start p-2 align-items-center">
+        <h1>Dashboard</h1>
+    </div>
+    <div class="col d-flex justify-content-end p-4">
+        <form id="gen_homecsv" name="gen_homecsv" action="{% url 'home' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="gen_homecsv" value="gen_homecsv">
+            {% if sbom_overview_query %}
+            <button href="#" class="btn sbom-btn" type="submit"><i class="fas fa-download"></i> Export</button>
+            {% endif %}
+        </form>
+    </div>
+</div>
+<!-- Overview Card -->
+<div class="container">
+    <div class="row">
+        <h6 class="card-header">Most Recent SBOMs:</h6>
+    </div>
+    {% if most_recent_sboms|length > 1 %}
+    <div class="row">
+        <!-- Most recent SBOM details 1 -->
+        {% if most_recent_sboms.0 %}
+        <div class="col-lg-12 col-xl-3 d-flex g-0 d-flex align-items-stretch ">
+            <div class="card recentGrade-1 w-100">
+                <div class="card-body">
+                    <p class="h6 text-secondary card-text d-flex">
+                        <b>Vendor:&nbsp;</b> {{ most_recent_sboms.0.vendorname }}</p>
+                    <p class="h6 text-secondary card-text d-flex">
+                        <b>Device:&nbsp;</b> {{ most_recent_sboms.0.documentname }}</p>
+                    <p class="h6 text-secondary card-text d-flex">
+                        <b>Vulnerabilities:&nbsp;</b>{{ most_recent_sboms.0.total_cves }}</p>
+                    <p class="h6 text-secondary card-text d-flex"><b>Upload
+                            Time:&nbsp;</b>{{ most_recent_sboms.0.uploadtime }}</p>
+                    <br>
+                    {% if most_recent_sboms.0.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_A" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-success">
+                        A</h1>
+                    {% elif most_recent_sboms.0.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_B" and most_recent_sboms.0.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_B" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-info">
+                        B</h1>
+                    {% elif most_recent_sboms.0.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_C" and most_recent_sboms.0.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_C" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-warn">
+                        C</h1>
+                    {% elif most_recent_sboms.0.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_D" and most_recent_sboms.0.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_D" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-secondary">
+                        D</h1>
+                    {% elif most_recent_sboms.0.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_F" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-danger">
+                        F</h1>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <!-- end most recent SBOM details 1 -->
+        <!-- Chart 1 -->
+        <div class="col-sm-3 g-0 d-flex align-items-stretch ">
+            <div class="card recentChart-1 w-100">
+                <div class="card-body mt-3 d-none d-xl-block">
+                    <canvas id="recent-sbom-chart-1"></canvas>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        <!-- end Chart 1 -->
+        <!-- most recent SBOM details 2 -->
+        {% if most_recent_sboms.1 %}
+        <div class="col-xl-3 m-0 g-0 mycontent-right d-flex align-items-stretch ">
+            <div class="card recentGrade-2 w-100">
+                <div class="card-body">
+                    <p class="h6 text-secondary card-text d-flex">
+                        <b>Vendor:&nbsp;</b> {{ most_recent_sboms.1.vendorname }}</p>
+                    <p class="h6 text-secondary card-text d-flex">
+                        <b>Device:&nbsp;</b> {{ most_recent_sboms.1.documentname }}</p>
+                    <p class="h6 text-secondary card-text d-flex">
+                        <b>Vulnerabilities:&nbsp;</b>{{ most_recent_sboms.1.total_cves }}</p>
+                    <p class="h6 text-secondary card-text d-flex"><b>Upload
+                            Time:&nbsp;</b>{{ most_recent_sboms.1.uploadtime }}</p>
+                    <br>
+                    {% if most_recent_sboms.1.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_A" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-success">
+                        A</h1>
+                    {% elif most_recent_sboms.1.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_B" and most_recent_sboms.1.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_B" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-info">
+                        B</h1>
+                    {% elif most_recent_sboms.1.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_C" and most_recent_sboms.1.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_C" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-warn">
+                        C</h1>
+                    {% elif most_recent_sboms.1.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_D" and most_recent_sboms.1.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_D" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-secondary">
+                        D</h1>
+                    {% elif most_recent_sboms.1.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_F" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-danger">
+                        F</h1>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <!-- end most recent SBOM details 2 -->
+        <!-- Chart 2 -->
+        <div class="col-sm-3 g-0 d-sm-none d-md-flex align-items-stretch ">
+            <div class="card recentChart-2 w-100">
+                <div class="card-body mt-3 d-none d-xl-block">
+                    <canvas id="recent-sbom-chart-2"></canvas>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        <!-- end chart 2 -->
+    </div>
+    <!-- end most recent SBOM charts -->
+    {% else %}
+    <div class="row">
+        <!-- Most recent SBOM details 1 -->
+        {% if most_recent_sboms.0 %}
+        <div class="col-lg-12 col-xl-3 d-flex g-0 d-flex align-items-stretch flex-fill">
+            <div class="card recentGrade-1 w-100">
+                <div class="card-body mt-2">
+                    <p class="h6 text-secondary card-text d-flex">
+                        <b>Vendor:&nbsp;</b> {{ most_recent_sboms.0.vendorname }}</p>
+                    <p class="h6 text-secondary card-text d-flex">
+                        <b>Device:&nbsp;</b> {{ most_recent_sboms.0.documentname }}</p>
+                    <p class="h6 text-secondary card-text d-flex">
+                        <b>Vulnerabilities:&nbsp;</b>{{ most_recent_sboms.0.total_cves }}</p>
+                    <p class="h6 text-secondary card-text d-flex"><b>Upload
+                            Time:&nbsp;</b>{{ most_recent_sboms.0.uploadtime }}</p>
+                    <br>
+                    {% if most_recent_sboms.0.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_A" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-success">
+                        A</h1>
+                    {% elif most_recent_sboms.0.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_B" and most_recent_sboms.0.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_B" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-info">
+                        B</h1>
+                    {% elif most_recent_sboms.0.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_C" and most_recent_sboms.0.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_C" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-warn">
+                        C</h1>
+                    {% elif most_recent_sboms.0.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_D" and most_recent_sboms.0.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_D" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-secondary">
+                        D</h1>
+                    {% elif most_recent_sboms.0.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_F" %}
+                    <h1 class="fw-bold display-4 offset-lg-4 gradeLetter-1 col-sm-3 border text-center db-danger">
+                        F</h1>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <!-- end most recent SBOM details 1 -->
+        <!-- Chart 1 -->
+        <div class="col-sm-3 g-0 d-flex align-items-stretch flex-fill">
+            <div class="card recentChart-1 w-100">
+                <div class="card-body mt-3 d-none d-xl-block">
+                    <canvas id="recent-sbom-chart-1"></canvas>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    <!-- Org stat row -->
+    <div class="row top-buffer align-items-center">
+        <div class="col d-flex flex-col p-0">
+            <div class="card o-card w-25 p-2 text-center">
+                <div class="card-body d-flex justify-content-center align-items-center">
+                    <div class="card-text fs-4 width-fit home-display-card-font text-wrap text-break">
+                        {% if highest_risk_device %} {{ highest_risk_device.1 }}{% else %}<span>-</span>{% endif %}
+                    </div>
+                </div>
+                <div class="card-footer text-muted"> Highest Risk Vendor</div>
+            </div>
+            <div class="card o-card w-25 p-2 text-center">
+                <div class="card-body d-flex justify-content-center align-items-center">
+                    <div class="card-text fs-4 width-fit home-display-card-font text-wrap text-break">
+                        {% if highest_risk_device %} {{ highest_risk_device.2 }}{% else %}<span>-</span>{% endif %}
+                    </div>
+                </div>
+                <div class="card-footer text-muted">Highest Risk SBOM</div>
+            </div>
+            <div class="card o-card w-25 p-2 text-center">
+                <div class="card-body d-flex justify-content-center align-items-center">
+                    <div
+                        class="card-text home-display-card-font width-fit {% if total_global_vulns == 0 %} db-success {% else %} db-danger {% endif %}">
+                        {% if total_global_vulns %}{{ total_global_vulns }}{% else %}<span>-</span>{% endif %}</div>
+                </div>
+                <div class="card-footer text-muted">Total Vuln.</div>
+            </div>
+            <div class="card o-card w-25 p-2 text-center">
+                <div class="card-body d-flex justify-content-center align-items-center">
+                    {% if new_weekly_vulns == None %}
+                    <div class="card-text home-display-card-font db-success">0</div>
+                    {% else %}
+                    <div class="card-text home-display-card-font db-danger">{{ new_weekly_vulns }}</div>
+                    {% endif %}
+                </div>
+                <div class="card-footer text-muted">New Vuln. (Weekly)</div>
+            </div>
+            <div class="card o-card w-25 p-2 text-center">
+                <div class="card-body d-flex justify-content-center align-items-center">
+                    <div class="card-text home-display-card-font">
+                        {% if avg_vuln_total %}{{ avg_vuln_total|floatformat:0 }}{% else %}<span>-</span>{% endif %}
+                    </div>
+                </div>
+                <div class="card-footer text-muted">Avg Vuln. per SBOM</div>
+            </div>
+            <div class="card o-card w-25 p-2 text-center">
+                <div class="card-body d-flex justify-content-center align-items-center">
+                    {% if avg_global_grade %}
+                    {% if  avg_global_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_A" %}
+                    <div class="card-text home-display-card-font db-success">A</div>
+                    {% elif avg_global_grade  >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_B" and avg_global_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_B" %}
+                    <div class="card-text home-display-card-font db-info">B</div>
+                    {% elif avg_global_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_C" and avg_global_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_C" %}
+                    <div class="card-text home-display-card-font db-warn">C</div>
+                    {% elif avg_global_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_D" and avg_global_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_D" %}
+                    <div class="card-text home-display-card-font db-secondary">D</div>
+                    {% elif avg_global_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_F" %}
+                    <div class="card-text home-display-card-font db-danger">F</div>
+                    {% endif %}
+                    {% else %}
+                    <div class="card-text home-display-card-font db-success">-</div>
+                    {% endif %}
+                </div>
+                <div class="card-footer text-muted">Avg Vendor Grade</div>
+            </div>
+        </div>
+    </div>
+    <!-- end org stat row -->
+
+
+    <!-- SBOM INFO -->
+    <br>
+    <br>
+
+    <div class="row my-2 d-flex p-2">
+        <div class="col">
+            <table id="sbomSummary" class="display">
+                <thead>
+                    <tr class="dbtb_header">
+                        <th scope="col">Vendor</th>
+                        <th scope="col">Device Type</th>
+                        <th scope="col">Total Vulnerabilities</th>
+                        <th scope="col">Total Exploits</th>
+                        <th scope="col">Avg. CVSS Score</th>
+                        <th scope="col">Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for val in sbom_overview_query %}
+                    <tr>
+                        <td>{{ val.ven_name }}</td>
+                        <td>{{ val.sbom_name }}</td>
+                        <td>{{ val.total_vuln }}</td>
+                        <td>{{ val.total_exploits }}</td>
+                        <td>{{ val.avg_cvss|floatformat:1 }}</td>
+                        {% if val.grade < letterGradeThresholds|get_item:"less_than_threshold_grade_A" %}
+                        <td class="db-success">A</td>
+                        {% elif val.grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_B" and val.grade < letterGradeThresholds|get_item:"less_than_threshold_grade_B" %}
+                        <td class="db-info">B</td>
+                        {% elif val.grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_C" and val.grade < letterGradeThresholds|get_item:"less_than_threshold_grade_C" %}
+                        <td class="db-warn">C</td>
+                        {% elif val.grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_D" and val.grade < letterGradeThresholds|get_item:"less_than_threshold_grade_D" %}
+                        <td class="db-secondary">D</td>
+                        {% elif val.grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_F" %}
+                        <td class="db-danger">F</td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    {% endblock body_container %}
+    {% block js_script_content %}
+
+    {{ most_recent_sboms.0.cve_crit|json_script:"firstCrit" }}
+    {{ most_recent_sboms.0.cve_high|json_script:"firstHigh" }}
+    {{ most_recent_sboms.0.cve_med|json_script:"firstMed" }}
+    {{ most_recent_sboms.0.cve_low|json_script:"firstLow" }}
+
+    {{ most_recent_sboms.1.cve_crit|json_script:"secondCrit" }}
+    {{ most_recent_sboms.1.cve_high|json_script:"secondHigh" }}
+    {{ most_recent_sboms.1.cve_med|json_script:"secondMed" }}
+    {{ most_recent_sboms.1.cve_low|json_script:"secondLow" }}
+    <script src="{% static 'js/dashboard.js' %}"></script>
+    {% endblock js_script_content %}

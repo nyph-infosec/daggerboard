@@ -1,0 +1,43 @@
+{% extends "admin/change_form.html" %}
+{% load daggerboard_templatetags %}
+{% load i18n admin_urls %}
+{% block field_sets %}
+{% for fieldset in adminform %}
+<label>Please specify the score thresholds for each letter grade.</label>
+<br>&nbsp;<br/>
+<fieldset class="module aligned {{ fieldset.classes }}">
+    {% if fieldset.name %}<h2>{{ fieldset.name }}</h2>{% endif %}
+    {% if fieldset.description %}
+        <div class="description">{{ fieldset.description|safe }}</div>
+    {% endif %}
+    {% for line in fieldset %}
+        <div class="form-row{% if line.fields|length_is:'1' and line.errors %} errors{% endif %}{% if not line.has_visible_field %} hidden{% endif %}{% for field in line %}{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% endfor %}">
+            {% if line.fields|length_is:'1' %}{{ line.errors }}{% endif %}
+            {% for field in line %}
+                <div{% if not line.fields|length_is:'1' %} class="fieldBox{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}{% if field.field.is_hidden %} hidden{% endif %}"{% elif field.is_checkbox %} class="checkbox-row"{% endif %}>
+                    {% if not line.fields|length_is:'1' and not field.is_readonly %}{{ field.errors }}{% endif %}
+                    {% if field.is_checkbox %}
+                        {{ field.field }}{{ field.label_tag }}
+                    {% else %}
+                        {% if 'And less than:' in field.label_tag %}
+                        <br>&nbsp;<br/>
+                        <br>
+                            {{ field.label_tag }}
+                        {% else %}
+                            <h1>{{ field.label_tag|gradeThresholdAdminSplit:"-" | first}}</h1>
+                            <label>{{ field.label_tag|gradeThresholdAdminSplit:"-" | last}}:</label>
+                        {% endif %}
+                        {% if field.is_readonly %}
+                            <div class="readonly">{{ field.contents }}</div>
+                        {% else %}
+                            {{ field.field }}
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</fieldset>
+
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,96 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+@import "./CACHE/css/bootstrap.ef16b29e00e4.css";
+body {
+  color: #5B5555;
+  background-color: #F4F5F6;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+@media (min-width: 64em) {
+  body {
+    font-size: 14.4px;
+  }
+}
+@media (min-width: 85.375em) {
+  body {
+    font-size: 15.6px;
+  }
+}
+@media (min-width: 120em) {
+  body {
+    font-size: 7.2px;
+  }
+}
+@media (min-width: 160em) {
+  body {
+    font-size: 6px;
+  }
+}
+
+h5 {
+  font-size: 1.55rem;
+}
+
+.banner {
+  background-image: linear-gradient(to top, #b3d9ef 0%, #5ab6ec 100%);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  border: transparent;
+}
+@media (min-width: 64em) {
+  .banner {
+    padding: 0.5rem 4rem;
+  }
+}
+@media (min-width: 85.375em) {
+  .banner {
+    padding: 0.5rem 4rem;
+  }
+}
+@media (min-width: 120em) {
+  .banner {
+    padding: 0.5rem 4rem;
+  }
+}
+@media (min-width: 160em) {
+  .banner {
+    padding: 0.5rem 4rem;
+  }
+}
+
+.desktop-header {
+  background-color: #323541;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white !important;
+}
+
+.desktop-header h1 {
+  font-size: 40px !important;
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-weight: 200;
+  text-transform: none;
+}
+
+.desktop-header h2 {
+  font-size: 18px !important;
+  font-weight: 300;
+  color: #a2a1a1;
+}
+
+.nav-item.active {
+  text-decoration: underline;
+}
+
+.sbom-btn {
+  background-color: #6A8085;
+  color: white;
+}
+
+
+
+/*# sourceMappingURL=daggerboard.css.map */

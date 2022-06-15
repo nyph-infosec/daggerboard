@@ -1,0 +1,44 @@
+{% load daggerboard_templatetags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{# url definitions #}
+{% url 'vendor_scorecard' as vendor_sc %}
+{% url 'sbom_scorecard' as sbom_sc %}
+{% url 'sbom_report' as report_sc %}
+{% url 'home' as homepage %}
+<head>
+{% include 'head.html'%}
+</head>
+
+<body>
+
+<!-- start nav-->
+{% block navbar %}
+{% include 'navbar.html' %}
+{% endblock navbar %}
+<!-- end nav -->
+<!-- main container -->
+<div class="container">
+    {% block body_container %}{% endblock body_container %}
+</div>
+{% block js_footer %}
+    {% block bootstrap_js %}
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    {% endblock bootstrap_js %}
+    <!-- slim select -->
+     <script defer src="{% static 'js/upload_status.js' %}"></script>
+    <script src="{% static 'js/slimselect.js' %}"></script>
+    <!-- datatables -->
+    <script type="text/javascript" src="{% static 'js/jquery.dataTables.js' %}"></script>
+    <!-- import Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    {% block js_script_content %}
+    {% endblock js_script_content %}
+{% endblock js_footer %}
+
+</body>
+
+</html>
