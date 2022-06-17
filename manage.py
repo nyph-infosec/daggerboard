@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+
+# SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital
+#
+# SPDX-License-Identifier: MIT
+
 """Django's command-line utility for administrative tasks."""
 import os
 import sys

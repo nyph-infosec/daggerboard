@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital
+#
+# SPDX-License-Identifier: MIT
+
 from django import forms
 from django.forms import ModelForm
 from .models import Sbom,Package,SbomUpload

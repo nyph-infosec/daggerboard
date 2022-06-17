@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital
+//
+// SPDX-License-Identifier: MIT
+
 $(document).ready(function () {
     let thost = window.location.host;
     let tproto = window.location.protocol;
@@ -54,7 +58,7 @@ function update_progress(proto, host) {
                     }
                 }
                 setTimeout(function () {
-                    update_progress();
+                    update_progress(proto, host);
                 }, 1000);
             }
         });

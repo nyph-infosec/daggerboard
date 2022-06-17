@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital
+#
+# SPDX-License-Identifier: MIT
+
 asgiref==3.4.1
 beautifulsoup4==4.10.0
 certifi==2021.5.30

@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital
+#
+# SPDX-License-Identifier: MIT
+
 import ldap, pyaes, logging, environ
 
 from django_auth_ldap.backend import LDAPBackend, _LDAPUser

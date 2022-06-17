@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital
+#
+# SPDX-License-Identifier: MIT
+
 import hashlib
 from datetime import date
 

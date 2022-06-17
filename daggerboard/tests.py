@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital
+#
+# SPDX-License-Identifier: MIT
+
 from django.contrib.auth.models import User
 from django.test import Client, TestCase
 from django.urls import reverse

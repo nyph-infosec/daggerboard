@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital
+
+SPDX-License-Identifier: MIT
+-->
+
 ```
 ____                                ____                      _ 
 |  _ \  __ _  __ _  __ _  ___ _ __  | __ )  ___   __ _ _ __ __| |
@@ -9,11 +15,10 @@ ____                                ____                      _
 
 ## _SBOM Vulnerability Scanner Tool_
 
-[![License: Unlicense](https://img.shields.io/badge/license-MIT-blue)](http://unlicense.org/)
-[![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen)]()
-[![Build Status](https://img.shields.io/badge/Build-Development-orange)](https://travis-ci.org/joemccann/dillinger)
+[![License: Unlicense](https://img.shields.io/badge/license-MIT-blue)](http://unlicense.org/) [![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen)]() [![Build Status](https://img.shields.io/badge/Build-Development-orange)](https://travis-ci.org/joemccann/dillinger) [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)
 
-DaggerBoard is a vulnerability scanning tool that ingests Software Bill of Material (SBOM) files (CycloneDX,SPDX) and outputs results in a human-readable format. This tool evaluates software dependencies outlined within the SBOM file for package vulnerabilities. Similar to how the DaggerBoard keeps the ship afloat the application assist with keeping your organization afloat by maintaining and analyzing risks.
+
+DaggerBoard is a vulnerability scanning tool that ingests Software Bill of Material (SBOM) files (CycloneDX,SPDX) and outputs results in a human-readable format. This tool evaluates software dependencies outlined within the SBOM file for package vulnerabilities. Similar to how the DaggerBoard keeps a ship afloat, the Daggerboard application assists with keeping your organization afloat by analyzing and maintaining risk levels.
 
 
 
@@ -32,7 +37,7 @@ DaggerBoard is a vulnerability scanning tool that ingests Software Bill of Mater
 
 #### Features
 ---
-- Dashboard to provides at-a-glance views of SBOMS and associated vulnerabilites.
+- Dashboard to provide at-a-glance views of SBOMS and associated vulnerabilites.
 - Provides in-depth analysis on vendor scorecards for given SBOMS.
 - Import SPDX or CycloneDX file to detect vulnerabilities.
 - Calculates single SBOM Grade or overall Vendor grade.
@@ -61,42 +66,39 @@ DaggerBoard uses a number of open-source projects. Listed below are the main pac
 #### Getting started
 
 ---
-Two installation methods provide Docker and Installer script. The two installation options can be downloaded [here](here). For manual installation steps see the section for **Manual Install**.
+Two installation methods are provided: Docker and an installer script. The two installation options can be downloaded [on the project releases page](here). For manual installation steps, see the section **Manual Install**.
 
 ##### Option 1 - Installer Script
-Make the .bin executable
+1. Make the .bin executable
 ```
 chmod +x DaggerBoard_Installer.bin
 ```
 
-Run the binary to install the application
+2. Run the binary to install the application
 ```
 sudo ./DaggerBoard_Installer.bin
 ```
-User will be requested to enter admin password upon setup and IP address listener.
+Note: You will be prompted to enter an admin password and IP address of the server.
 
-Reboot the server
+3. Reboot the server
 
 
 ##### Option 2 - Docker
-Load the package into docker
+1. Load the package into Docker
 
 
 ```
 sudo docker load --input daggerboard_docker_image.tar
 ```
 
-Run the container
+2. Run the container
 ```
 sudo docker run -p443:443 -d -v dagger-vol:/var/lib/mysql daggerboard:version1
 ```
 
 #### Manual Install Steps
 ---
-To install DaggerBoard on an OS that is not supported, you will have to make sure that you have the right dependencies and run the install script.
-
-1. Clone the repository, download the tar [here](here) and unzip.
-2. Replace the specific OS dependencies within the bash script to meet your environment. These dependencies are found [here](here) and in system dependencies of the README.
+To install DaggerBoard on an OS that is not supported, you must ensure that you have the necessary OS dependencies prior to running steps outlined in the installer script.
 
 Install the OS equivalent of the following on your system:
    ```
@@ -121,7 +123,6 @@ Install the OS equivalent of the following on your system:
     libldap2-dev
    ```
 
-3. Within the script update the homedir variable to path where the install script is located.
 
 
 #### Proxy Configuration
@@ -274,7 +275,7 @@ Please take a moment to review guidelines [PR]() | [Issues]()
 This project is licensed under the terms of the [MIT license](LICENSE.md).
 
 
-#### Releases Notes
+#### Release Notes
 
 ---
 * Version 1.0 Initial  of DaggerBoard

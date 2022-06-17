@@ -1,0 +1,38 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name:
+Upstream-Contact: 
+Source: 
+
+Files: daggerboard/static/js/bootstrap/* daggerboard/static/scss/bootstrap/* daggerboard/static/js/bootstrap* daggerboard/static/js/tab.js daggerboard/static/CACHE/css/bootstrap*
+Copyright: 2011-2022 Twitter, Inc.
+Copyright: 2011-2022 The Bootstrap Authors
+License: MIT
+
+
+Files: daggerboard/static/admin/*
+Copyright: 2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors
+License: MIT
+
+Files: daggerboard/static/js/chart.js daggerboard/static/js/Chart.bundle.js
+Copyright: 2014-2022 Chart.js Contributors
+License: MIT
+
+Files: daggerboard/static/js/jquery* daggerboard/static/css/jquery*
+Copyright: 2022 OpenJS Foundation and jQuery contributors
+License: MIT
+
+Files: daggerboard/static/css/slimselect.css daggerboard/static/js/slimselect.js
+Copyright: 2017 Brian Voelker
+License: MIT
+
+Files: daggerboard/static/images/* .attachments/readme_db_diagram.png daggerboard/static/daggerboard* daggerboardproject/.env daggerboard/templates/*
+Copyright: 2022 NewYork-Presbyterian Hospital 
+License: MIT
+
+Files: daggerboard/static/fonts/BebasNeue-Regular.ttf
+Copyright: 2010 by Dharma Type
+License: OFL-1.1
+
+Files: daggerboard/static/fonts/SourceSansPro* daggerboard/static/fonts/OFL.txt
+Copyright: 2010, 2012, 2014 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’
+License: OFL-1.1

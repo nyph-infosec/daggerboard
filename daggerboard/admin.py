@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital
+#
+# SPDX-License-Identifier: MIT
+
 from django.contrib import admin
 from .models import Sbom, Cpe, Cve, Package, Ldap
 

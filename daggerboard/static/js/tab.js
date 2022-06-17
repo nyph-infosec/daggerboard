@@ -2,6 +2,8 @@
  * --------------------------------------------------------------------------
  * Bootstrap (v5.1.3): tab.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Copyright (c) 2011-2022 Twitter, Inc.
+ * Copyright (c) 2011-2022 The Bootstrap Authors
  * --------------------------------------------------------------------------
  */
 

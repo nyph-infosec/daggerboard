@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2022 2022 NewYork-Presbyterian Hospital
+#
+# SPDX-License-Identifier: MIT
+
 """
 Django settings for daggerboardproject project.
 
@@ -27,7 +31,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '==_xv2k%xqvnf2zwlgpi2b+=rhq*gymuv58uz4%vbd=2h0fq+g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -95,6 +99,8 @@ DATABASES = {
     'PORT': '3306'
     },
 }
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -167,11 +173,6 @@ LOGOUT_REDIRECT_URL = '/login/'
 # CSP Policy
 CSP_DEFAULT_SRC = [
     "'self'",
-    "ajax.googleapis.com",
-    'code.jquery.com',
-    'cdnjs.cloudflare.com',
-    'cdn.datatables.net',
-    'cdn.jsdelivr.net',
 ]
 
 CSP_STYLE_SRC = [
@@ -187,6 +188,11 @@ CSP_FONT_SRC = [
     "use.fontawesome.com",
 ]
 
+CSP_IMG_SRC = [
+    "'self'",
+    "data:",
+]
+
 CSP_SCRIPT_SRC = [
     "'self'",
     "cdnjs.cloudflare.com",
@@ -194,6 +200,18 @@ CSP_SCRIPT_SRC = [
     "cdn.jsdelivr.net",
     "ajax.googleapis.com",
     "cdn.datatables.net",
+]
+
+CSP_OBJECT_SRC = [
+    "none"
+]
+
+CSP_FRAME_ANCESTORS = [
+    "'self'"
+]
+
+CSP_BASE_URI = [
+    "'self'"
 ]
 
 ## django-rq redis config
@@ -213,7 +231,10 @@ CORS_ALLOWED_ORIGINS = [
 
 ]
 
+## XSS protections
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
 ## session cookie
-#SESSION_COOKIE_SECURE = True
-#CSRF_COOKIE_SECURE = True
-#SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = False

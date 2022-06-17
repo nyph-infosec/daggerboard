@@ -1,0 +1,2341 @@
+SPDXVersion: SPDX-2.1
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: daggerboard
+DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-08aeb158-c55a-4002-9014-56d88ad20b91
+Creator: Person: NYP InfoSec Contributors
+Creator: Organization: NewYork-Presbyterian Hospital
+Creator: Tool: reuse-1.0.0
+Created: 2022-06-17T19:04:02Z
+CreatorComment: <text>This document was created automatically using available reuse information consistent with REUSE.</text>
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5d3ecf08655fc52cf2745a65779c54e4
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ccacfc3dcee4501e1497f464f4b2523e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-88920f3c067e9e75b7e11b8c100e9ca4
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5c3a2b8b3080ea1136e8d69bed10477b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7120b1abf6b723d768f50cf9fe4c2c5f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-86406246a7b7d41baec84b157fd7ff6a
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3e92c24f3deba53be776a89a18745f7b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c80c7b3b45e7cee580b2159d3662fe7f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-80579d98117454f362c4d9f224d5f5e2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0f42075eb0d6b45267794035ff58245d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-39cd5aafec6b3a1ef96d29b33856644e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-136a945f025ef5480b5488b478d71d5e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-9e4e7848c78e20c204bac9222afb55ed
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-11759e02dce5840eadaa5535d51efaf9
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e9028678a1b5d1342aeedfbb47bc1baf
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-802df26b0230446de9365d2a53e109a7
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-822704bc9caa5d87f2004e2410d832a9
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-1bde3c8fb0cc9a6b3482c7430dce009c
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e0c9daeb165fe5b1cabf927f57c39ffb
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5c6c177f6af17db318dddcfbd1f556f7
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-2b509538de0d5c0c6e9fc76546051e34
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b4588c12b0d1b135ab2f2e7e29a486f0
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-68a75ae778c82230b74ce3a7b1e37a15
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ef7199341592a53f6edab85cc382fca8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c908c38f9038cc7afef17f62171512b3
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-856d1caabf4558ff17d92dfc93d349ed
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5f05c29df627bf1cbb3f76cef00899a2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-66305f676359302e476633ad84bc13db
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-180b9d26b97be74d2f365e6a471a7764
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-657d65f749c1322195850ed8b2f7ae9a
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e6e052d8a368542d4db1b2a70ab16c7c
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e1cb66e1814f2202e807e5c582f325f1
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4df1d58922f1c2933944b2fe2ec409db
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-650185e2a8e5d55825ff824ca6821232
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d90e767e1d9fd12f320e70a46081e214
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-6a2b830d91c4b60106b5834dae257ffd
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-175d003620a46095977e72de0517a6be
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-cc241a843cbda21d29334720ce926601
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-219944fad9e2cf4f846439ad94ff7ecb
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-38a1a9138e35fc14f5fb33e4c10b369b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c6bca891ddda8ea7442c28f9b2f9788d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-1e07ff10e65bc59b39ea624bef793dec
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-8e9a53eeb5049eab173e2906fbc4e4d1
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d3196b55ea22eb82220812b9027f1586
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d4f09d49719a37d90d41edc88e07c7c4
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-de8ef10524bc5501c894fe084d49900e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-57b031e517e23c5d094123c45be47f58
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-fca072eb32af921fcb9ec418540d4bbe
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b305989bc901279ea98e7d7f688ca89b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-674d3940fb7072b874c6939cfbdfcb61
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-a6dcf2b754df41bd68e8d76dfcc35780
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0dc36cceb8932ca4d3d36c7db5cd3b80
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e4cf33db089d14caa88bdb2e1816e537
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-aa070748d68f4f1b5292d46afc090123
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-8804954b08a40f425f8b7e7db206dcc5
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-442f7c25473450f535af0a058d738f71
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5623bdc39006daa27d8bf4e86b938535
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d90b0f3a13c8b7dadb6cb856267f9f73
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-05eec9a71ab476de0c054aa1d273c87b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-9e4982ec050053404509901599ebbd51
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-dbd0d60053b2b86eb70319ca2116733e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-651e67d84912d3d8d2f25899eae70eac
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-67fe94abb649d3c6db8ee47a327ef20c
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d4b43ac76b9341b04b0928ec4e837021
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-20f166388f38bd7128185be316ffe287
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-6d8aca302b9d0708c7b47a8ff4ce7115
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-85dc808db3ea888b116d96101196b0b9
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7537fd695477deee4872272ac42e989b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c3e9df2070f394169ad2d467b034fab7
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-2a87fb9185a9ff7d5c520b56565ee04c
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-bf9c0c8321a97262f917fa04a59eb81f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4d976e6ed230face956fe5ca53b79fb5
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-adac29e28c8bc67701175d8889be65fe
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-121e68dc88d62913b6b6e4390b9a1cc8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-bf62e0b74b832318dc8c779143860c4b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-18ee542ad7a40b247cd5a4e1791aaeb3
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-6e216aa2c2981cea5e760a7dabf46839
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e1695164a8af15355214c74cd423a547
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-f5bc577ffa36b8afd6f1c67b6ab35f85
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-00526a5034cc9aea5c0c3eb0245d4ae0
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-98585ab3c36e4d5666209d84b2e94358
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-14bc8195d90d880a0eac8aef35fc6b31
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0ff8f621165eaad7db89cdcab946b0c7
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-fee9bc48c3057bb6accfcf02896fa69d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-82d2c05baac3dd43a633d493cdc63cba
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-fa3466e8070d70a4e0593da9282df5fb
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-148aa1c8ba33c379a0c29082d51508ed
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-2b007b7d5f3840641f7455a90b035711
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-98bfea6b95061b8e62d9120ec0f7f066
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-be430c5dd11efe7573bd62d660a1ddf7
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4828f3c6ef0201e09862e98280137b65
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-33c4f38d32e02d706dfc39a05b32082e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c4d47b201c7c8f0af709544563d4a8fb
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ae7ab908532ff3a72d26ccb599c388d6
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c26ac87ce694f90dff75d289f83e37de
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d2ea665e6b12d20fb4e9f69ae237f7e8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7ff8fd4dfaec148b58d311d937a4a89f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-1cf80efcbdc59907376aa2b0ca0ea2b8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-8076b6d31f2a5df4b8da4fbf836cc46b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ddff86ecf07842daf8426be289866ad5
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-8aacbb1210a1e4fcf8035daf1b66c6a0
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ffbd5bdc4be7b462e139b26c6ade8dc8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-1f4b71a1c91780fd69de4eb4bb0205f4
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-178450b74b004c9c86884b1064723f19
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-59dfa229a4caee59db0f5858a65f4c27
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d7c665f4dafee7186eceb929b05b644d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ea8acc2f0156ed83bd81d702652c1774
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-fdc1a197af4f77b4de9c91c64eb6e871
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-161df22adcd10ef4de39d12891031316
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-358ba543827b593f836f45d7c816604f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4388729c8ede9500f165464e55896c68
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-cb82fe6d3a5ca4ef36b21450bbe6621b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-dc3154b69dadeb57caa0f8612ea40e40
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-1e382bd327dae966491ecd9f0f436459
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c8b951fb75794146a7f46619a56edf77
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-1600dba46cd9c5cdb3ddaf089408de06
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7d77f75c372b972e00f7e30b349d7568
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-488d3c5b6b3c10eca9d40acfe2384f55
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c006c0db8dfe1ea007b85f55e975416c
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-f7127336d5b1de86f51c01604cbe9f4c
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e638ecc112c0736a2017bbfd4fbc8cb7
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-abb4f4dbaa979c0855421138d8165193
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d0a9aec96e5def5a1507db5ca772c83c
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4b2ae885aa1a1d018c934290533d477f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3eb07ebec70ae93dc92261df2173a8e2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b8b7c4dd202671c9cece8bf025a09078
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d4264c29fbcaca3b5c2b537bd9202cc8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-89033b53d295da6ee49b5b7220552547
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-6fbb97551b76824ae554992e78d824ff
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-fa3c3838d033e91378d773303a03f4cb
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ee977892819ee24a1588ed6bfe371309
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b3dcb83e66d03e353557b8a769c7b1c8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-9fadefd36858eb46329d62ee5def2259
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-1352e66d61b32b6fd267333c0f89f00b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e141df41b2dac4b9c0c8c78c8537dcdd
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b086d956c708d717a23931e8ea55ebcf
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3bbac48331957882537e4d32a7c53a7e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-8feb12a2b3a5209bb95592593704bbae
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-822a4ae0d6c717c655fb7f42871f4c26
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-87de4011a717a18ffbd2f5672af2f158
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3ef0f27ec105a43e80dbf4c70b7a9dd7
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-493c56215c92b4b339b1ac88f8ea4189
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d78067d08bda3dc6efedd1dc66bde961
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-83c537050930bcbb0fa58aad9927131c
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7a23ebddc7f21c7da3eac83ab5bc8439
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-2e1c07a1fb73b3cf12faae1f852d14ed
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-93c14dcb9d48e896a5da6f2878a2a735
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-8a26a2617bf46ad5a1ca0f5205c17241
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-72717a0faf6e6231679b22f562f56029
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b4a3de183110088ea33a4b618ea750fc
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7317a3046726899128fcb5e2fc9ea2b8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7d0569e0fe874c48bedc7b87713bdede
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3e4888610d233427f085befca538fbe6
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-55fab3ea37bc2e642c2c17ad2cd87029
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0b497f0889cdbe1ff972d4201ea19000
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-50159c275e654b1face72834b3e90186
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7fc7e4a73e23348e785478868afc539d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-8b73fb45bdbc49633436b1a411e6b6bc
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-8611dd0774374e75329afb9e751800fc
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ef97f6f80edffe02447a17504b0ddf9a
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e404926b84f0d2ea2403a2f329a64259
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-89f3053e8e9780c467d4556cac978eb3
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d7d3121fd3d65dd9740c843d9eac2f39
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-782f30d4f16cfa1361fefc0f94b355ad
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-a06c56c7de7f6b600665da362fd31ded
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-a0d5ae3bddad1c24dfa7fa771681f2bf
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-10f81d29b2e472a7572f7fa506cb6102
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d0b7c5d850d9284aa6bcef23a28b3cef
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-24f6dceeedac8db7fe5e5f45688ad9ea
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-78a2857113917b1196a1b50f253570c2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-79df9dec1663e3bd4321acc6423d96e5
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-17168dce184ad0c4133c2622c3bb63a1
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4debb01304c968363aefe8c209fff662
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ceb09f49e864dda81db8a8e33e380c6f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-36da5d8119abe38239a8aae1482fd80d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-beff49cc67ddbfcfaa9fb9eeeb2b5015
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-8c5a75f5988bce687c02dcaf26b03128
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-69ba2662cffb04e1f529773159b07ad2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-244d701697d71c3785bec13921ee40d0
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-adefd11d3f2ceafaac5896939e3d5caf
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d89b4193d3349808131ab9a5710cd578
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-f7f72bae5c48fe24f62f38c64dbfdf45
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-49b2194bb2c9e5fa1b93012f17d0a491
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-cb0677ba932151567c9c758a5bf0a4a3
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-329abefe5dfda26bf758d9106fd5c7f4
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-795db985af0552d8a5ead9b8967ec5f4
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-99abd7fe641741b03ff88aa4c7fad167
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-575a69f8e87810768ddea3c3078c464e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4e33c5a692495279963c432d8e1792df
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-6fd89ab132ed6ceef1a5d06151a92330
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-171ddf23c400a4be318404cdfff6cdaf
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4cd61b77effcc5a18f67b39957664486
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-789c3f74ae7eb06a98091c41c812ab05
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4244c7cca38e622eb77a1b3722e34b61
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-77cdc0222872ccac8d3aba878b94edfc
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7e06c550900401efd5a53257b67c7b5d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-844278726722362aacc3423119463708
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-a9696666f13f7988b0d72ea0b1166d79
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-92112e1f9ac2f8ee0e5705bd41581678
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-757bb8ffefec383816de379fc0ea142d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7d98ad7588348736214a6131de891217
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4fa5d41d3d95aec89bb10fa9d1c717f8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-6fd099009a7f0a47dccae79176bc89e6
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0c3d50673dde0f3a2de4709e397c0cee
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3caa29ee6a3912965dd69abd98192d51
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3a8568eee2561ee9497a887e23699ed4
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-9ea399d673afa2e0bf732a5b3b6aca52
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-184beadaed9494c8d3a173a1045d2c61
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-1810918f9ae979d7562edb4bf74911e5
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-f8c9aeb8123d6c4c2b39ec5ca2d5e890
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-dd5f35bcef23e841135c2c9df0bbcc55
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-04623175680629d68c79195eddddfc25
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-594cac8d7cdd93dd19942a1f378ec648
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-2cc59ec59b2f951a4c488aeb6a51a60a
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5f614b8cbedd7899b323794058b85f94
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-08cb1995c12e0d1f3d5d85f9df5b665a
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-acd97aafaf7fd44044f0657437510739
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-48311869d3092bf0444f0d6cff7815f1
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-f9147fa49a5b5dc1a27aa2b45d31f701
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0721c8e382f475114831de8385823d33
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-404ed6435a9bc1218bd19937afcef082
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-950e1258a5e9f36f4759a93015b78c7c
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-fda2e75222462bf60f73389fe3cad199
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b82308c0b47838e8b8d3ac0dd6cd93ce
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-35014ba83d7ba3647356cfb864173cbb
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c731248351087e1fb05b8758f9ccda7e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-556445e414d040d0933e4b1bce8dac22
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5a1224a727c0e540a3ff7498508ad1db
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0bdebd90cb695ee7f4336dc96ca7cfd7
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-84fa84d65edd7945927efc14c3b3dc44
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-f6d4e0aedfce34a1fec68ac435df83d2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b2e00fdedf02a7b85dcbbadf0f378f30
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-fd00ffb4e581ba91310a6d0fba56b94a
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c00bc60b394ba15036f82f5f774a6ca4
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-035d6d8aab2d9626041a48ca974a5db2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-75be9171a39b90b9a6bc327b0d01be02
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-a20359e50e6d32a56a292a884f989237
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b4f1998b3ef85b33b1e2a8e7cd2b0d32
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e10f3eab34a8e09211e578b920b6e659
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b89a723cf0045d6b9471d8681ca86040
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-905561e6e306c93cd8b8658d994e8843
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7cd62d92f497798c3d280017a5c6677a
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c9a00ba2670c2176b4718a124d56ddbf
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-a7b7277acab47f551da5ebf7e457858e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-752d604eb7ec57e4ce5c24d393a7234f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-7a4e63f06ef0bfa4bdb18af21b6442a9
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-cf3312fe8bdfb1b8fd23b4a0bb7693c2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-64794d1491aa6fa24b4b6a39b880f201
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-a1ca6864f60d85d26d18000a95ccbca2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-bdef8ab28de9a91e37ab66952ad54516
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ff01fbbd19913a1d264b21d76ecb6774
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e1c43f54b2f08cd82f6ae387244d65f7
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-16668be1f599eafbe7bbda7ee67cc32e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-77b4de765c233c871fc5ae5e8dfa4933
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d4df2844e4eaefe74163f947111524a2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ed2d0f1bf1b2d4cb6e7bf64e3f9e32b5
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-fb4a8c9a04e09e0b0309a315a1e18b01
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-2d935e7c736fec30727d3623a49f3601
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d2437dc3c4f3d96c5267351d2120e0fa
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-e19f3ad378c8ce3073e2b04fe81564f2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-15eb3fd0068a2bdadd89d0fd1f6e9081
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-51c7c333a828237a618dd5228aee774f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ea5c04fc3b4d17493094da66ba6bb7d4
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-27c7f032f57775be7cc7a58733832f65
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b25b14d79b90a3448489f50f14519e17
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c57ef632a81cd3898080551ae6e3979c
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-efa28d180cfcf696724942b4b87a78c2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3259c9041db2e59ccbc631be8b1f52d3
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-58b202da0754f97a70eb6851c8bd77c8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0c313c72f3f8ccb80e05a19835bddbae
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-101579256501f948d9ac17a5e372f841
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3d6b97ff7cac32315cfc44cc10828751
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4a5a0b8bf58e95401bd7e97763372e6f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-69602905c8d85ec8fce70b5d56d12b96
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-55f740030edbb2eaf88f4e3f1623f1b3
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b09a51b3e69b5cbdce3971e1af3329f6
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-9e5e8b2fa729ae515aa05a28a831dca8
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5b54c312d53b7696064ca4039eefd02d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0de7e3a20c9fc3e16fbdbaa757aa5139
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c0396bdce288ada0deb9d0130b0333d5
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-236762c02b631b1a05cc2db0c2b2f3b2
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3fb8de5fab5aeffa9b77bebfe92c69ab
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-2066c8c54b31e10c94dfbf8424fcef37
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-74b7a5dd968ed0bdc4ddd19e5ec61c7b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ea4b375c3638f771a8511601d5e95ed1
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c050744c35b00a41c366fb2419c105f6
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-f02b42506977b9c85cf7886bfb6f686b
+
+FileName: ./.attachments/readme_db_diagram.png
+SPDXID: SPDXRef-5d3ecf08655fc52cf2745a65779c54e4
+FileChecksum: SHA1: c9cbcbb642743f628c659b247e25705542f33928
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./.gitignore
+SPDXID: SPDXRef-ccacfc3dcee4501e1497f464f4b2523e
+FileChecksum: SHA1: 1744d1ef50fb8ac056703260c72a4374d80cb3bc
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./README.md
+SPDXID: SPDXRef-88920f3c067e9e75b7e11b8c100e9ca4
+FileChecksum: SHA1: b25641f9f0db91729ecbfed14c9d20bab80af80b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./azure-pipelines.yml
+SPDXID: SPDXRef-5c3a2b8b3080ea1136e8d69bed10477b
+FileChecksum: SHA1: 0d0cd408292a07e4858e3927c531ca1b5994e1b5
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/admin.py
+SPDXID: SPDXRef-7120b1abf6b723d768f50cf9fe4c2c5f
+FileChecksum: SHA1: 3469d53df792aa2453ebc267c41a67999cfc7be6
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/apps.py
+SPDXID: SPDXRef-86406246a7b7d41baec84b157fd7ff6a
+FileChecksum: SHA1: 5439eabdb7193ac6dae5f9b63359ee34aab6e8bd
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/forms.py
+SPDXID: SPDXRef-3e92c24f3deba53be776a89a18745f7b
+FileChecksum: SHA1: bdce372d5b8cd184f9abaf39df2fd8eafe31e010
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/ldap.py
+SPDXID: SPDXRef-c80c7b3b45e7cee580b2159d3662fe7f
+FileChecksum: SHA1: a99792526479a7149fd6e870c537132f4e683cb8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/models.py
+SPDXID: SPDXRef-80579d98117454f362c4d9f224d5f5e2
+FileChecksum: SHA1: 7ba9c04aaa048998da8cdd2f155be67324eaa5b1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/rbac.py
+SPDXID: SPDXRef-0f42075eb0d6b45267794035ff58245d
+FileChecksum: SHA1: 8f649b463eda3773924ad20492b31c0c428db622
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/CACHE/css/bootstrap.ef16b29e00e4.css
+SPDXID: SPDXRef-39cd5aafec6b3a1ef96d29b33856644e
+FileChecksum: SHA1: cc7f227e2f34e21301d654878cee5a8f6fa3f396
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors
+Copyright 2011-2021 The Bootstrap Authors
+Copyright 2011-2021 Twitter, Inc.</text>
+
+FileName: ./daggerboard/static/CACHE/css/bootstrap.ef34329359f6.css
+SPDXID: SPDXRef-136a945f025ef5480b5488b478d71d5e
+FileChecksum: SHA1: 2ffae56bf79cf39caa5b1269801f7fcd9f81411b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors
+Copyright 2011-2021 The Bootstrap Authors
+Copyright 2011-2021 Twitter, Inc.</text>
+
+FileName: ./daggerboard/static/admin/css/autocomplete.css
+SPDXID: SPDXRef-9e4e7848c78e20c204bac9222afb55ed
+FileChecksum: SHA1: 28f72636a25fbb0d4808abb984a0a2ad75908435
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/base.css
+SPDXID: SPDXRef-11759e02dce5840eadaa5535d51efaf9
+FileChecksum: SHA1: a1bda13649e45b037667fded647f73f02540da6d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/changelists.css
+SPDXID: SPDXRef-e9028678a1b5d1342aeedfbb47bc1baf
+FileChecksum: SHA1: b7d7849a40feebe8785a7ec06c1ba5939e04396a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/dashboard.css
+SPDXID: SPDXRef-802df26b0230446de9365d2a53e109a7
+FileChecksum: SHA1: fb84ad96d1b02c6a5b89bb33d3640c788d70d21a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/fonts.css
+SPDXID: SPDXRef-822704bc9caa5d87f2004e2410d832a9
+FileChecksum: SHA1: 185ad91034e8334957e89bea971278b6233b213e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/forms.css
+SPDXID: SPDXRef-1bde3c8fb0cc9a6b3482c7430dce009c
+FileChecksum: SHA1: 06f957ffbc782da2224b2bd185ee75285b11b695
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/login.css
+SPDXID: SPDXRef-e0c9daeb165fe5b1cabf927f57c39ffb
+FileChecksum: SHA1: e6ab93cb3c7f152b6bc19c349371b4f4e734cb69
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/nav_sidebar.css
+SPDXID: SPDXRef-5c6c177f6af17db318dddcfbd1f556f7
+FileChecksum: SHA1: cc25c88072b65d8ba52e518d5c4dda871271517d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/responsive.css
+SPDXID: SPDXRef-2b509538de0d5c0c6e9fc76546051e34
+FileChecksum: SHA1: 028ef5afc6cbc118fc48c48831ec5758a09e914d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/responsive_rtl.css
+SPDXID: SPDXRef-b4588c12b0d1b135ab2f2e7e29a486f0
+FileChecksum: SHA1: e4e54cac53ce713fbf732568fe7684948319aa69
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/rtl.css
+SPDXID: SPDXRef-68a75ae778c82230b74ce3a7b1e37a15
+FileChecksum: SHA1: fe908772eac1c757c113cd2e1a8492b3fbaf6791
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/vendor/select2/select2.css
+SPDXID: SPDXRef-ef7199341592a53f6edab85cc382fca8
+FileChecksum: SHA1: 88e4401150379e98f87da84d59197fe5fe3ae0b8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/vendor/select2/select2.min.css
+SPDXID: SPDXRef-c908c38f9038cc7afef17f62171512b3
+FileChecksum: SHA1: ae5735562faabd1a2d9803bbd7bf4c502b5e4f51
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/css/widgets.css
+SPDXID: SPDXRef-856d1caabf4558ff17d92dfc93d349ed
+FileChecksum: SHA1: ba7fa53896b94087ac4fefa6d34afbbaa2c9b076
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/fonts/README.txt
+SPDXID: SPDXRef-5f05c29df627bf1cbb3f76cef00899a2
+FileChecksum: SHA1: 16ca75872c2e3d2009290dd7112076d8039eeeb6
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/fonts/Roboto-Bold-webfont.woff
+SPDXID: SPDXRef-66305f676359302e476633ad84bc13db
+FileChecksum: SHA1: e4774be50a91e83c4fdc647e27342d03a29fd215
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/fonts/Roboto-Light-webfont.woff
+SPDXID: SPDXRef-180b9d26b97be74d2f365e6a471a7764
+FileChecksum: SHA1: 3ea2c95e21cc88d82bb111c99883484c64d657db
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/fonts/Roboto-Regular-webfont.woff
+SPDXID: SPDXRef-657d65f749c1322195850ed8b2f7ae9a
+FileChecksum: SHA1: 96eca9934dff83a12371dd54fc6c1bf29256815a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/README.txt
+SPDXID: SPDXRef-e6e052d8a368542d4db1b2a70ab16c7c
+FileChecksum: SHA1: f4945c6a42c1432b7a172eae7c551134e1ca679f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/calendar-icons.svg
+SPDXID: SPDXRef-e1cb66e1814f2202e807e5c582f325f1
+FileChecksum: SHA1: 4675757588d87f2eafb2a313d1b8d259b0e33be3
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/gis/move_vertex_off.svg
+SPDXID: SPDXRef-4df1d58922f1c2933944b2fe2ec409db
+FileChecksum: SHA1: b30ada97852f3cbec750f90abc18ee4982515bd2
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/gis/move_vertex_on.svg
+SPDXID: SPDXRef-650185e2a8e5d55825ff824ca6821232
+FileChecksum: SHA1: 531beb8effb722d13c08de6318c103701b8a053e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/icon-addlink.svg
+SPDXID: SPDXRef-d90e767e1d9fd12f320e70a46081e214
+FileChecksum: SHA1: 4389d23b208164ab03c698bda38586331d766ddd
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/icon-alert.svg
+SPDXID: SPDXRef-6a2b830d91c4b60106b5834dae257ffd
+FileChecksum: SHA1: 5e5c150efc224df9e7e252b8cef29b64fa87e71b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/icon-calendar.svg
+SPDXID: SPDXRef-175d003620a46095977e72de0517a6be
+FileChecksum: SHA1: 00acee9e7f7c8673247567e8601057adf3661a47
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/icon-changelink.svg
+SPDXID: SPDXRef-cc241a843cbda21d29334720ce926601
+FileChecksum: SHA1: 631fdde7fe88f343652e2f3aa9e2606c172a60ab
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/icon-clock.svg
+SPDXID: SPDXRef-219944fad9e2cf4f846439ad94ff7ecb
+FileChecksum: SHA1: 5d173861525f2d331d268ad5f1aef29ebe6357a5
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/icon-deletelink.svg
+SPDXID: SPDXRef-38a1a9138e35fc14f5fb33e4c10b369b
+FileChecksum: SHA1: 4551c28d23c0cd7e1df75fb707e32201bb375676
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/icon-no.svg
+SPDXID: SPDXRef-c6bca891ddda8ea7442c28f9b2f9788d
+FileChecksum: SHA1: 55546da14fa61cb2cb396735f3dd2aca0aaeeb09
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/icon-unknown-alt.svg
+SPDXID: SPDXRef-1e07ff10e65bc59b39ea624bef793dec
+FileChecksum: SHA1: f19ea4da9b77f2c2de5d2ba30faa2066ed268a38
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/icon-unknown.svg
+SPDXID: SPDXRef-8e9a53eeb5049eab173e2906fbc4e4d1
+FileChecksum: SHA1: b87c3c951adbcd7b299119ff291e22fba06ff04a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/icon-viewlink.svg
+SPDXID: SPDXRef-d3196b55ea22eb82220812b9027f1586
+FileChecksum: SHA1: d17b95334bb137e894e2c41a7a6bb1673beb2a04
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/icon-yes.svg
+SPDXID: SPDXRef-d4f09d49719a37d90d41edc88e07c7c4
+FileChecksum: SHA1: 13fc9ac75563f04cd8d0e25ce6795edd172ae837
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/inline-delete.svg
+SPDXID: SPDXRef-de8ef10524bc5501c894fe084d49900e
+FileChecksum: SHA1: 2ba4856707a771369029b2d6ec9d94c47c71ceb3
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/search.svg
+SPDXID: SPDXRef-57b031e517e23c5d094123c45be47f58
+FileChecksum: SHA1: ca44dcfb641c6817a4fc60dfc86f5b352dfeeefc
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/selector-icons.svg
+SPDXID: SPDXRef-fca072eb32af921fcb9ec418540d4bbe
+FileChecksum: SHA1: f559254837cff796971f4a20739ee326f5b53b47
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/sorting-icons.svg
+SPDXID: SPDXRef-b305989bc901279ea98e7d7f688ca89b
+FileChecksum: SHA1: 17e8c7d9d4627bd06a4a754a558fa42d4d63dd3a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/tooltag-add.svg
+SPDXID: SPDXRef-674d3940fb7072b874c6939cfbdfcb61
+FileChecksum: SHA1: 4d828cfdca7bddf0f0fac3330d880b30ed5fa781
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/img/tooltag-arrowright.svg
+SPDXID: SPDXRef-a6dcf2b754df41bd68e8d76dfcc35780
+FileChecksum: SHA1: 6d6d65a85efc9c086ae09d24ffacfd38335a508b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/SelectBox.js
+SPDXID: SPDXRef-0dc36cceb8932ca4d3d36c7db5cd3b80
+FileChecksum: SHA1: 10702fc8556277ce804304fb6b66970a00cbe00e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/SelectFilter2.js
+SPDXID: SPDXRef-e4cf33db089d14caa88bdb2e1816e537
+FileChecksum: SHA1: b715fac93391d545bad123f0c35bd3ce632b7cc1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/actions.js
+SPDXID: SPDXRef-aa070748d68f4f1b5292d46afc090123
+FileChecksum: SHA1: 6f04fb4e735c58a15b5482283e9bf13714d95798
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/actions.min.js
+SPDXID: SPDXRef-8804954b08a40f425f8b7e7db206dcc5
+FileChecksum: SHA1: 13fbdffc8776e0f0f3deeeaabcb917b23abd7567
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/admin/DateTimeShortcuts.js
+SPDXID: SPDXRef-442f7c25473450f535af0a058d738f71
+FileChecksum: SHA1: 84276e88cc07dc31587ae08b4f9ed706c2365258
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/admin/RelatedObjectLookups.js
+SPDXID: SPDXRef-5623bdc39006daa27d8bf4e86b938535
+FileChecksum: SHA1: aae31b7481f7884eadb465408144459494a5ea72
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/autocomplete.js
+SPDXID: SPDXRef-d90b0f3a13c8b7dadb6cb856267f9f73
+FileChecksum: SHA1: 81cabf54ebae643de7b1f1d180071dbd64b3f22b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/calendar.js
+SPDXID: SPDXRef-05eec9a71ab476de0c054aa1d273c87b
+FileChecksum: SHA1: 252ab8b43bbd1329e0834dd081f3bc0f295b18bf
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/cancel.js
+SPDXID: SPDXRef-9e4982ec050053404509901599ebbd51
+FileChecksum: SHA1: 752d97be01ad2e0500c9371f68dd9322b98d9018
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/change_form.js
+SPDXID: SPDXRef-dbd0d60053b2b86eb70319ca2116733e
+FileChecksum: SHA1: ac553485b96e30d304aec424df49765dfde19bc5
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/collapse.js
+SPDXID: SPDXRef-651e67d84912d3d8d2f25899eae70eac
+FileChecksum: SHA1: 14e5da4f8a54aa8bad16966ef81f0681f9744f2e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/collapse.min.js
+SPDXID: SPDXRef-67fe94abb649d3c6db8ee47a327ef20c
+FileChecksum: SHA1: 9ed9f3dfc273036aad916ede898cd81af0aeead4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/core.js
+SPDXID: SPDXRef-d4b43ac76b9341b04b0928ec4e837021
+FileChecksum: SHA1: de6ef96a106a75e5519d7b52217ce77d5497c430
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/inlines.js
+SPDXID: SPDXRef-20f166388f38bd7128185be316ffe287
+FileChecksum: SHA1: b481093615e007ae77d65eba270d4efb1ff7f69f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors
+Copyright (c) 2009, Stanislaus Madueke</text>
+
+FileName: ./daggerboard/static/admin/js/inlines.min.js
+SPDXID: SPDXRef-6d8aca302b9d0708c7b47a8ff4ce7115
+FileChecksum: SHA1: 915f718798fa9841622324aa76830ef5f47bd99e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/jquery.init.js
+SPDXID: SPDXRef-85dc808db3ea888b116d96101196b0b9
+FileChecksum: SHA1: 09f22eba7bb4eac1cbc1746061f6050fc329cc1d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/nav_sidebar.js
+SPDXID: SPDXRef-7537fd695477deee4872272ac42e989b
+FileChecksum: SHA1: aa7dd9ec6ecabb12dedd37dff1cfee6841a8389f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/popup_response.js
+SPDXID: SPDXRef-c3e9df2070f394169ad2d467b034fab7
+FileChecksum: SHA1: ae3964b30c4256a94d2ecf9362e659cbba3ab83e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/prepopulate.js
+SPDXID: SPDXRef-2a87fb9185a9ff7d5c520b56565ee04c
+FileChecksum: SHA1: 636455321ea67980bcbdeb9de487a7401343016f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/prepopulate.min.js
+SPDXID: SPDXRef-bf9c0c8321a97262f917fa04a59eb81f
+FileChecksum: SHA1: 4945aa0ee9b1ae8381075a28e15212f49d09715c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/prepopulate_init.js
+SPDXID: SPDXRef-4d976e6ed230face956fe5ca53b79fb5
+FileChecksum: SHA1: ab636312f056936f3e4fce86248b58bd3f7d6a2b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/urlify.js
+SPDXID: SPDXRef-adac29e28c8bc67701175d8889be65fe
+FileChecksum: SHA1: 449d2b837fd9c117d232c28428db5ae1673ddfc0
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/jquery/jquery.js
+SPDXID: SPDXRef-121e68dc88d62913b6b6e4390b9a1cc8
+FileChecksum: SHA1: ad16c4a132ad2a03b4951185fed46d55397b5e88
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors
+Copyright JS Foundation and other contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/jquery/jquery.min.js
+SPDXID: SPDXRef-bf62e0b74b832318dc8c779143860c4b
+FileChecksum: SHA1: c8e1c8b386dc5b7a9184c763c88d19a346eb3342
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/af.js
+SPDXID: SPDXRef-18ee542ad7a40b247cd5a4e1791aaeb3
+FileChecksum: SHA1: bd27657d85f794a98cd823e3fabc500a6e3613f4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/ar.js
+SPDXID: SPDXRef-6e216aa2c2981cea5e760a7dabf46839
+FileChecksum: SHA1: 1bbbdd68b643a31797bbea0c1159fa83696cb6b4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/az.js
+SPDXID: SPDXRef-e1695164a8af15355214c74cd423a547
+FileChecksum: SHA1: f9dd0a0cc99499d72f60ead79977af34f0ccc221
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/bg.js
+SPDXID: SPDXRef-f5bc577ffa36b8afd6f1c67b6ab35f85
+FileChecksum: SHA1: 2c052dd7b3af2c00e3beed92b7012876b3bdaeaf
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/bn.js
+SPDXID: SPDXRef-00526a5034cc9aea5c0c3eb0245d4ae0
+FileChecksum: SHA1: b59ea9a01f183503044ecddc8ceb1ca7c18dc566
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/bs.js
+SPDXID: SPDXRef-98585ab3c36e4d5666209d84b2e94358
+FileChecksum: SHA1: 9f7dfbf022b5d25e8fb56b6233acb1cbbabbd2e7
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/ca.js
+SPDXID: SPDXRef-14bc8195d90d880a0eac8aef35fc6b31
+FileChecksum: SHA1: 31a8bff3894ec89ec790905d74a75dc743fb0be3
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/cs.js
+SPDXID: SPDXRef-0ff8f621165eaad7db89cdcab946b0c7
+FileChecksum: SHA1: 8663563801779f80f8520d9de3816f01e3bded03
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/da.js
+SPDXID: SPDXRef-fee9bc48c3057bb6accfcf02896fa69d
+FileChecksum: SHA1: 3d0805129d121b1464ff60c051214c44579089fe
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/de.js
+SPDXID: SPDXRef-82d2c05baac3dd43a633d493cdc63cba
+FileChecksum: SHA1: 34d96c160f63b2d5ec4a12d4c38b65c60761e45b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/dsb.js
+SPDXID: SPDXRef-fa3466e8070d70a4e0593da9282df5fb
+FileChecksum: SHA1: 9c49670161af95125600eeb804956639899b4b81
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/el.js
+SPDXID: SPDXRef-148aa1c8ba33c379a0c29082d51508ed
+FileChecksum: SHA1: a7a7d0e4a8f5e9d99c5c0621d48bd1852fc811db
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/en.js
+SPDXID: SPDXRef-2b007b7d5f3840641f7455a90b035711
+FileChecksum: SHA1: 6bb5c48e18078a5688c6f7e187cf3c44057cbc1e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/es.js
+SPDXID: SPDXRef-98bfea6b95061b8e62d9120ec0f7f066
+FileChecksum: SHA1: b8097715cfd7fea831f2551664585f33302f1c28
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/et.js
+SPDXID: SPDXRef-be430c5dd11efe7573bd62d660a1ddf7
+FileChecksum: SHA1: 62b8dc201a6071d1c9ae4d0cc5cf419dce71ed89
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/eu.js
+SPDXID: SPDXRef-4828f3c6ef0201e09862e98280137b65
+FileChecksum: SHA1: f727bb4876f26a81d4961277f4f4d900dfb0f84f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/fa.js
+SPDXID: SPDXRef-33c4f38d32e02d706dfc39a05b32082e
+FileChecksum: SHA1: e78d4a277fa39d48c3b0ffe479315a17e8c1f62b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/fi.js
+SPDXID: SPDXRef-c4d47b201c7c8f0af709544563d4a8fb
+FileChecksum: SHA1: d9ca619500907f7fdd94e2a3eb665406719280d7
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/fr.js
+SPDXID: SPDXRef-ae7ab908532ff3a72d26ccb599c388d6
+FileChecksum: SHA1: bca64003d563451801651fb42ca8a1e0ca8055b4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/gl.js
+SPDXID: SPDXRef-c26ac87ce694f90dff75d289f83e37de
+FileChecksum: SHA1: becb10526bb68f70db2867f5a2e3b79fe7117aa1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/he.js
+SPDXID: SPDXRef-d2ea665e6b12d20fb4e9f69ae237f7e8
+FileChecksum: SHA1: a72ac85ea6faeac10150fa6b2330521984afba73
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/hi.js
+SPDXID: SPDXRef-7ff8fd4dfaec148b58d311d937a4a89f
+FileChecksum: SHA1: e245a22c99a774992cef23c5abc825ce8811c022
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/hr.js
+SPDXID: SPDXRef-1cf80efcbdc59907376aa2b0ca0ea2b8
+FileChecksum: SHA1: a1808a4f9778cb577615b601eb429b5dc88cde7a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/hsb.js
+SPDXID: SPDXRef-8076b6d31f2a5df4b8da4fbf836cc46b
+FileChecksum: SHA1: 2a263d9c688cd7aa09cafd6c31769ea0ed28529b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/hu.js
+SPDXID: SPDXRef-ddff86ecf07842daf8426be289866ad5
+FileChecksum: SHA1: 86519e4eb4cf552a2b084bf118d6c9173658935a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/hy.js
+SPDXID: SPDXRef-8aacbb1210a1e4fcf8035daf1b66c6a0
+FileChecksum: SHA1: 73d8c0aac67d5a67e0a427b9f72607500a0a0f15
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/id.js
+SPDXID: SPDXRef-ffbd5bdc4be7b462e139b26c6ade8dc8
+FileChecksum: SHA1: 054f5612ea6f8de585cb7c3d534dd621039e32d2
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/is.js
+SPDXID: SPDXRef-1f4b71a1c91780fd69de4eb4bb0205f4
+FileChecksum: SHA1: 3f4f203545d0db2db770ccbaf5591aa2ef6000ef
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/it.js
+SPDXID: SPDXRef-178450b74b004c9c86884b1064723f19
+FileChecksum: SHA1: d5a02fc223ea3e048dace02ae8757daf67ccf3af
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/ja.js
+SPDXID: SPDXRef-59dfa229a4caee59db0f5858a65f4c27
+FileChecksum: SHA1: b1cfbd2dd7f578238b3d36eea42331dc0b87d73e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/ka.js
+SPDXID: SPDXRef-d7c665f4dafee7186eceb929b05b644d
+FileChecksum: SHA1: 9126533d06719d2ae3535929b98b77c34798a0fb
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/km.js
+SPDXID: SPDXRef-ea8acc2f0156ed83bd81d702652c1774
+FileChecksum: SHA1: 282bb56ddafc416b655c04f9ae0f1168220cd6fc
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/ko.js
+SPDXID: SPDXRef-fdc1a197af4f77b4de9c91c64eb6e871
+FileChecksum: SHA1: 6a75b8c4cc0ea56cf7bed9cb2f9c46c1d43ccfcd
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/lt.js
+SPDXID: SPDXRef-161df22adcd10ef4de39d12891031316
+FileChecksum: SHA1: 081c69be56387d5b25252aae96420b9f4121f3bf
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/lv.js
+SPDXID: SPDXRef-358ba543827b593f836f45d7c816604f
+FileChecksum: SHA1: 0ce547e78b10bf52a69c557b96edb3f30f262d59
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/mk.js
+SPDXID: SPDXRef-4388729c8ede9500f165464e55896c68
+FileChecksum: SHA1: 00078dd1f99b93f4a0b3f1d6aeb0c13d0c42f749
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/ms.js
+SPDXID: SPDXRef-cb82fe6d3a5ca4ef36b21450bbe6621b
+FileChecksum: SHA1: 5f9c625b8c1541a722736c70a943207d5ea1b26d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/nb.js
+SPDXID: SPDXRef-dc3154b69dadeb57caa0f8612ea40e40
+FileChecksum: SHA1: eec948ca7b449e9c8a273a9df6e4fff087e04ebb
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/ne.js
+SPDXID: SPDXRef-1e382bd327dae966491ecd9f0f436459
+FileChecksum: SHA1: a4c0b4e89dc2615bebb57ef3f65b232f12501723
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/nl.js
+SPDXID: SPDXRef-c8b951fb75794146a7f46619a56edf77
+FileChecksum: SHA1: 76043e76f2b01d0e76115fa1bcc7b2b7f422812a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/pl.js
+SPDXID: SPDXRef-1600dba46cd9c5cdb3ddaf089408de06
+FileChecksum: SHA1: 0d4cb09186007d0d7880d0c5b27e1b30637f9522
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/ps.js
+SPDXID: SPDXRef-7d77f75c372b972e00f7e30b349d7568
+FileChecksum: SHA1: 0071e891d37a638338c90740ac1cf85df1834f2d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/pt-BR.js
+SPDXID: SPDXRef-488d3c5b6b3c10eca9d40acfe2384f55
+FileChecksum: SHA1: d33ef214ab79a665adec2e788fc76cf8b8c76b2e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/pt.js
+SPDXID: SPDXRef-c006c0db8dfe1ea007b85f55e975416c
+FileChecksum: SHA1: a8e2d039bd8fef1c54be4cef7013814f69777517
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/ro.js
+SPDXID: SPDXRef-f7127336d5b1de86f51c01604cbe9f4c
+FileChecksum: SHA1: b22601703b41b9fc18da6f8c9d051500f1107545
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/ru.js
+SPDXID: SPDXRef-e638ecc112c0736a2017bbfd4fbc8cb7
+FileChecksum: SHA1: c111f056dbc8aea5b4bfdd01a4f180fb7b8df181
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/sk.js
+SPDXID: SPDXRef-abb4f4dbaa979c0855421138d8165193
+FileChecksum: SHA1: 2f595da6fed5a6a7bed7c511333c18b6063214be
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/sl.js
+SPDXID: SPDXRef-d0a9aec96e5def5a1507db5ca772c83c
+FileChecksum: SHA1: 2e07269f9252a46f68965945232b966506b6666b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/sq.js
+SPDXID: SPDXRef-4b2ae885aa1a1d018c934290533d477f
+FileChecksum: SHA1: b649c57ed50b4efc2d19fa55f39ac62285016b49
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/sr-Cyrl.js
+SPDXID: SPDXRef-3eb07ebec70ae93dc92261df2173a8e2
+FileChecksum: SHA1: 9b8799e969b2fba7274083546a471c61084baf0e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/sr.js
+SPDXID: SPDXRef-b8b7c4dd202671c9cece8bf025a09078
+FileChecksum: SHA1: 004b24e86f31ec0fde222cc0649fcc70a3bbc330
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/sv.js
+SPDXID: SPDXRef-d4264c29fbcaca3b5c2b537bd9202cc8
+FileChecksum: SHA1: eaca7ac56a9176fa52cbd0a870bb8a00fd631cf1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/th.js
+SPDXID: SPDXRef-89033b53d295da6ee49b5b7220552547
+FileChecksum: SHA1: 7bd949693c008c6665bdf0dc4551cffea2023204
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/tk.js
+SPDXID: SPDXRef-6fbb97551b76824ae554992e78d824ff
+FileChecksum: SHA1: ebb169d666967e4c2df3a99fc8896eb16aa0463f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/tr.js
+SPDXID: SPDXRef-fa3c3838d033e91378d773303a03f4cb
+FileChecksum: SHA1: 0d99107aacebd1f08b319410a59866c619b63f71
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/uk.js
+SPDXID: SPDXRef-ee977892819ee24a1588ed6bfe371309
+FileChecksum: SHA1: ccfb60dcad7faf9d1f18102f5827acddb7a8ad9b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/vi.js
+SPDXID: SPDXRef-b3dcb83e66d03e353557b8a769c7b1c8
+FileChecksum: SHA1: c73feb5aeb1faa11438fadb924a8848b1743cac5
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/zh-CN.js
+SPDXID: SPDXRef-9fadefd36858eb46329d62ee5def2259
+FileChecksum: SHA1: d401505af994d0e6d75651ce55203df702938fe1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/i18n/zh-TW.js
+SPDXID: SPDXRef-1352e66d61b32b6fd267333c0f89f00b
+FileChecksum: SHA1: d2ac5ee73876355c63293ef7a4c6684842062621
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/select2.full.js
+SPDXID: SPDXRef-e141df41b2dac4b9c0c8c78c8537dcdd
+FileChecksum: SHA1: 6245cdab59b33350a6833637df0941a3b2b5ab6f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors
+Copyright jQuery Foundation and other contributors.</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/select2/select2.full.min.js
+SPDXID: SPDXRef-b086d956c708d717a23931e8ea55ebcf
+FileChecksum: SHA1: aa40e683c82dd844db73fde37048cf7fc145135e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/xregexp/xregexp.js
+SPDXID: SPDXRef-3bbac48331957882537e4d32a7c53a7e
+FileChecksum: SHA1: 4e7112e3451944087aed173a44a6b373a3bdfff2
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/admin/js/vendor/xregexp/xregexp.min.js
+SPDXID: SPDXRef-8feb12a2b3a5209bb95592593704bbae
+FileChecksum: SHA1: 7f728c2cd9ff469b5ecf72b0f2646a59fc228180
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2012-2017 Kevin Brown, Igor Vaynberg, and Select2 contributors</text>
+
+FileName: ./daggerboard/static/css/jquery.dataTables.css
+SPDXID: SPDXRef-822a4ae0d6c717c655fb7f42871f4c26
+FileChecksum: SHA1: 5c8667dcdb4443e58c5cbc0cd2ae94dd424a78f9
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 OpenJS Foundation and jQuery contributors</text>
+
+FileName: ./daggerboard/static/css/jquery.dataTables.min.css
+SPDXID: SPDXRef-87de4011a717a18ffbd2f5672af2f158
+FileChecksum: SHA1: 9308e8da8e4814e9721b274a9ce246875ae06803
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 OpenJS Foundation and jQuery contributors</text>
+
+FileName: ./daggerboard/static/css/slimselect.css
+SPDXID: SPDXRef-3ef0f27ec105a43e80dbf4c70b7a9dd7
+FileChecksum: SHA1: 68a29e5cf864e2f38694a0d48c55c2d4e72bcc60
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2017 Brian Voelker</text>
+
+FileName: ./daggerboard/static/daggerboard.css
+SPDXID: SPDXRef-493c56215c92b4b339b1ac88f8ea4189
+FileChecksum: SHA1: 2f48b77968735f6fe7db87802b247bf0a4e21689
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/daggerboard.css.map
+SPDXID: SPDXRef-d78067d08bda3dc6efedd1dc66bde961
+FileChecksum: SHA1: 1a0711ae55867fd8431a73db61461eba4fed29ab
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/daggerboard.scss
+SPDXID: SPDXRef-83c537050930bcbb0fa58aad9927131c
+FileChecksum: SHA1: f6ab1c730669443c6d7288d9fd43f32509fcb594
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/fonts/BebasNeue-Regular.ttf
+SPDXID: SPDXRef-7a23ebddc7f21c7da3eac83ab5bc8439
+FileChecksum: SHA1: 8b3aaeb978f3cb5f575860774b50c332338563c1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: OFL-1.1
+FileCopyrightText: <text>2010 by Dharma Type</text>
+
+FileName: ./daggerboard/static/fonts/SourceSansPro-Bold.ttf
+SPDXID: SPDXRef-2e1c07a1fb73b3cf12faae1f852d14ed
+FileChecksum: SHA1: 167ac25366e252f07c090a8113910337f3d5255b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: OFL-1.1
+FileCopyrightText: <text>2010, 2012, 2014 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’</text>
+
+FileName: ./daggerboard/static/fonts/SourceSansPro-ExtraLight.ttf
+SPDXID: SPDXRef-93c14dcb9d48e896a5da6f2878a2a735
+FileChecksum: SHA1: 48fe9c368a331044f7cb8ddf4db4feda40808993
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: OFL-1.1
+FileCopyrightText: <text>2010, 2012, 2014 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’</text>
+
+FileName: ./daggerboard/static/fonts/SourceSansPro-Light.ttf
+SPDXID: SPDXRef-8a26a2617bf46ad5a1ca0f5205c17241
+FileChecksum: SHA1: df208d4edf8bf13483beec5c5893a3f474755439
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: OFL-1.1
+FileCopyrightText: <text>2010, 2012, 2014 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’</text>
+
+FileName: ./daggerboard/static/fonts/SourceSansPro-Regular.ttf
+SPDXID: SPDXRef-72717a0faf6e6231679b22f562f56029
+FileChecksum: SHA1: 48d6928e08ba5e2ca1e15d754c146580b1c8febd
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: OFL-1.1
+FileCopyrightText: <text>2010, 2012, 2014 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’</text>
+
+FileName: ./daggerboard/static/images/daggerboard_icon.png
+SPDXID: SPDXRef-b4a3de183110088ea33a4b618ea750fc
+FileChecksum: SHA1: 4b751531ebd819553e8ae965d33ad366d417e5e8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/images/favicon.ico
+SPDXID: SPDXRef-7317a3046726899128fcb5e2fc9ea2b8
+FileChecksum: SHA1: 4b751531ebd819553e8ae965d33ad366d417e5e8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/images/sort_asc.png
+SPDXID: SPDXRef-7d0569e0fe874c48bedc7b87713bdede
+FileChecksum: SHA1: 4ed7eba22e4258db81fd79761ed5fc6d00c7dab7
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/images/sort_asc_disabled.png
+SPDXID: SPDXRef-3e4888610d233427f085befca538fbe6
+FileChecksum: SHA1: ae170a833b6f5d6344570061c60291b5b45e6004
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/images/sort_both.png
+SPDXID: SPDXRef-55fab3ea37bc2e642c2c17ad2cd87029
+FileChecksum: SHA1: 96e499eff491eac39508e1696686712df94108aa
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/images/sort_desc.png
+SPDXID: SPDXRef-0b497f0889cdbe1ff972d4201ea19000
+FileChecksum: SHA1: 5d17b4a1cd4c5d92df1adc190a9292674e2a3ab0
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/images/sort_desc_disabled.png
+SPDXID: SPDXRef-50159c275e654b1face72834b3e90186
+FileChecksum: SHA1: 960aafb94a313744af3b6b5cfaced54024a429bf
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/js/Chart.bundle.js
+SPDXID: SPDXRef-7fc7e4a73e23348e785478868afc539d
+FileChecksum: SHA1: b0686e02dd2fd3f98bd395b3097b1bae889ac1d4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2014-2022 Chart.js Contributors</text>
+
+FileName: ./daggerboard/static/js/bootstrap-select.js
+SPDXID: SPDXRef-8b73fb45bdbc49633436b1a411e6b6bc
+FileChecksum: SHA1: ca380900397b5aab04ea7e024dbd376ee2dfd747
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors
+Copyright 2012-2020 SnapAppointments, LLC</text>
+
+FileName: ./daggerboard/static/js/bootstrap-select.js.map
+SPDXID: SPDXRef-8611dd0774374e75329afb9e751800fc
+FileChecksum: SHA1: 7910cff5eaaffc3215ecd51d9fff187166d7d028
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/js/bootstrap-select.min.js
+SPDXID: SPDXRef-ef97f6f80edffe02447a17504b0ddf9a
+FileChecksum: SHA1: 51bc796e1262c29c74b8e035e015ac0583cb5c6a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors
+Copyright 2012-2020 SnapAppointments, LLC</text>
+
+FileName: ./daggerboard/static/js/bootstrap-select.min.js.map
+SPDXID: SPDXRef-e404926b84f0d2ea2403a2f329a64259
+FileChecksum: SHA1: dc08ce8d21448696b40140587e58eee34e846ad3
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/js/bootstrap.bundle.js
+SPDXID: SPDXRef-89f3053e8e9780c467d4556cac978eb3
+FileChecksum: SHA1: 9e673f8ced937d5eef2110f11e3f061453d0e9fd
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors
+Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)</text>
+
+FileName: ./daggerboard/static/js/bootstrap.bundle.min.js.map
+SPDXID: SPDXRef-d7d3121fd3d65dd9740c843d9eac2f39
+FileChecksum: SHA1: a542542d8ebf58ed88377a885df17c2dad122d11
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/js/chart.js
+SPDXID: SPDXRef-782f30d4f16cfa1361fefc0f94b355ad
+FileChecksum: SHA1: 2884ac42743853c65e2d0a1bcde34b5d5c295cc1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2014-2022 Chart.js Contributors</text>
+
+FileName: ./daggerboard/static/js/dashboard.js
+SPDXID: SPDXRef-a06c56c7de7f6b600665da362fd31ded
+FileChecksum: SHA1: f519c8f05893981991fb139ddc8b9c67b54cf77a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/js/jquery.dataTables.js
+SPDXID: SPDXRef-a0d5ae3bddad1c24dfa7fa771681f2bf
+FileChecksum: SHA1: 9f4dc6cef93212fea1db7b141cf9358a5e351e08
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 OpenJS Foundation and jQuery contributors
+Copyright 2008-2020 SpryMedia Ltd.</text>
+
+FileName: ./daggerboard/static/js/jquery.dataTables.min.js
+SPDXID: SPDXRef-10f81d29b2e472a7572f7fa506cb6102
+FileChecksum: SHA1: 002f28745ce1b2e5680eb3828685ad7c4bb4934e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 OpenJS Foundation and jQuery contributors</text>
+
+FileName: ./daggerboard/static/js/jquery.js
+SPDXID: SPDXRef-d0b7c5d850d9284aa6bcef23a28b3cef
+FileChecksum: SHA1: 5eb42eeaa76d65e36111eee581dba45cd818d655
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 OpenJS Foundation and jQuery contributors
+Copyright JS Foundation and other contributors</text>
+
+FileName: ./daggerboard/static/js/jquery.min.js
+SPDXID: SPDXRef-24f6dceeedac8db7fe5e5f45688ad9ea
+FileChecksum: SHA1: e4634a8666d914aed78713b8de5f9086c00a96cd
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 OpenJS Foundation and jQuery contributors</text>
+
+FileName: ./daggerboard/static/js/sbomscorecard.js
+SPDXID: SPDXRef-78a2857113917b1196a1b50f253570c2
+FileChecksum: SHA1: 0102b8d7933f5a2993aa09618c53496d6c49f14d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/js/slimselect.js
+SPDXID: SPDXRef-79df9dec1663e3bd4321acc6423d96e5
+FileChecksum: SHA1: 410a08263c94604e758fc4a850c4523a099e8b4e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2017 Brian Voelker</text>
+
+FileName: ./daggerboard/static/js/tab.js
+SPDXID: SPDXRef-17168dce184ad0c4133c2622c3bb63a1
+FileChecksum: SHA1: 60c69eee9272cfc6fbd4fd3d39ed9c489a102980
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors
+Copyright (c) 2011-2022 The Bootstrap Authors
+Copyright (c) 2011-2022 Twitter, Inc.</text>
+
+FileName: ./daggerboard/static/js/upload_status.js
+SPDXID: SPDXRef-4debb01304c968363aefe8c209fff662
+FileChecksum: SHA1: 9d5d6f517cc41fecdeafbb4ec5e8a49ef1d6300c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/js/vendorscorecard.js
+SPDXID: SPDXRef-ceb09f49e864dda81db8a8e33e380c6f
+FileChecksum: SHA1: e8dae2866a8713f181bf6e071324abde14db209a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_accordion.scss
+SPDXID: SPDXRef-36da5d8119abe38239a8aae1482fd80d
+FileChecksum: SHA1: 7a501e89cf799ecfb839e9bcd30d6b7ced457f18
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_alert.scss
+SPDXID: SPDXRef-beff49cc67ddbfcfaa9fb9eeeb2b5015
+FileChecksum: SHA1: 753865f861799be472baaef06bf6dd994c01e6df
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_badge.scss
+SPDXID: SPDXRef-8c5a75f5988bce687c02dcaf26b03128
+FileChecksum: SHA1: 3a71c4c05ed2c07459c52d5fd6441d556ed1038b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_breadcrumb.scss
+SPDXID: SPDXRef-69ba2662cffb04e1f529773159b07ad2
+FileChecksum: SHA1: e8b103c89ef0431b7dc912ce0853eb4b27532fa2
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_button-group.scss
+SPDXID: SPDXRef-244d701697d71c3785bec13921ee40d0
+FileChecksum: SHA1: 47daa05a8e25f62b99bbfa48def05945765382f2
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_buttons.scss
+SPDXID: SPDXRef-adefd11d3f2ceafaac5896939e3d5caf
+FileChecksum: SHA1: 293f0ef4a59647674ca13cef2c8117a499167032
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_card.scss
+SPDXID: SPDXRef-d89b4193d3349808131ab9a5710cd578
+FileChecksum: SHA1: 7bd9ab38b6cbf06abd57365395d88b2cb3fb05a8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_carousel.scss
+SPDXID: SPDXRef-f7f72bae5c48fe24f62f38c64dbfdf45
+FileChecksum: SHA1: 235ca7beddf21f54697de68ae4c4fce53ec9ee6f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_close.scss
+SPDXID: SPDXRef-49b2194bb2c9e5fa1b93012f17d0a491
+FileChecksum: SHA1: 3bc8149c456173bc0bca88f9838f1a2b317f5ca8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_containers.scss
+SPDXID: SPDXRef-cb0677ba932151567c9c758a5bf0a4a3
+FileChecksum: SHA1: 39499759bda1c0874043830138b035ce45a5e77f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_dropdown.scss
+SPDXID: SPDXRef-329abefe5dfda26bf758d9106fd5c7f4
+FileChecksum: SHA1: efb07c63abd4293b468a9755e9d4072e4d5d5591
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_forms.scss
+SPDXID: SPDXRef-795db985af0552d8a5ead9b8967ec5f4
+FileChecksum: SHA1: eec0aee711b41b56216025bcef152964c0b2dc2f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_functions.scss
+SPDXID: SPDXRef-99abd7fe641741b03ff88aa4c7fad167
+FileChecksum: SHA1: 49d0bef461815a8aeabf0b8c4211370f05b5eee9
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_grid.scss
+SPDXID: SPDXRef-575a69f8e87810768ddea3c3078c464e
+FileChecksum: SHA1: 1c1ec3c0ffbfab186983a6dcfeae5ceed80ee5d6
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_helpers.scss
+SPDXID: SPDXRef-4e33c5a692495279963c432d8e1792df
+FileChecksum: SHA1: f5301751ddee0cd6590dbbbe5c11d8e3a54ecc40
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_images.scss
+SPDXID: SPDXRef-6fd89ab132ed6ceef1a5d06151a92330
+FileChecksum: SHA1: 0079370490e269becc044e7f9fa2714cf2ac0e72
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_list-group.scss
+SPDXID: SPDXRef-171ddf23c400a4be318404cdfff6cdaf
+FileChecksum: SHA1: e6dc541295879287875c78666946950fd8650e39
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_mixins.scss
+SPDXID: SPDXRef-4cd61b77effcc5a18f67b39957664486
+FileChecksum: SHA1: d50bb16e9145184b5d054ae69a816671643a2038
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_modal.scss
+SPDXID: SPDXRef-789c3f74ae7eb06a98091c41c812ab05
+FileChecksum: SHA1: fb1734efd116aef17e57e9ff9d69b5a6522f2935
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_nav.scss
+SPDXID: SPDXRef-4244c7cca38e622eb77a1b3722e34b61
+FileChecksum: SHA1: f3ae811a08e32786d9e290749c2ef254187b04f6
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_navbar.scss
+SPDXID: SPDXRef-77cdc0222872ccac8d3aba878b94edfc
+FileChecksum: SHA1: c7819543b148035849755949e7e7024f33dfeaac
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_offcanvas.scss
+SPDXID: SPDXRef-7e06c550900401efd5a53257b67c7b5d
+FileChecksum: SHA1: 562cf7e757d418a0c3cf2d6c3acab0b662f3b010
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_pagination.scss
+SPDXID: SPDXRef-844278726722362aacc3423119463708
+FileChecksum: SHA1: 260da6032483cff3f8499ff603499411418daabf
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_placeholders.scss
+SPDXID: SPDXRef-a9696666f13f7988b0d72ea0b1166d79
+FileChecksum: SHA1: d99f70694165452ec989dee6275f3d86f33f1be9
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_popover.scss
+SPDXID: SPDXRef-92112e1f9ac2f8ee0e5705bd41581678
+FileChecksum: SHA1: 07fc6e2842393198b6d3fbc7bb658962b2375be7
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_progress.scss
+SPDXID: SPDXRef-757bb8ffefec383816de379fc0ea142d
+FileChecksum: SHA1: 6143bbcc39ba42d784af35ce667f2b06c9a861d9
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_reboot.scss
+SPDXID: SPDXRef-7d98ad7588348736214a6131de891217
+FileChecksum: SHA1: 79e2fc96d286674ca82e564bd05d562acb4bdb56
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_root.scss
+SPDXID: SPDXRef-4fa5d41d3d95aec89bb10fa9d1c717f8
+FileChecksum: SHA1: dea79c343908868b9ffc7f27c7f7c7db95a1b0b9
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_spinners.scss
+SPDXID: SPDXRef-6fd099009a7f0a47dccae79176bc89e6
+FileChecksum: SHA1: 3458629c36a893f08aa4f30751c587e4fc932639
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_tables.scss
+SPDXID: SPDXRef-0c3d50673dde0f3a2de4709e397c0cee
+FileChecksum: SHA1: ee33eef3776d83a2e21c6534ca02b329be278354
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_toasts.scss
+SPDXID: SPDXRef-3caa29ee6a3912965dd69abd98192d51
+FileChecksum: SHA1: 6f34371aa0cfa72df93f649b01bfa360209f2356
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_tooltip.scss
+SPDXID: SPDXRef-3a8568eee2561ee9497a887e23699ed4
+FileChecksum: SHA1: 6b450c39331c473cecabf5dcf8e59568d826a3a0
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_transitions.scss
+SPDXID: SPDXRef-9ea399d673afa2e0bf732a5b3b6aca52
+FileChecksum: SHA1: 19ac5ef452741c2b496eae582b58ccc91b22ec12
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_type.scss
+SPDXID: SPDXRef-184beadaed9494c8d3a173a1045d2c61
+FileChecksum: SHA1: bada4d5dafe537dd3278f74c5f72fbee191d45d5
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_utilities.scss
+SPDXID: SPDXRef-1810918f9ae979d7562edb4bf74911e5
+FileChecksum: SHA1: 652f519fd09418b260e945ca5b9ea461f08b1582
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/_variables.scss
+SPDXID: SPDXRef-f8c9aeb8123d6c4c2b39ec5ca2d5e890
+FileChecksum: SHA1: 38536100b203c932dd60c06b4edee356c0b20d9b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/bootstrap-grid.scss
+SPDXID: SPDXRef-dd5f35bcef23e841135c2c9df0bbcc55
+FileChecksum: SHA1: e3cb22138bdacc6f78eada011b4add3da630e44b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors
+Copyright 2011-2021 The Bootstrap Authors
+Copyright 2011-2021 Twitter, Inc.</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/bootstrap-reboot.scss
+SPDXID: SPDXRef-04623175680629d68c79195eddddfc25
+FileChecksum: SHA1: 78d88fbe5ec58800f086f595775688338b62e73b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors
+Copyright 2011-2021 The Bootstrap Authors
+Copyright 2011-2021 Twitter, Inc.</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/bootstrap-utilities.scss
+SPDXID: SPDXRef-594cac8d7cdd93dd19942a1f378ec648
+FileChecksum: SHA1: 6e35057092c8c77671460da64bcefea8f94176a2
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors
+Copyright 2011-2021 The Bootstrap Authors
+Copyright 2011-2021 Twitter, Inc.</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/bootstrap.scss
+SPDXID: SPDXRef-2cc59ec59b2f951a4c488aeb6a51a60a
+FileChecksum: SHA1: 9989edd18695de953d89aa40505525b8991e5a0b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors
+Copyright 2011-2021 The Bootstrap Authors
+Copyright 2011-2021 Twitter, Inc.</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/forms/_floating-labels.scss
+SPDXID: SPDXRef-5f614b8cbedd7899b323794058b85f94
+FileChecksum: SHA1: 0f01a68309c13f60d348e64a4c7bdc3677b52861
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/forms/_form-check.scss
+SPDXID: SPDXRef-08cb1995c12e0d1f3d5d85f9df5b665a
+FileChecksum: SHA1: 0340eddc2f323cc45c22e33eaed7a986f7c318e9
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/forms/_form-control.scss
+SPDXID: SPDXRef-acd97aafaf7fd44044f0657437510739
+FileChecksum: SHA1: 51f6990bc0ca82a6c5d434c0c4826613fadc33cb
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/forms/_form-range.scss
+SPDXID: SPDXRef-48311869d3092bf0444f0d6cff7815f1
+FileChecksum: SHA1: f1db26a1c767dad2b0f8daac86ea24ace96b7756
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/forms/_form-select.scss
+SPDXID: SPDXRef-f9147fa49a5b5dc1a27aa2b45d31f701
+FileChecksum: SHA1: 540bd665000f63f1e524aae2ed7d8786a2b7bfa0
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/forms/_form-text.scss
+SPDXID: SPDXRef-0721c8e382f475114831de8385823d33
+FileChecksum: SHA1: 9407a91bfd7ec88dfb943e5d51db363d792d5833
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/forms/_input-group.scss
+SPDXID: SPDXRef-404ed6435a9bc1218bd19937afcef082
+FileChecksum: SHA1: e8fe24937e7b4c477592b255b78b9cb1deb80428
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/forms/_labels.scss
+SPDXID: SPDXRef-950e1258a5e9f36f4759a93015b78c7c
+FileChecksum: SHA1: 5a90c6e1805cbb1e87b3616cc2a7b72e9cdd5b64
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/forms/_validation.scss
+SPDXID: SPDXRef-fda2e75222462bf60f73389fe3cad199
+FileChecksum: SHA1: 40fc79cfecb37b18e0bbb90d2eb69b47973fe2de
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/helpers/_clearfix.scss
+SPDXID: SPDXRef-b82308c0b47838e8b8d3ac0dd6cd93ce
+FileChecksum: SHA1: bf953d01858d3837478ba94bf68ee579d460b092
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/helpers/_colored-links.scss
+SPDXID: SPDXRef-35014ba83d7ba3647356cfb864173cbb
+FileChecksum: SHA1: a99d9379bc79983d10c65f1bb1a72458a4af51ab
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/helpers/_position.scss
+SPDXID: SPDXRef-c731248351087e1fb05b8758f9ccda7e
+FileChecksum: SHA1: ef6e10d7f960b72a77122a85107a07b1be667069
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/helpers/_ratio.scss
+SPDXID: SPDXRef-556445e414d040d0933e4b1bce8dac22
+FileChecksum: SHA1: 8e3381608f03f761cdf9bd5c1c37675be1ff2361
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/helpers/_stacks.scss
+SPDXID: SPDXRef-5a1224a727c0e540a3ff7498508ad1db
+FileChecksum: SHA1: de36bac48071352035bbc1e428c3bcb090625ddb
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/helpers/_stretched-link.scss
+SPDXID: SPDXRef-0bdebd90cb695ee7f4336dc96ca7cfd7
+FileChecksum: SHA1: 978b9acddaaf95421813597928c47d954d047047
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/helpers/_text-truncation.scss
+SPDXID: SPDXRef-84fa84d65edd7945927efc14c3b3dc44
+FileChecksum: SHA1: 10fc231a3cedea645248461c50ee2d01057d6017
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/helpers/_visually-hidden.scss
+SPDXID: SPDXRef-f6d4e0aedfce34a1fec68ac435df83d2
+FileChecksum: SHA1: 855e314dfc36cf05c6ef45746bd042d217a3e322
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/helpers/_vr.scss
+SPDXID: SPDXRef-b2e00fdedf02a7b85dcbbadf0f378f30
+FileChecksum: SHA1: 2bb9e2a37ae351ff06067add9b22e142dc3a843d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_alert.scss
+SPDXID: SPDXRef-fd00ffb4e581ba91310a6d0fba56b94a
+FileChecksum: SHA1: ffc862674bbee44e468a972b4eb4ca17ea1edbf2
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_backdrop.scss
+SPDXID: SPDXRef-c00bc60b394ba15036f82f5f774a6ca4
+FileChecksum: SHA1: 1cf9e1c0ab0d0b69bc64319ba1aff824e72b37a8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_border-radius.scss
+SPDXID: SPDXRef-035d6d8aab2d9626041a48ca974a5db2
+FileChecksum: SHA1: b5faf352b1b60f4c81b195c8bbd520c1e50aacc8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_box-shadow.scss
+SPDXID: SPDXRef-75be9171a39b90b9a6bc327b0d01be02
+FileChecksum: SHA1: c6c235875c120e9ebc7c547cb220abc967a9fb43
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_breakpoints.scss
+SPDXID: SPDXRef-a20359e50e6d32a56a292a884f989237
+FileChecksum: SHA1: c017bcbbcdcc41527976fd161bb939a5ea1c32b7
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_buttons.scss
+SPDXID: SPDXRef-b4f1998b3ef85b33b1e2a8e7cd2b0d32
+FileChecksum: SHA1: 1aa69c6d46bff3575c8a0ef1fecf37355bcf32c4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_caret.scss
+SPDXID: SPDXRef-e10f3eab34a8e09211e578b920b6e659
+FileChecksum: SHA1: 749e4932c9eb0171fea56ca64788447a7f95622d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_clearfix.scss
+SPDXID: SPDXRef-b89a723cf0045d6b9471d8681ca86040
+FileChecksum: SHA1: 447acba4f087923927db3c008b26c70bb0a49719
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_color-scheme.scss
+SPDXID: SPDXRef-905561e6e306c93cd8b8658d994e8843
+FileChecksum: SHA1: 323ed6b9e99ea0d91fbea5d64bc0b08b46e9017c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_container.scss
+SPDXID: SPDXRef-7cd62d92f497798c3d280017a5c6677a
+FileChecksum: SHA1: c14383dbc61b55af3a51b7f5fb6bfe1a773acc6e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_deprecate.scss
+SPDXID: SPDXRef-c9a00ba2670c2176b4718a124d56ddbf
+FileChecksum: SHA1: 235109d32a22d4a7043207eb2c1d50beec85d6de
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_forms.scss
+SPDXID: SPDXRef-a7b7277acab47f551da5ebf7e457858e
+FileChecksum: SHA1: 760dc1ae2438672031a7dd6bc72f26e7cba5b659
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_gradients.scss
+SPDXID: SPDXRef-752d604eb7ec57e4ce5c24d393a7234f
+FileChecksum: SHA1: ce2434453f929b370dd74a3a51c08852dc03c743
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_grid.scss
+SPDXID: SPDXRef-7a4e63f06ef0bfa4bdb18af21b6442a9
+FileChecksum: SHA1: 17287a52298a469a6f577001d965c2351d24d474
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_image.scss
+SPDXID: SPDXRef-cf3312fe8bdfb1b8fd23b4a0bb7693c2
+FileChecksum: SHA1: f715e7ad5ee2500f3d05ee5637b98e45c5fd09db
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_list-group.scss
+SPDXID: SPDXRef-64794d1491aa6fa24b4b6a39b880f201
+FileChecksum: SHA1: e99786bee4092c906d4e375a645ea219e0f1c47a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_lists.scss
+SPDXID: SPDXRef-a1ca6864f60d85d26d18000a95ccbca2
+FileChecksum: SHA1: 8a57052c7e617ae05c65f50125406ef2b05778e0
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_pagination.scss
+SPDXID: SPDXRef-bdef8ab28de9a91e37ab66952ad54516
+FileChecksum: SHA1: 3e4abbe34b3a3504e644ec86c229bbe92182c16d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_reset-text.scss
+SPDXID: SPDXRef-ff01fbbd19913a1d264b21d76ecb6774
+FileChecksum: SHA1: a6ae188160a2e87a5fbad2fbd81c6085f7fae12a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_resize.scss
+SPDXID: SPDXRef-e1c43f54b2f08cd82f6ae387244d65f7
+FileChecksum: SHA1: 3d2a20f6f3286817ef8ac1c445a315aba5803018
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_table-variants.scss
+SPDXID: SPDXRef-16668be1f599eafbe7bbda7ee67cc32e
+FileChecksum: SHA1: 8b34d0ca066bd91bb1b43fe5670be75a94c7d717
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_text-truncate.scss
+SPDXID: SPDXRef-77b4de765c233c871fc5ae5e8dfa4933
+FileChecksum: SHA1: 82d3db84717c968ad9972c98d081d45bce3f0354
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_transition.scss
+SPDXID: SPDXRef-d4df2844e4eaefe74163f947111524a2
+FileChecksum: SHA1: 23d848fc6012916c52e4dd50d5e586a27172e1bd
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_utilities.scss
+SPDXID: SPDXRef-ed2d0f1bf1b2d4cb6e7bf64e3f9e32b5
+FileChecksum: SHA1: 283e85d493f86cf9a6b34d4d9fb40c2e715a5641
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/mixins/_visually-hidden.scss
+SPDXID: SPDXRef-fb4a8c9a04e09e0b0309a315a1e18b01
+FileChecksum: SHA1: 2648174e72dc422dc259c5e0eefdbf20d5c78928
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/utilities/_api.scss
+SPDXID: SPDXRef-2d935e7c736fec30727d3623a49f3601
+FileChecksum: SHA1: 8f754cad7d0f2bcd83fcc8ceb5dc7afd84a6051a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/static/scss/bootstrap/scss/vendor/_rfs.scss
+SPDXID: SPDXRef-d2437dc3c4f3d96c5267351d2120e0fa
+FileChecksum: SHA1: 4b70f5bb2b577c659bc384f384a02e8f5f7f57d5
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2011-2022 The Bootstrap Authors</text>
+
+FileName: ./daggerboard/tasks.py
+SPDXID: SPDXRef-e19f3ad378c8ce3073e2b04fe81564f2
+FileChecksum: SHA1: a21979b69bbc2ee88adfee7ffacd1d819d8d74b1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/.DS_Store
+SPDXID: SPDXRef-15eb3fd0068a2bdadd89d0fd1f6e9081
+FileChecksum: SHA1: 16eeb8f5830dadc52f5d8280654605b0fda3952c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/admin/base.html
+SPDXID: SPDXRef-51c7c333a828237a618dd5228aee774f
+FileChecksum: SHA1: 55ee0ed6c1bcac63430390c1eb8b65f70380f463
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/admin/base_site.html
+SPDXID: SPDXRef-ea5c04fc3b4d17493094da66ba6bb7d4
+FileChecksum: SHA1: 35032c6901d0eb8d38358ab570e66e2dddda601e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/admin/grading/gradethresholds/change_form.html
+SPDXID: SPDXRef-27c7f032f57775be7cc7a58733832f65
+FileChecksum: SHA1: 64e70e4fb0cbe55a9bb40a2ca1e4c4b236bd8360
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/base.html
+SPDXID: SPDXRef-b25b14d79b90a3448489f50f14519e17
+FileChecksum: SHA1: 22d14f5829db7b9321acdb94a80de0491bd0dc3d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/head.html
+SPDXID: SPDXRef-c57ef632a81cd3898080551ae6e3979c
+FileChecksum: SHA1: f8820cc1e43f11c14c315646968a1d9d77ba61ae
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/home.html
+SPDXID: SPDXRef-efa28d180cfcf696724942b4b87a78c2
+FileChecksum: SHA1: 27010c6be84e09a2b0a5e41649a876d49f3becf3
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/login.html
+SPDXID: SPDXRef-3259c9041db2e59ccbc631be8b1f52d3
+FileChecksum: SHA1: 591288e0bc48ed5178454dbaeeb588d856ffe4a4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/navbar.html
+SPDXID: SPDXRef-58b202da0754f97a70eb6851c8bd77c8
+FileChecksum: SHA1: 91a2cb24dcc382414304c4d9fd7e63a2039d84e4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/not-found-page.html
+SPDXID: SPDXRef-0c313c72f3f8ccb80e05a19835bddbae
+FileChecksum: SHA1: 8c34d23c4b055b5fc7b885c709535b9c1b0c798c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/sbomscorecard.html
+SPDXID: SPDXRef-101579256501f948d9ac17a5e372f841
+FileChecksum: SHA1: 6daef266ed8e0e669d9e61cc429611ff100891e9
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templates/vendorscorecard.html
+SPDXID: SPDXRef-3d6b97ff7cac32315cfc44cc10828751
+FileChecksum: SHA1: dc4bc7bfa60f43d944a8ada28485e38ae6510da8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital
+SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/templatetags/daggerboard_templatetags.py
+SPDXID: SPDXRef-4a5a0b8bf58e95401bd7e97763372e6f
+FileChecksum: SHA1: 1ea385dfa9a050623afca75a3998b7467e23256e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/tests.py
+SPDXID: SPDXRef-69602905c8d85ec8fce70b5d56d12b96
+FileChecksum: SHA1: fcdefe19fe8d8ee1249090d2e7c69cb214bcdbf4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboard/views.py
+SPDXID: SPDXRef-55f740030edbb2eaf88f4e3f1623f1b3
+FileChecksum: SHA1: 69cafa4aabaeb2d9e4bdf5341011d1136f9403cb
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboardproject/.env
+SPDXID: SPDXRef-b09a51b3e69b5cbdce3971e1af3329f6
+FileChecksum: SHA1: 570b7861d289f38460066d99f37b9f7eb5326904
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboardproject/asgi.py
+SPDXID: SPDXRef-9e5e8b2fa729ae515aa05a28a831dca8
+FileChecksum: SHA1: 5df96081017b1eacf85377c811f23e459c10c391
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboardproject/settings.py
+SPDXID: SPDXRef-5b54c312d53b7696064ca4039eefd02d
+FileChecksum: SHA1: 6484f8113ffc9a216d15a46499d230d288c4fe96
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboardproject/urls.py
+SPDXID: SPDXRef-0de7e3a20c9fc3e16fbdbaa757aa5139
+FileChecksum: SHA1: a128feb25722e57f43cb3d49290140f276386851
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./daggerboardproject/wsgi.py
+SPDXID: SPDXRef-c0396bdce288ada0deb9d0130b0333d5
+FileChecksum: SHA1: 23880a77fe4888224b2756478c06164263edb517
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./grading/admin.py
+SPDXID: SPDXRef-236762c02b631b1a05cc2db0c2b2f3b2
+FileChecksum: SHA1: 03769c14048897d8407f29593bb1a58c72d300d8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./grading/apps.py
+SPDXID: SPDXRef-3fb8de5fab5aeffa9b77bebfe92c69ab
+FileChecksum: SHA1: 73a2a2346fbece6abd46a01ff4764ce27275a165
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./grading/models.py
+SPDXID: SPDXRef-2066c8c54b31e10c94dfbf8424fcef37
+FileChecksum: SHA1: c378c95ea67c30f6298dba86c0ba1bc6809fe4c7
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./grading/tests.py
+SPDXID: SPDXRef-74b7a5dd968ed0bdc4ddd19e5ec61c7b
+FileChecksum: SHA1: b5bdbd698138780879f913afd5c6410944e9f673
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./grading/views.py
+SPDXID: SPDXRef-ea4b375c3638f771a8511601d5e95ed1
+FileChecksum: SHA1: 3c9ffb0f938c2770bcbee741cbc2e71c9278fa4c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./manage.py
+SPDXID: SPDXRef-c050744c35b00a41c366fb2419c105f6
+FileChecksum: SHA1: e8ac9b8fb214e28077a9e8bb683fb39ffad48c1f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
+
+FileName: ./requirements.txt
+SPDXID: SPDXRef-f02b42506977b9c85cf7886bfb6f686b
+FileChecksum: SHA1: f1d5f37da66fe78aa8bfba3a4373435979ac61c8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital</text>
