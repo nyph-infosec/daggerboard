@@ -15,7 +15,7 @@ ____                                ____                      _
 
 ## _SBOM Vulnerability Scanner Tool_
 
-[![License: Unlicense](https://img.shields.io/badge/license-MIT-blue)](http://unlicense.org/) [![Version: 1.0](https://img.shields.io/badge/Version-1.0-brightgreen)]() [![Build Status](https://img.shields.io/badge/Build-Development-orange)](https://travis-ci.org/joemccann/dillinger) [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)
+[![License: Unlicense](https://img.shields.io/badge/license-MIT-blue)](http://unlicense.org/) [![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-brightgreen)]() [![Build Status](https://img.shields.io/badge/Build-Production-green)](https://travis-ci.org/joemccann/dillinger) [![REUSE status](https://api.reuse.software/badge/git.fsfe.org/reuse/api)](https://api.reuse.software/info/git.fsfe.org/reuse/api)
 
 
 DaggerBoard is a vulnerability scanning tool that ingests Software Bill of Material (SBOM) files (CycloneDX,SPDX) and outputs results in a human-readable format. This tool evaluates software dependencies outlined within the SBOM file for package vulnerabilities. Similar to how the DaggerBoard keeps a ship afloat, the Daggerboard application assists with keeping your organization afloat by analyzing and maintaining risk levels.
@@ -66,7 +66,7 @@ DaggerBoard uses a number of open-source projects. Listed below are the main pac
 #### Getting started
 
 ---
-Two installation methods are provided: Docker and an installer script. The two installation options can be downloaded [on the project releases page](here). For manual installation steps, see the section **Manual Install**.
+Two installation methods are provided: Docker and an installer script. The two installation options can be downloaded [on the project releases page](https://github.com/nyph-infosec/daggerboard/releases). For manual installation steps, see the section **Manual Install**.
 
 ##### Option 1 - Installer Script
 1. Make the .bin executable
@@ -278,4 +278,4 @@ This project is licensed under the terms of the [MIT license](LICENSE.md).
 #### Release Notes
 
 ---
-* Version 1.0 Initial  of DaggerBoard
+* Version 1.0.0 Initial  of DaggerBoard
