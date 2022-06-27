@@ -7,4 +7,4 @@ socio-economic status, nationality, personal appearance, race,
 religion, or sexual identity and orientation.
 
 As a Linux Foundation project, the Daggerboard community adheres to
-the Linux Foundation Code of Conduct (needs link).
+the Linux Foundation Code of Conduct [link here](https://docs.linuxfoundation.org/lfx/mentorship/mentor-guide/code-of-conduct).
