@@ -176,11 +176,11 @@ Please change the password in the DaggerBoard Admin panel.
 
 
 
-**CRON background processes: **
+**CRON background processes**: 
 - Retrieve CVE data from the NVD Website feed on Recent & Modified feeds daily and store in **local data object**. [https://nvd.nist.gov/vuln/data-feeds]()
 - Retrieve CVE data from the NVD website feed on all CVE data listed since 2002 monthly and store in **local data object**.
 
-**User provided data: **
+**User provided data**: 
 1. User Uploads SPDX or CycloneDX SBOM.
 2. The SBOM is parsed and correlation is performed against the **local data object** for CPE.
    * If a match is found:
@@ -200,7 +200,7 @@ Please change the password in the DaggerBoard Admin panel.
          * User is prompted on successful upload.
 
 
-####Grading Policy
+#### Grading Policy
 
 ---
 
