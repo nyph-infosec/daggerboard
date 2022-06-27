@@ -245,7 +245,7 @@ AUTH LDAP REQUIRE GROUP	 The distinguished name of a group; authentication will 
 ---
 
 All contributions are welcome!
-Please take a moment to review guidelines [PR]() | [Issues]()
+Please take a moment to review guidelines [PR](https://github.com/nyph-infosec/daggerboard/pulls) | [Issues](https://github.com/nyph-infosec/daggerboard/issues)
 
 
 #### Future Work
