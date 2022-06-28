@@ -19,7 +19,7 @@ Please review the following guidelines before contributing:
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [DaggerBoard Code of Conduct](https://). By contributing and taking part in this project, you are expected to follow our Code of Conduct.
+This project and everyone participating in it is governed by the [DaggerBoard Code of Conduct](CODE_OF_CONDUCT.md). By contributing and taking part in this project, you are expected to follow our Code of Conduct.
 
 If you witness any unacceptable behavior displayed by anyone participating (including the maintainers), please contact [SecDevOps@nyp.org](mailto:SecDevOps@nyp.org?subject=[DaggerBoard]) with the subject heading starting with "[DaggerBoard]".
 
@@ -39,7 +39,7 @@ Within the body of your email please provide details about the vulnerability you
 
 All other bugs are tracked as [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues).
 
-1. Create an issue and provide information on the bug by filling out this [template](https://)
+1. Create an issue and provide information on the bug by filling out this [template](contributing/bug_template.md)
 
 #### Documentation
 
