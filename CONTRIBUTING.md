@@ -1,6 +1,6 @@
 # How to contribute to DaggerBoard
 
-:sparkler: :boat: We would like to thank you for taking the time to contribute and taking on a role in the cybersecurity fight! :boat: :sparkler:
+:sparkler: :boat: We would like to thank you for taking the time to contribute and joining us on the SBOM journey! :boat: :sparkler:
 
 Please review the following guidelines before contributing:
 
@@ -47,17 +47,18 @@ We love good documentation! However, sometimes we may not be good at providing t
 
 ### Suggestions and Enhancements
 
-For these requests please provide the following in your github issue:
-	- Suggestion/Enhancement
-	- Use case for the feature
-	- Written example of how it should/could work
+For these requests please provide the following in your [GitHub Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues):
+- Suggestion/Enhancement
+- Use case for the feature
+- Explain why this enhancement would be useful
+- Written example of how it should/could work
 
 ### Pull Requests
 
-To keep our processes structured for our maintainers and contributers:
-	1. Make sure you are clear in your descriptions
-	2. Follow our formatting/style guides
-	3. Provide tests if these are fixes/features/enhancements (as of now this is optional)
+To keep the process structured for our maintainers and contributors, please follow these steps when submitting a pull request:
+1. Make sure you are clear in your descriptions
+2. Follow our formatting/style guides
+3. Provide tests if these are fixes/features/enhancements (as of now this is optional)
 
 ## Formatting/Style Guides
 
