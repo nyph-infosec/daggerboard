@@ -23,10 +23,6 @@ This project and everyone participating in it is governed by the [DaggerBoard Co
 
 If you witness any unacceptable behavior displayed by anyone participating (including the maintainers), please contact [SecDevOps@nyp.org](mailto:SecDevOps@nyp.org?subject=[DaggerBoard]) with the subject heading starting with "[DaggerBoard]".
 
-## What to know before I contribute
-
-...
-
 ## How can I Contribute?
 
 #### Security Vulnerability
