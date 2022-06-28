@@ -46,7 +46,7 @@ We love good documentation! However, sometimes we may not be good at providing t
 For these requests please provide the following in your [GitHub Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues):
 - Suggestion/Enhancement
 - Use case for the feature
-- Explain why this enhancement would be useful
+- Explain why this would be useful
 - Written example of how it should/could work
 
 ### Pull Requests
