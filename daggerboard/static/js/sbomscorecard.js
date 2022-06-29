@@ -53,7 +53,6 @@ function genBar(bar_data) {
 //SBOM severity distribution
     var barColors = ["#a85556", "#d1964d", "#4D5C74", "#739174"];
     var xValuesSeverity2 = ["CRITICAL", "HIGH", "MEDIUM", "LOW"];
-// let yData2 = {{ severity_dist_chart|safe }};
     var sbom_severity_dist = document.getElementById("severity_dist_chart");
     new Chart(sbom_severity_dist, {
         type: "bar",
