@@ -31,7 +31,6 @@ SPDX-License-Identifier: MIT
 </div>
 {% block js_footer %}
     {% block bootstrap_js %}
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
     {% endblock bootstrap_js %}
     <!-- slim select -->
@@ -39,8 +38,6 @@ SPDX-License-Identifier: MIT
     <script src="{% static 'js/slimselect.js' %}"></script>
     <!-- datatables -->
     <script type="text/javascript" src="{% static 'js/jquery.dataTables.js' %}"></script>
-    <!-- import Chart.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     {% block js_script_content %}
     {% endblock js_script_content %}
 {% endblock js_footer %}
