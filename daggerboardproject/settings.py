@@ -183,7 +183,6 @@ CSP_STYLE_SRC = [
 
 CSP_FONT_SRC = [
     "'self'",
-    "cdnjs.cloudflare.com",
     "fonts.gstatic.com",
     "use.fontawesome.com",
 ]
@@ -195,11 +194,7 @@ CSP_IMG_SRC = [
 
 CSP_SCRIPT_SRC = [
     "'self'",
-    "cdnjs.cloudflare.com",
     "code.jquery.com",
-    "cdn.jsdelivr.net",
-    "ajax.googleapis.com",
-    "cdn.datatables.net",
 ]
 
 CSP_OBJECT_SRC = [
