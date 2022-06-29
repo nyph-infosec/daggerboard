@@ -14,7 +14,7 @@ SPDX-License-Identifier: MIT
 <fieldset class="module aligned {{ fieldset.classes }}">
     {% if fieldset.name %}<h2>{{ fieldset.name }}</h2>{% endif %}
     {% if fieldset.description %}
-        <div class="description">{{ fieldset.description|safe }}</div>
+        <div class="description">{{ fieldset.description }}</div>
     {% endif %}
     {% for line in fieldset %}
         <div class="form-row{% if line.fields|length_is:'1' and line.errors %} errors{% endif %}{% if not line.has_visible_field %} hidden{% endif %}{% for field in line %}{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% endfor %}">
