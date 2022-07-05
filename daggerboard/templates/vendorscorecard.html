@@ -197,10 +197,10 @@ SPDX-License-Identifier: MIT
             <tbody>
                 {% for i in all_sbom_table %}
                 <tr>
-                    <td> {{ i.documentname|safe }}</td>
-                    <td>{{ i.uploadtime|safe }}</td>
-                    <td>{{ i.total_cves|safe }}</td>
-                    <td>{{ i.total_exploits|safe }}</td>
+                    <td> {{ i.documentname }}</td>
+                    <td>{{ i.uploadtime }}</td>
+                    <td>{{ i.total_cves }}</td>
+                    <td>{{ i.total_exploits }}</td>
                     {% if i.sbom_grade > letterGradeThresholds|get_item:"greater_eq_threshold_grade_F" %}
                     <td class="db-danger">F</td>
                     {% elif i.sbom_grade >= letterGradeThresholds|get_item:"greater_eq_threshold_grade_D" and i.sbom_grade < letterGradeThresholds|get_item:"less_than_threshold_grade_D" %}
