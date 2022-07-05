@@ -16,10 +16,11 @@ var yData1 = JSON.parse(document.getElementById('spider_vals').innerText);
 var yData2 = JSON.parse(document.getElementById('severity_values_y').innerText);
 
 // Generate JS charts if data is available
-if (yData1.length > 0 && yData2.length > 0){
+if (yData1.length > 0 || yData2.length > 0){
     genSpider(yData1);
     genBar(yData2);
 } else {
+    console.log("No chart data received.");
 }
 
 function genSpider(spider_data) {
