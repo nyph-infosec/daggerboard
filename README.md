@@ -21,7 +21,6 @@ ____                                ____                      _
 DaggerBoard is a vulnerability scanning tool that ingests Software Bill of Material (SBOM) files (CycloneDX,SPDX) and outputs results in a human-readable format. This tool evaluates software dependencies outlined within the SBOM file for package vulnerabilities. Similar to how the DaggerBoard keeps a ship afloat, the Daggerboard application assists with keeping your organization afloat by analyzing and maintaining risk levels.
 
 
-
 #### System Dependencies
 ---
 - Any version of Docker (if using docker installation method)
@@ -88,6 +87,7 @@ Note: You will be prompted to enter an admin password and IP address of the serv
 
 
 ```
+sudo gunzip daggerboard_docker_image.tgz
 sudo docker load --input daggerboard_docker_image.tar
 ```
 
