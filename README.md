@@ -165,7 +165,19 @@ Password: daggerboard
 
 Please change the password in the DaggerBoard Admin panel.
 
+#### Supported SPDX Formats
+---
+Daggerboard supports the following SPDX formats:
+* CycloneDX
+* RDF
+* Tag/Value
 
+JSON SPDX files are not supported, but this is currently under analysis. Samples of the various SPDX formats can be found here (under "Producing/Consuming SPDX Documents"): https://spdx.dev/resources/use/. 
+
+An example of generating tag/value SPDX with Syft:\
+`syft %repo_name or directory% -o spdx_tag_value >> new_tagvalue_sbom.spdx`
+
+For troubleshooting errors please see the wiki.
 
 
 #### SBOM Upload Process
