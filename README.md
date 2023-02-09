@@ -177,7 +177,7 @@ JSON SPDX files are not supported, but this is currently under analysis. Samples
 An example of generating tag/value SPDX with Syft:\
 `syft %repo_name or directory% -o spdx_tag_value >> new_tagvalue_sbom.spdx`
 
-For troubleshooting errors please see the wiki.
+For troubleshooting errors please see the [wiki](https://github.com/nyph-infosec/daggerboard/wiki/Supported-SPDX-Formats-&-Upload-Troubleshooting).
 
 
 #### SBOM Upload Process
