@@ -77,10 +77,11 @@ chmod +x DaggerBoard_Installer.bin
 ```
 sudo ./DaggerBoard_Installer.bin
 ```
-Note: You will be prompted to enter an admin password and IP address of the server.
 
 3. Reboot the server
-
+```
+sudo reboot
+```
 
 ##### Option 2 - Docker
 1. Load the package into Docker
@@ -134,6 +135,9 @@ Use the .env file to set the proxy configuration.
 2. Add proxy server to the PROXY= variable
 
 Ex: PROXY=https://proxy.example.com:8080
+
+3. Add the NVD API Key value to NVD_API_KEY= variable (variable will be included in the upcoming newer version)
+Ex: NVD_API_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
 
@@ -145,6 +149,7 @@ Ex: PROXY=https://proxy.example.com:8080
 | Environment Variable      | Default | Description    |
 | :---        |    :----   |          :--- |
 | ```PROXY``` | Optional. No default | If internet is provided via proxy, please enter address here. |
+| ```NVD_API_KEY``` | Required (will be included with the upcoming newer version)| NVD API Key is required to update/populate the local dataset object with new CVE data. Please see [https://nvd.nist.gov/developers/request-an-api-key]() |
 | ```LOGPATH``` | ```/var/www/Daggerboard/logs/``` | Location path of log file. |
 | ```DBHOST``` | ```localhost``` | Hostname of database. |
 | ```DBPASSWORD``` | ```daggerboard``` | Database password. |
@@ -189,8 +194,10 @@ For troubleshooting errors please see the [wiki](https://github.com/nyph-infosec
 
 
 **CRON background processes**: 
-- Retrieve CVE data from the NVD Website feed on Recent & Modified feeds daily and store in **local data object**. [https://nvd.nist.gov/vuln/data-feeds]()
-- Retrieve CVE data from the NVD website feed on all CVE data listed since 2002 monthly and store in **local data object**.
+~~- Retrieve CVE data from the NVD Website feed on Recent & Modified feeds daily and store in **local data object**. [https://nvd.nist.gov/vuln/data-feeds]()~~
+~~- Retrieve CVE data from the NVD website feed on all CVE data listed since 2002 monthly and store in **local data object**.~~
+- Retrieve CVE data from the NVD by calling API using iterative requests to populate/update **local dataset object**. [https://nvd.nist.gov/developers/start-here]()
+
 
 **User provided data**: 
 1. User Uploads SPDX or CycloneDX SBOM.
@@ -264,7 +271,7 @@ Please take a moment to review the [DaggerBoard Contribution Guide](CONTRIBUTING
 
 ---
 * Advanced reporting and analytics.
-* API Integrations
+* API Integrations (will be included in upcoming DaggerBoard newer version)
 * Email and scheduled report options.
 * Enhancements to SBOM search functionality to search by CVE.
 
