@@ -33,8 +33,7 @@ SECRET_KEY = '==_xv2k%xqvnf2zwlgpi2b+=rhq*gymuv58uz4%vbd=2h0fq+g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -170,9 +169,16 @@ MEDIA_URL = '/uploads/'
 LOGIN_URL = '/login/'
 LOGOUT_REDIRECT_URL = '/login/'
 
+
 # CSP Policy
+
 CSP_DEFAULT_SRC = [
     "'self'",
+    "ajax.googleapis.com",
+    'code.jquery.com',
+    'cdnjs.cloudflare.com',
+    'cdn.datatables.net',
+    'cdn.jsdelivr.net',
 ]
 
 CSP_STYLE_SRC = [
@@ -183,31 +189,21 @@ CSP_STYLE_SRC = [
 
 CSP_FONT_SRC = [
     "'self'",
+    "cdnjs.cloudflare.com",
     "fonts.gstatic.com",
     "use.fontawesome.com",
 ]
 
-CSP_IMG_SRC = [
-    "'self'",
-    "data:",
-]
 
 CSP_SCRIPT_SRC = [
     "'self'",
+    "cdnjs.cloudflare.com",
     "code.jquery.com",
+    "cdn.jsdelivr.net",
+    "ajax.googleapis.com",
+    "cdn.datatables.net",
 ]
 
-CSP_OBJECT_SRC = [
-    "none"
-]
-
-CSP_FRAME_ANCESTORS = [
-    "'self'"
-]
-
-CSP_BASE_URI = [
-    "'self'"
-]
 
 ## django-rq redis config
 RQ_QUEUES = {
@@ -223,7 +219,8 @@ RQ_SHOW_ADMIN_LINK = True
 
 ## CORS headers
 CORS_ALLOWED_ORIGINS = [
-
+    "https://127.0.0.1:8000",
+    "http://127.0.0.1:8000"
 ]
 
 ## XSS protections
@@ -233,3 +230,4 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
+
