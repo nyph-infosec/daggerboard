@@ -291,7 +291,7 @@ Please take a moment to review the [DaggerBoard Contribution Guide](CONTRIBUTING
 
 ---
 
-This project is licensed under the terms of the [MIT license](LICENSE.md).
+This project is licensed under the terms of the [MIT license](LICENSE).
 
 
 #### Release Notes
