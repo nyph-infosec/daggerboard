@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+## This script will force the script get_cve_cpe.py
+## to pull CVEs and CPEs created from year 2002
+
+hdir=/var/www/sbomscripts
+PYTHON=/var/www/Daggerboard/venv/bin/python
+envvar="/var/www/Daggerboard/daggerboardproject/.env"
+last_nvd_update=$hdir/last_nvd_update
+db_nvd=$hdir/nvdrepo/nvdcvecpe.csv
+db_nvd_tmp=$hdir/nvdrepo/nvdcvecpe.csv_tmp
+nvdurl="https://services.nvd.nist.gov/rest/json/cves/2.0?resultsPerPage=1"
+proxysrv=$(grep PROXY $envvar | cut -d= -f2 | tr -d "'" | tr -d '"')
+cve_records=$(curl -k --connect-timeout 10 -s -x "$proxysrv" "$nvdurl" | $PYTHON -m json.tool | grep total | cut -d':' -f2 | tr -d ',' | xargs)
+
+## Setting default CVE number of records
+if ! [[ "$cve_records" =~ ^[0-9]+$ ]]; then
+  echo "not integer"
+  cve_records=210000
+fi
+
+today=$(date +%Y-%m-%d)
+pid_file_date=$(stat $hdir/get_nvd_cve_cpe.pid | grep Modify | awk '{print $2}')
+pid_file=$hdir/get_nvd_cve_cpe.pid
+
+## make sure no data is being written before resetting the last_nvd_update
+if [ ! -f $db_nvd_tmp ]; then
+  ## Reset last_nvd_update
+  if [ $(cat $db_nvd | wc -l) -lt $cve_records ]; then
+    echo "LAST_UPDATE=2002-01-01 00:00:01" > $last_nvd_update
+  fi
+fi
+
+## rm pidfile if CVE collecting script got stuck for some unpredictable reason
+if [[ "$pid_file_date" != "$today" ]];then
+  rm -f $pid_file
+fi
+
+
+## Maintain db copies
+find $hdir/nvdrepo -name "nvdcvecpe.csv_$(date +%Y)*" -mtime +7 -exec rm \{\} \;
+
+exit 0

@@ -1,0 +1,107 @@
+#!/usr/bin/env bash
+
+baseurl="https://nvd.nist.gov/feeds/json/cve/1.1"
+nvd_feed_mod="$baseurl/nvdcve-1.1-modified.json.gz"
+nvd_feed_recent="$baseurl/nvdcve-1.1-recent.json.gz"
+cpe_dict="https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.gz"
+cur_year=$(date +%Y | xargs)
+
+envvar="/var/www/Daggerboard/daggerboardproject/.env"
+proxysrv=$(grep PROXY $envvar | cut -d= -f2 | tr -d "'" | tr -d '"')
+export http_proxy=$proxysrv
+export https_proxy=$proxysrv
+
+cd /var/www/Daggerboard/apps/sbomscanner/nvdrepo
+
+## proxy info: /etc/wgetrc
+# wget -q $nvd_feed_mod
+# wget -q $nvd_feed_recent
+# wget -q $cpe_dict
+# wget -q $baseurl/nvdcve-1.1-${cur_year}.json.gz
+
+curl -O $nvd_feed_mod
+curl -O $nvd_feed_recent
+curl -O $cpe_dict
+curl -O $baseurl/nvdcve-1.1-${cur_year}.json.gz
+
+for f in `ls *.gz`
+do
+  gunzip -f $f
+done
+
+rm -f *.gz*
+
+## dumpcpedict
+cpedict=official-cpe-dictionary_v2.3.xml
+
+egrep -i "<title xml\:lang=\"en\-US\"|cpe23\-item name|Vendor" $cpedict | \
+cut -d= -f2 | sed -e 's/"en-US">//g' -e 's/<\/title>//g' -e 's/\/>//g' | \
+tr -d '">' | egrep -iv "http|https" | python3 -c "
+
+import sys
+input=sys.stdin
+for line in input.readlines():
+  if 'cpe' not in line:
+    sys.stdout.write(line.replace('\n','|'))
+  else:
+    sys.stdout.write(line)
+" > nvdcpedict.csv
+
+# chown www-data: nvdcpedict.csv
+
+## dumpcvecpe
+for f in `ls nvdcve-1.1-20*.json nvdcve-1.1-recent.json nvdcve-1.1-modified.json`
+do
+cat $f | python3 -c "
+import json, sys
+obj=json.load(sys.stdin)
+#for o in obj['result']['CVE_Items']:
+for o in obj['CVE_Items']:
+      cve=o['cve']['CVE_data_meta']['ID']
+      description=o['cve']['description']['description_data'][0]['value'].replace('\r','').replace('\n','')
+      if 'baseMetricV3' in o['impact']:
+        baseSeverity23=o['impact']['baseMetricV3']['cvssV3']['baseSeverity']
+        baseScore23=o['impact']['baseMetricV3']['cvssV3']['baseScore']
+        vectorString3=o['impact']['baseMetricV3']['cvssV3']['vectorString']
+      else:
+        if 'baseMetricV2' in o['impact']:
+          baseSeverity23=o['impact']['baseMetricV2']['severity']
+          baseScore23=o['impact']['baseMetricV2']['cvssV2']['baseScore']
+          vectorString3=o['impact']['baseMetricV2']['cvssV2']['vectorString']
+          baseScore23=(baseScore23 * 30 / 100) + baseScore23
+          baseScore23=round(baseScore23,1)
+          vectorString3='na'
+          if baseScore23 > 0 and baseScore23 <= 3.9:
+            baseSeverity23='LOW'
+          if baseScore23 >= 4 and baseScore23 <= 6.9:
+            baseSeverity23='MEDIUM'
+          if baseScore23 >= 7 and baseScore23 <= 8:
+            baseSeverity23='HIGH'
+          if baseScore23 >= 9 and baseScore23 <= 10:
+            baseSeverity23='CRITICAL'
+          if baseScore23 > 10:
+            baseSeverity23='CRITICAL'
+            baseScore23=10
+        else:
+          baseSeverity23='na'
+          baseScore23='na'
+          vectorString3='na'
+      sys.stdout.write( '|'.join((cve, description,str(baseScore23),baseSeverity23,vectorString3)).strip() + '|')
+      #chil = ''
+      for i in o['configurations']['nodes']:
+        for l in i['children']:
+          for r in l['cpe_match']:
+            sys.stdout.write(r['cpe23Uri'].strip() + ',')
+            #chil='WITHCHILDREN'
+        for n in i['cpe_match']:
+          sys.stdout.write(n['cpe23Uri'].strip() + ',')
+          #chil='NOCHILDREN'
+
+      #sys.stdout.write(chil + '\n')
+      sys.stdout.write('\n')
+"
+done > nvdcvecpe.csv
+
+# chown www-data: nvdcvecpe.csv
+
+exit 0

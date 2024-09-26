@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+# Check if the correct number of arguments is provided
+if [ "$#" -ne 2 ]; then
+  echo "Usage: $0 <filepath> <app_user>"
+  exit 1
+fi
+
+# Assign arguments to variables
+filepath=$1
+app_user=$2
+
+baseurl="https://nvd.nist.gov/feeds/json/cve/1.1"
+nvd_feed_mod="$baseurl/nvdcve-1.1-modified.json.gz"
+nvd_feed_recent="$baseurl/nvdcve-1.1-recent.json.gz"
+cpe_dict="https://nvd.nist.gov/feeds/xml/cpe/dictionary/official-cpe-dictionary_v2.3.xml.gz"
+
+cd "$filepath/nvdrepo" || exit
+
+curl -O $nvd_feed_mod
+curl -O $nvd_feed_recent
+curl -O $cpe_dict
+
+cur_year=$(date +%Y | xargs)
+for (( y=2002; y<=$cur_year; y++ ))
+do
+  curl -O $baseurl/nvdcve-1.1-${y}.json.gz
+done
+
+for f in *.gz
+do
+  gunzip -f "$f"
+done
+
+rm -f *.gz*
+
+## dumpcpedict
+cpedict=official-cpe-dictionary_v2.3.xml
+
+egrep -i "<title xml\:lang=\"en\-US\"|cpe23\-item name|Vendor" "$cpedict" | \
+cut -d= -f2 | sed -e 's/"en-US">//g' -e 's/<\/title>//g' -e 's/\/>//g' | \
+tr -d '">|' | egrep -iv "http|https" | python3 "$filepath/process_cpedict.py" > nvdcpedict.csv
+
+chown "$app_user:" nvdcpedict.csv
+
+## dumpcvecpe
+for f in nvdcve-1.1-20*.json nvdcve-1.1-recent.json nvdcve-1.1-modified.json
+do
+  cat "$f" | python3 "$filepath/process_cvecpe.py"
+
+done > nvdcvecpe.csv
+
+chown "$app_user:" nvdcvecpe.csv
+
+exit 0

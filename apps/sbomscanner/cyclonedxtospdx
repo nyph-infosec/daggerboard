@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+## Converts cycloneDx to SPDX
+## Script gets called by sbom_process.py
+
+# wdir=/var/www/Daggerboard/uploads/sbom/
+# archive=/var/www/sbomscripts/archive_spdx
+
+wdir=/uploads/sbom
+archive=/archive_spdx
+
+cd $wdir
+
+for f in $(ls *.xml)
+do
+  spdx_f=${f%.xml}.spdx
+  spdx_f=${spdx_f// /_}
+  cp /dev/null ${spdx_f}
+  echo 'SPDXVersion: SPDX-2.2' >> $spdx_f
+  echo 'SPDXID: SPDXRef-DOCUMENT' >> $spdx_f
+  echo "DocumentName: ${f%.xml}" >> $spdx_f
+  echo >> $spdx_f
+
+  cat $f | grep -i -A2 'component type="library"' | egrep -v 'component type="library"|\-\-' | \
+	  perl -pe 's/\n/|/' | sed "s/<\/version>/<\/version>XXXXX/g" | sed 's/XXXXX/\n/g' | \
+	  sed 's/^|//g' | tr -d '[:blank:]' | \
+  while read line
+  do
+    pn=$(echo $line | cut -d'|' -f1 | sed -n 's:.*<name>\(.*\)</name>.*:\1:p')
+    pv=$(echo $line | cut -d'|' -f2 | sed -n 's:.*<version>\(.*\)</version>.*:\1:p')
+
+    echo "PackageName: $pn"
+    echo "PackageVersion: $pv"
+    echo
+  done >> $spdx_f
+  chown www-data: $spdx_f
+  mv -f $f $archive
+  converted="$converted $f"
+done
+
+if [[ "X$converted" != "X" ]]; then
+  echo "CycloneDX converted: $converted"
+fi

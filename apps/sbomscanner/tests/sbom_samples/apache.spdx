@@ -1,0 +1,647 @@
+SPDXVersion: SPDX-2.2
+CreatorComment: apache_old2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: httpd-2.4.43-alpine-3
+DocumentNamespace: https://anchore.com/syft/image/httpd-2.4.43-alpine-eef99ed4-381f-49d1-94dd-2070bfa6dca6
+LicenseListVersion: 3.15
+Creator: Organization: Apache Software Foundation
+Creator: Tool: syft-0.36.0
+Created: 2022-01-26T17:07:24Z
+
+
+
+PackageName: .httpd-rundeps
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-.httpd-rundeps
+PackageVersion: 20200706.202041
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:.httpd-rundeps:.httpd-rundeps:20200706.202041:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:.httpd-rundeps:.httpd_rundeps:20200706.202041:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:.httpd_rundeps:.httpd-rundeps:20200706.202041:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:.httpd_rundeps:.httpd_rundeps:20200706.202041:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:.httpd:.httpd-rundeps:20200706.202041:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:.httpd:.httpd_rundeps:20200706.202041:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/.httpd-rundeps@20200706.202041?arch=noarch
+
+
+
+PackageName: alpine-baselayout
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-alpine-baselayout
+PackageVersion: 3.2.0-r6
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-only
+PackageLicenseDeclared: GPL-2.0-only
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine-baselayout:alpine-baselayout:3.2.0-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine-baselayout:alpine_baselayout:3.2.0-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine_baselayout:alpine-baselayout:3.2.0-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine_baselayout:alpine_baselayout:3.2.0-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine:alpine-baselayout:3.2.0-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine:alpine_baselayout:3.2.0-r6:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/alpine-baselayout@3.2.0-r6?arch=x86_64
+
+
+
+PackageName: alpine-keys
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-alpine-keys
+PackageVersion: 2.2-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine-keys:alpine-keys:2.2-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine-keys:alpine_keys:2.2-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine_keys:alpine-keys:2.2-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine_keys:alpine_keys:2.2-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine:alpine-keys:2.2-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:alpine:alpine_keys:2.2-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/alpine-keys@2.2-r0?arch=x86_64
+
+
+
+PackageName: apk-tools
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-apk-tools
+PackageVersion: 2.10.5-r1
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-only
+PackageLicenseDeclared: GPL-2.0-only
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apk-tools:apk-tools:2.10.5-r1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apk-tools:apk_tools:2.10.5-r1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apk_tools:apk-tools:2.10.5-r1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apk_tools:apk_tools:2.10.5-r1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apk:apk-tools:2.10.5-r1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apk:apk_tools:2.10.5-r1:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/apk-tools@2.10.5-r1?arch=x86_64
+
+
+
+PackageName: apr
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-apr
+PackageVersion: 1.7.0-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr:apr:1.7.0-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/apr@1.7.0-r0?arch=x86_64
+
+
+
+PackageName: apr-util
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-apr-util
+PackageVersion: 1.6.1-r6
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util:apr-util:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util:apr_util:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util:apr-util:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util:apr_util:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr:apr-util:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr:apr_util:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/apr-util@1.6.1-r6?arch=x86_64
+
+
+
+PackageName: apr-util-dbm_db
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-apr-util-dbm_db
+PackageVersion: 1.6.1-r6
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util-dbm-db:apr-util-dbm-db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util-dbm-db:apr-util-dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util-dbm-db:apr_util_dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util-dbm_db:apr-util-dbm-db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util-dbm_db:apr-util-dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util-dbm_db:apr_util_dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util_dbm_db:apr-util-dbm-db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util_dbm_db:apr-util-dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util_dbm_db:apr_util_dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util-dbm:apr-util-dbm-db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util-dbm:apr-util-dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util-dbm:apr_util_dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util_dbm:apr-util-dbm-db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util_dbm:apr-util-dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util_dbm:apr_util_dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util:apr-util-dbm-db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util:apr-util-dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util:apr_util_dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util:apr-util-dbm-db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util:apr-util-dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util:apr_util_dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr:apr-util-dbm-db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr:apr-util-dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr:apr_util_dbm_db:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/apr-util-dbm_db@1.6.1-r6?arch=x86_64
+
+
+
+PackageName: apr-util-ldap
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-apr-util-ldap
+PackageVersion: 1.6.1-r6
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util-ldap:apr-util-ldap:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util-ldap:apr_util_ldap:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util_ldap:apr-util-ldap:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util_ldap:apr_util_ldap:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util:apr-util-ldap:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr-util:apr_util_ldap:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util:apr-util-ldap:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr_util:apr_util_ldap:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr:apr-util-ldap:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apr:apr_util_ldap:1.6.1-r6:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/apr-util-ldap@1.6.1-r6?arch=x86_64
+
+
+
+PackageName: brotli-libs
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-brotli-libs
+PackageVersion: 1.0.7-r5
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:brotli-libs:brotli-libs:1.0.7-r5:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:brotli-libs:brotli_libs:1.0.7-r5:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:brotli_libs:brotli-libs:1.0.7-r5:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:brotli_libs:brotli_libs:1.0.7-r5:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:brotli:brotli-libs:1.0.7-r5:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:brotli:brotli_libs:1.0.7-r5:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/brotli-libs@1.0.7-r5?arch=x86_64
+
+
+
+PackageName: busybox
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-busybox
+PackageVersion: 1.31.1-r16
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-only
+PackageLicenseDeclared: GPL-2.0-only
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:busybox:busybox:1.31.1-r16:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/busybox@1.31.1-r16?arch=x86_64
+
+
+
+PackageName: ca-certificates
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-ca-certificates
+PackageVersion: 20191127-r4
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MPL-2.0 AND GPL-2.0-or-later
+PackageLicenseDeclared: MPL-2.0 AND GPL-2.0-or-later
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca-certificates:ca-certificates:20191127-r4:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca-certificates:ca_certificates:20191127-r4:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca_certificates:ca-certificates:20191127-r4:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca_certificates:ca_certificates:20191127-r4:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca:ca-certificates:20191127-r4:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca:ca_certificates:20191127-r4:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/ca-certificates@20191127-r4?arch=x86_64
+
+
+
+PackageName: ca-certificates-bundle
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-ca-certificates-bundle
+PackageVersion: 20191127-r2
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MPL-2.0 AND GPL-2.0-or-later
+PackageLicenseDeclared: MPL-2.0 AND GPL-2.0-or-later
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca-certificates-bundle:ca-certificates-bundle:20191127-r2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca-certificates-bundle:ca_certificates_bundle:20191127-r2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca_certificates_bundle:ca-certificates-bundle:20191127-r2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca_certificates_bundle:ca_certificates_bundle:20191127-r2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca-certificates:ca-certificates-bundle:20191127-r2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca-certificates:ca_certificates_bundle:20191127-r2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca_certificates:ca-certificates-bundle:20191127-r2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca_certificates:ca_certificates_bundle:20191127-r2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca:ca-certificates-bundle:20191127-r2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ca:ca_certificates_bundle:20191127-r2:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/ca-certificates-bundle@20191127-r2?arch=x86_64
+
+
+
+PackageName: db
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-db
+PackageVersion: 5.3.28-r1
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:db:db:5.3.28-r1:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/db@5.3.28-r1?arch=x86_64
+
+
+
+PackageName: expat
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-expat
+PackageVersion: 2.2.9-r1
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:expat:expat:2.2.9-r1:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/expat@2.2.9-r1?arch=x86_64
+
+
+
+PackageName: jansson
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-jansson
+PackageVersion: 2.13.1-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:jansson:jansson:2.13.1-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/jansson@2.13.1-r0?arch=x86_64
+
+
+
+PackageName: libbz2
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-libbz2
+PackageVersion: 1.0.8-r1
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: bzip2-1.0.6
+PackageLicenseDeclared: bzip2-1.0.6
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libbz2:libbz2:1.0.8-r1:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/libbz2@1.0.8-r1?arch=x86_64
+
+
+
+PackageName: libc-utils
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-libc-utils
+PackageVersion: 0.7.2-r3
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause AND BSD-3-Clause
+PackageLicenseDeclared: BSD-2-Clause AND BSD-3-Clause
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libc-utils:libc-utils:0.7.2-r3:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libc-utils:libc_utils:0.7.2-r3:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libc_utils:libc-utils:0.7.2-r3:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libc_utils:libc_utils:0.7.2-r3:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libc:libc-utils:0.7.2-r3:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libc:libc_utils:0.7.2-r3:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/libc-utils@0.7.2-r3?arch=x86_64
+
+
+
+PackageName: libcrypto1.1
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-libcrypto1.1
+PackageVersion: 1.1.1g-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: OpenSSL
+PackageLicenseDeclared: OpenSSL
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1g-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/libcrypto1.1@1.1.1g-r0?arch=x86_64
+
+
+
+PackageName: libcurl
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-libcurl
+PackageVersion: 7.69.1-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libcurl:libcurl:7.69.1-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/libcurl@7.69.1-r0?arch=x86_64
+
+
+
+PackageName: libldap
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-libldap
+PackageVersion: 2.4.50-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libldap:libldap:2.4.50-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/libldap@2.4.50-r0?arch=x86_64
+
+
+
+PackageName: libsasl
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-libsasl
+PackageVersion: 2.1.27-r6
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libsasl:libsasl:2.1.27-r6:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/libsasl@2.1.27-r6?arch=x86_64
+
+
+
+PackageName: libssl1.1
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-libssl1.1
+PackageVersion: 1.1.1g-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: OpenSSL
+PackageLicenseDeclared: OpenSSL
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libssl1.1:libssl1.1:1.1.1g-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/libssl1.1@1.1.1g-r0?arch=x86_64
+
+
+
+PackageName: libtls-standalone
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-libtls-standalone
+PackageVersion: 2.9.1-r1
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: ISC
+PackageLicenseDeclared: ISC
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libtls-standalone:libtls-standalone:2.9.1-r1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libtls-standalone:libtls_standalone:2.9.1-r1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libtls_standalone:libtls-standalone:2.9.1-r1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libtls_standalone:libtls_standalone:2.9.1-r1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libtls:libtls-standalone:2.9.1-r1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libtls:libtls_standalone:2.9.1-r1:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/libtls-standalone@2.9.1-r1?arch=x86_64
+
+
+
+PackageName: libuuid
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-libuuid
+PackageVersion: 2.35.2-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0 AND GPL-2.0-or-later AND LGPL-2.0-or-later
+PackageLicenseDeclared: GPL-2.0 AND GPL-2.0-or-later AND LGPL-2.0-or-later
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libuuid:libuuid:2.35.2-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/libuuid@2.35.2-r0?arch=x86_64
+
+
+
+PackageName: libxml2
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-libxml2
+PackageVersion: 2.9.10-r4
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:libxml2:libxml2:2.9.10-r4:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/libxml2@2.9.10-r4?arch=x86_64
+
+
+
+PackageName: lua5.1-libs
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-lua5.1-libs
+PackageVersion: 5.1.5-r7
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:lua5.1-libs:lua5.1-libs:5.1.5-r7:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:lua5.1-libs:lua5.1_libs:5.1.5-r7:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:lua5.1_libs:lua5.1-libs:5.1.5-r7:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:lua5.1_libs:lua5.1_libs:5.1.5-r7:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:lua5.1:lua5.1-libs:5.1.5-r7:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:lua5.1:lua5.1_libs:5.1.5-r7:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/lua5.1-libs@5.1.5-r7?arch=x86_64
+
+
+
+PackageName: musl
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-musl
+PackageVersion: 1.1.24-r9
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:musl:musl:1.1.24-r9:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/musl@1.1.24-r9?arch=x86_64
+
+
+
+PackageName: musl-utils
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-musl-utils
+PackageVersion: 1.1.24-r8
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:musl-utils:musl-utils:1.1.24-r8:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:musl-utils:musl_utils:1.1.24-r8:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:musl_utils:musl-utils:1.1.24-r8:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:musl_utils:musl_utils:1.1.24-r8:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:musl:musl-utils:1.1.24-r8:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:musl:musl_utils:1.1.24-r8:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/musl-utils@1.1.24-r8?arch=x86_64
+
+
+
+PackageName: nghttp2-libs
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-nghttp2-libs
+PackageVersion: 1.41.0-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:nghttp2-libs:nghttp2-libs:1.41.0-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:nghttp2-libs:nghttp2_libs:1.41.0-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:nghttp2_libs:nghttp2-libs:1.41.0-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:nghttp2_libs:nghttp2_libs:1.41.0-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:nghttp2:nghttp2-libs:1.41.0-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:nghttp2:nghttp2_libs:1.41.0-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/nghttp2-libs@1.41.0-r0?arch=x86_64
+
+
+
+PackageName: pcre
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-pcre
+PackageVersion: 8.44-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-3-Clause
+PackageLicenseDeclared: BSD-3-Clause
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:pcre:pcre:8.44-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/pcre@8.44-r0?arch=x86_64
+
+
+
+PackageName: perl
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-perl
+PackageVersion: 5.30.3-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-1.0-or-later
+PackageLicenseDeclared: GPL-1.0-or-later
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:perl:perl:5.30.3-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/perl@5.30.3-r0?arch=x86_64
+
+
+
+PackageName: scanelf
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-scanelf
+PackageVersion: 1.2.6-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-only
+PackageLicenseDeclared: GPL-2.0-only
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:scanelf:scanelf:1.2.6-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/scanelf@1.2.6-r0?arch=x86_64
+
+
+
+PackageName: ssl_client
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-ssl_client
+PackageVersion: 1.31.1-r16
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-only
+PackageLicenseDeclared: GPL-2.0-only
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ssl-client:ssl-client:1.31.1-r16:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ssl-client:ssl_client:1.31.1-r16:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ssl_client:ssl-client:1.31.1-r16:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ssl_client:ssl_client:1.31.1-r16:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ssl:ssl-client:1.31.1-r16:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:ssl:ssl_client:1.31.1-r16:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/ssl_client@1.31.1-r16?arch=x86_64
+
+
+
+PackageName: xz-libs
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-xz-libs
+PackageVersion: 5.2.5-r0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-or-later AND LGPL-2.1-or-later
+PackageLicenseDeclared: GPL-2.0-or-later AND LGPL-2.1-or-later
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:xz-libs:xz-libs:5.2.5-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:xz-libs:xz_libs:5.2.5-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:xz_libs:xz-libs:5.2.5-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:xz_libs:xz_libs:5.2.5-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:xz:xz-libs:5.2.5-r0:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:xz:xz_libs:5.2.5-r0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/xz-libs@5.2.5-r0?arch=x86_64
+
+
+
+PackageName: zlib
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apk-zlib
+PackageVersion: 1.2.11-r3
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: Zlib
+PackageLicenseDeclared: Zlib
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:zlib:zlib:1.2.11-r3:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:alpine/zlib@1.2.11-r3?arch=x86_64
+
