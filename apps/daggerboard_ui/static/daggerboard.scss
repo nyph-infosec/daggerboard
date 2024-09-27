@@ -1,0 +1,508 @@
+/*
+ * SPDX-FileCopyrightText: 2022 NewYork-Presbyterian Hospital
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+/* fonts */
+//@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+@import "scss/bootstrap/scss/bootstrap";  // Import Bootstrap SCSS
+
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../static/fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: Bold;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+	src: url('../static/fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: Normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../static/fonts/SourceSansPro-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../static/fonts/SourceSansPro-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../static/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 600;
+}
+
+
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+
+// Media Queries
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)";
+
+// font size
+$base-font-size: 12px;
+$card-title-font-size: calc(14px + (14 - 12) * ((100vw - 300px) / (1600 - 300)));
+$header-title-font-size: 40px;
+$header-sub-font-size: 18px;
+
+//fonts
+$primary-font: 'Source Sans Pro', sans-serif;
+$secondary-font: 'Bebas Neue', cursive;
+//colors
+$cardheader-color: #646667;
+$light-bg: #F4F5F6;
+$font-white: #D0D0D3;
+$light-bg-border: #eaecef;
+$accent1: #6A8085;
+$db-danger: #a85556;
+$db-secondary: #cb673f;
+$db-warn: #d1964d;
+$db-info: #4D5C74;
+$db-success: #739174;
+$db-primary-blue: #323541;
+
+// color classes
+.db-danger{
+  color: $db-danger;
+}
+
+.db-secondary{
+  color: $db-secondary;
+}
+
+.db-warn{
+  color: $db-warn;
+}
+
+.db-info {
+  color: $db-info;
+}
+.db-success{
+  color: $db-success;
+}
+.db-danger-bg{
+  background-color: $db-danger !important;
+  color: white;
+}
+
+.db-secondary-bg {
+  background-color: $db-secondary !important;
+  color: white;
+}
+
+.db-warn-bg{
+  background-color: $db-warn !important;
+  color: white;
+}
+
+.db-info-bg{
+  background-color: $db-info !important;
+  color: white;
+}
+.db-success-bg{
+  background-color: $db-success !important;
+  color: white;
+}
+
+
+body:not(.loginBody) {
+  color: #5B5555;
+  background-color: $light-bg;
+  font-family: $primary-font;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size*1.2;
+  }
+
+  @media #{$mq-large} {
+    font-size: $base-font-size*1.3;
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size*1.3;
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size*.5;
+  }
+}
+
+h5{
+  font-size: 1.55rem;
+}
+
+.banner {
+  background-image: linear-gradient(to top, rgb(179, 217, 239) 0%, rgb(90, 182, 236) 100%);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  border: transparent;
+
+  @media #{$mq-medium} {
+    padding: .5rem 4rem;
+  }
+  @media #{$mq-large} {
+    padding: .5rem 4rem;
+  }
+  @media #{$mq-xlarge} {
+    padding: .5rem 4rem;
+  }
+  @media #{$mq-xxlarge} {
+    padding: .5rem 4rem;
+  }
+}
+
+//header navbar
+.desktop-header {
+  background-color: #323541;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white !important;
+}
+
+.width-fit {
+  width: fit-content;
+}
+.desktop-header h1{
+    font-size: $header-title-font-size !important;
+    font-family: $primary-font !important;
+    font-weight: 200;
+  text-transform: none;
+}
+.desktop-header h2{
+  font-size: $header-sub-font-size !important;
+  font-weight: 300;
+  color: #a2a1a1;
+}
+
+.nav-item.active {
+text-decoration: underline;
+}
+
+//buttons
+.sbom-btn{
+  background-color: $accent1;
+  color: white;
+}
+
+.sbom-btn:hover {
+  //background-color: $font-white;
+  border: 1px solid $cardheader-color;
+  background-color: #eae9e9;
+  color: $accent1;
+}
+
+.vendor_heading>h1{
+  font-size: 80px;
+  font-weight: 600;
+  font-family: $secondary-font;
+  color: black;
+}
+
+.card-header {
+  background-color: $cardheader-color;
+  color: #e3e3e7;
+}
+
+.card-footer{
+  background-color: transparent;
+}
+
+.card-title{
+  font-size: $card-title-font-size;
+}
+//font settings on page display cards (ie, SBOM analysis, vendor overview, etc)
+.display-card-font {
+  font-size: 3vw;
+}
+
+.home-display-card-font {
+  font-size: 2vw;
+}
+
+//Begin Style for login page//
+
+//fade in for login screent
+.loginfade {
+  animation: fadeIn .5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+.logininput {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+.logininput::-moz-focus-inner {
+  border: 0;
+}
+.loginsubmit {
+  color: white;
+  margin-top: 40px;
+  transition: color 300ms;
+  background-color: #6A8085;
+  height: 50px;
+}
+.loginsubmit:focus {
+  color: #f2f2f2;
+}
+.loginsubmit:active {
+  color: #d0d0d2;
+}
+
+.logininput {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #d9d9d9;
+  margin-bottom: 5%;
+  font-family: $primary-font;
+}
+
+.loginDBicon {
+  width: 40%;
+  height: 25%;
+}
+
+.loginbg {
+  background-color: #323541;
+}
+
+.loginHeader {
+  color:white;
+  font-size: 60px !important;
+  font-family: $primary-font !important;
+  font-weight: 200;
+  text-transform: none;
+}
+
+.login-SubHeader {
+  font-size: 23px;
+  font-weight: 300;
+  color: #a2a1a1
+}
+
+.login-error-msg {
+  font-size: 14px;
+  font-weight: 300;
+  color: #a2a1a1
+}
+
+.loginlabel{
+  color: white;
+  font-family: $primary-font;
+}
+
+// End Style for Login //
+
+// begin home style//
+
+.top-buffer { margin-top:20px; }
+
+.vl {
+  border-left: 6px solid green;
+  height: 50px;
+}
+
+.vertical-line {
+  border-left: 1px solid lightgrey;
+  height: 180px;
+  position: absolute;
+  left: 51%;
+}
+
+//end home style//
+.dbtb_header {
+  background-color: $cardheader-color;
+  color: $font-white;
+  font-family: $primary-font;
+  font-weight: 200 !important;
+}
+
+table.dataTable thead th {
+  font-weight: normal !important;
+}
+
+.report-card-header {
+  font-family: $secondary-font;
+  font-size: $header-sub-font-size;
+}
+
+.report-card-desc {
+  font-size: $base-font-size;
+}
+
+.report-sectional-card {
+  background-color: $light-bg;
+  border: $light-bg-border 1px solid;
+}
+
+//navtabs with datatoggle
+//.nav-tabs {
+  //background-color: $cardheader-color;
+  //color: $font-white
+//}
+
+.nav-tabs .nav-link{
+  color: $font-white;
+  background-color: $cardheader-color;
+
+}
+
+.nav-tabs .nav-link.active {
+  //background-color: $font-white;
+  border: 1px solid $cardheader-color;
+  background-color: #eae9e9;
+  color: $accent1;
+}
+
+.nav-subtitle {
+  margin-left: 5rem;
+}
+
+.header-nav-settings {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+
+.header-nav-settings:hover {
+  color: #F4F5F6;
+}
+
+.menu-links {
+  color: #ffffff8c;
+}
+
+.nav-test {
+  background-color: #eeeeee;
+  border-bottom: 1px gray solid;
+}
+//changes to slim select colors
+
+.ss-single-selected{
+  border: none !important;
+}
+
+.ss-main{
+  border: 1px solid #646667 !important;
+}
+
+.ss-single-selected{
+  color: $accent1 !important;
+}
+
+/* ss dropdown arrow color */
+span.ss-arrow>span.arrow-down {
+  border: #86a7af solid !important;
+  border-width: 0 4px 4px 0 !important;
+}
+
+.ss-value {
+  background-color: $accent1 !important;
+}
+
+.placeholder {
+  background-color: transparent;
+//spacer inbetween recent sboms on dashboard
+}
+.mycontent-left {
+  border-right: 4px dashed #ffffff00;
+}
+
+//spacer inbetween recent sboms on dashboard
+.mycontent-right {
+  border-left: 4px dashed #ffffff00;
+}
+
+//Hide charts when screen is specific size
+@media only screen and (max-width: 1290px) {
+  .fadeshow1 {
+      display: none;
+  }
+}
+
+// begin bad request error page style//
+.br-border {
+  border: 2px solid white;
+  padding-bottom: 25px;
+}
+
+.br-header {
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 3.0rem;
+  text-decoration: underline;
+}
+
+.br-message {
+  color: #D3D3D3
+}
+
+.br-background {
+  background-color: #323541;
+}
+
+.br-icon {
+  width: 40%;
+  height: 25%;
+}
+// end error page style//
+
+// begin charts //
+
+.chart-size {
+  width: 100%;
+  max-width: 600px;
+  max-height: 300px;
+}
+
+.vendor-sc-heading {
+  color:#646667;
+}
+
+.vendor-severity-dist{
+  width:100%;
+  max-width:600px
+}

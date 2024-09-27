@@ -1,0 +1,158 @@
+SPDXVersion: SPDX-2.2
+Creator: Organization: vulnerable
+CreatorComment: vulnerable
+DataLicense: CC0-1.0
+DocumentName: SPDXRef-DOCUMENT
+SPDXID: SPDXRef-DOCUMENT
+Creator: Tool: SPDX-Tools_v2.2.3
+Created: 2023-12-27T11:00:00Z
+
+PackageName: libxml2
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-libxml2
+PackageVersion: 2.9.1
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageVerificationCode: NOASSERTION
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageLicenseComments: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:xmlsoft:libxml2:2.9.1:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:xmlsoft/libxml2@2.9.1
+
+PackageName: openssl
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-openssl
+PackageVersion: 1.0.1f
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageVerificationCode: NOASSERTION
+PackageLicenseConcluded: OpenSSL
+PackageLicenseDeclared: OpenSSL
+PackageLicenseComments: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:openssl:openssl:1.0.1f:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:openssl/openssl@1.0.1f
+
+PackageName: apache-http-server
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-apache-http-server
+PackageVersion: 2.2.15
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageVerificationCode: NOASSERTION
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+PackageLicenseComments: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apache:http_server:2.2.15:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:apache/http_server@2.2.15
+
+PackageName: nginx
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-nginx
+PackageVersion: 1.4.0
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageVerificationCode: NOASSERTION
+PackageLicenseConcluded: BSD-2-Clause
+PackageLicenseDeclared: BSD-2-Clause
+PackageLicenseComments: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:nginx:nginx:1.4.0:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:nginx/nginx@1.4.0
+
+PackageName: mysql
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-mysql
+PackageVersion: 5.1.73
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageVerificationCode: NOASSERTION
+PackageLicenseConcluded: GPL-2.0-only
+PackageLicenseDeclared: GPL-2.0-only
+PackageLicenseComments: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:mysql:mysql:5.1.73:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:mysql/mysql@5.1.73
+
+PackageName: php
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-php
+PackageVersion: 5.3.29
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageVerificationCode: NOASSERTION
+PackageLicenseConcluded: PHP-3.01
+PackageLicenseDeclared: PHP-3.01
+PackageLicenseComments: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:php:php:5.3.29:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:php/php@5.3.29
+
+PackageName: jquery
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-jquery
+PackageVersion: 1.6.1
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageVerificationCode: NOASSERTION
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageLicenseComments: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:jquery:jquery:1.6.1:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:jquery/jquery@1.6.1
+
+PackageName: bootstrap
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-bootstrap
+PackageVersion: 3.3.5
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageVerificationCode: NOASSERTION
+PackageLicenseConcluded: MIT
+PackageLicenseDeclared: MIT
+PackageLicenseComments: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:twbs:bootstrap:3.3.5:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:twbs/bootstrap@3.3.5
+
+PackageName: struts
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-struts
+PackageVersion: 2.3.16.1
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageVerificationCode: NOASSERTION
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+PackageLicenseComments: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apache:struts:2.3.16.1:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:apache/struts@2.3.16.1
+
+PackageName: tomcat
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-Package-tomcat
+PackageVersion: 7.0.54
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageVerificationCode: NOASSERTION
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseDeclared: Apache-2.0
+PackageLicenseComments: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:apache:tomcat:7.0.54:*:*:*:*:*:*:*
+ExternalRef: PACKAGE_MANAGER purl pkg:apache/tomcat@7.0.54

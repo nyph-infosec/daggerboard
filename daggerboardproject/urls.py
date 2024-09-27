@@ -18,20 +18,33 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-from daggerboard.views import *
-from django.conf.urls import handler404, handler500, handler403, handler400
+from django.urls import include, path
+
+from apps.daggerboard_ui.views import (APILoginView, error_400, error_403,
+                                       error_404, error_500, genreport,
+                                       home_view, login_view, logout_view,
+                                       sbomscorecard, upload_status,
+                                       uploadProgressChk, vendorscorecard)
+from apps.sbomscanner.views import DaggerBoardAPIView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('login/', login_view, name='login'),
-    path('logout/', logout_view, name='logout'),
-    path('', home_view, name='home'),
-    path('vendorscorecard/', vendorscorecard, name='vendor_scorecard'),
-    path('sbomscorecard/', sbomscorecard, name='sbom_scorecard'),
-    path('genreport/', genreport, name='genreport'),
-    path('uploadstatus/', uploadProgressChk.as_view(), name='mjob_status'),
-    path('django-rq/', include("django_rq.urls"))
+    path("admin/", admin.site.urls),
+    path("login/", login_view, name="login"),
+    path("logout/", logout_view, name="logout"),
+    path("", home_view, name="home"),
+    path("vendorscorecard/", vendorscorecard, name="vendor_scorecard"),
+    path("sbomscorecard/", sbomscorecard, name="sbom_scorecard"),
+    path("genreport/", genreport, name="genreport"),
+    path("uploadstatus/", uploadProgressChk.as_view(), name="mjob_status"),
+    path("sbomuploadstatus/", upload_status, name="upload_status"),
+    path("django-rq/", include("django_rq.urls")),
+    path("api/sbom/", DaggerBoardAPIView.as_view(), name="daggerboard_api"),
+    path(
+        "api/sbom/<str:transaction_id>/",
+        DaggerBoardAPIView.as_view(),
+        name="daggerboard_api_with_id",
+    ),
+    path("api/login/", APILoginView.as_view(), name="daggerboard_api_login"),
 ]
 
 handler404 = error_404

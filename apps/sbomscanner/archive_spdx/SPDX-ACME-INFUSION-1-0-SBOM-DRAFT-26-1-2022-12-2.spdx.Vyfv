@@ -1,0 +1,205 @@
+
+SPDXVersion: SPDX-2.1
+Creator: Organization: SPDX-ACME-INFUSION-1-0-SBOM-DRAFT-26-1-2022-12-2
+CreatorComment: SPDX-ACME-INFUSION-1-0-SBOM-DRAFT-26-1-2022-12-2
+Creator: Organization: SPDX-ACME-INFUSION-1-0-SBOM-DRAFT-26-1-2022-12-2
+CreatorComment: SPDX-ACME-INFUSION-1-0-SBOM-DRAFT-26-1-2022-12-2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: ACME-INFUSION-1.0-SBOM-DRAFT
+DocumentNamespace: http://www.hospitalproducts.acme
+Creator: Organization: ACME-Hospital-Division()
+Created: 2022-01-26T22:02:23Z
+CreatorComment: <text>Draft ACME INFUSION PoC II SBOM document in SPDX format. Unofficial content for demonstration purposes only</text>
+
+
+PackageName: INFUSION
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-d82f5914-77fe-0485-71b2-4cc3e073e963
+PackageComment: <text>PURL is pkg:supplier/ACME/INFUSION@1.0  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/ACME/INFUSION@1.0
+PackageVersion: 1.0
+PackageSupplier: Organization: ACME
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-d82f5914-77fe-0485-71b2-4cc3e073e963
+Relationship: SPDXRef-d82f5914-77fe-0485-71b2-4cc3e073e963 CONTAINS NONE
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: true
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageFileName: INFUSION.iso
+PackageChecksum: SHA256: c79c4693f7118f4afbc21cf49e76d1676ff5605b3b6922b92981b3fbd8c396b1
+
+
+PackageName: Windows Embedded Standard 7
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-10674e24-86c7-9d74-5e20-41cc3d053134
+PackageComment:  <text>PURL is pkg:supplier/Microsoft/Windows%20Embedded%20Standard%207@6.1.7601  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Microsoft/Windows%20Embedded%20Standard%207@6.1.7601
+PackageVersion: 6.1.7601
+PackageSupplier: Organization: Microsoft
+Relationship: SPDXRef-d82f5914-77fe-0485-71b2-4cc3e073e963 CONTAINS SPDXRef-10674e24-86c7-9d74-5e20-41cc3d053134
+Relationship: SPDXRef-10674e24-86c7-9d74-5e20-41cc3d053134 CONTAINS NOASSERTION
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: true
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageFileName: Windows7-Embedded.pkg
+PackageChecksum: SHA256: 046f1c2abc172abfa27fc436013eedc0a6400b6a3def42c692e739702dae2555
+
+
+PackageName: Windows Embedded Standard 7 with SP1 patches
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-3a918f44-5fae-7e58-9d39-a6687a8a1240
+PackageComment:  <text>PURL is pkg:supplier/Microsoft/Windows%20Embedded%20Standard%207%20with%20SP1%20patches@3.0  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Microsoft/Windows%20Embedded%20Standard%207%20with%20SP1%20patches@3.0
+PackageVersion: 3.0
+PackageSupplier: Organization: Microsoft
+Relationship: SPDXRef-d82f5914-77fe-0485-71b2-4cc3e073e963 CONTAINS SPDXRef-3a918f44-5fae-7e58-9d39-a6687a8a1240
+Relationship: SPDXRef-3a918f44-5fae-7e58-9d39-a6687a8a1240 CONTAINS NOASSERTION
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: true
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageFileName: MS-Windows-7-tr.iso
+PackageChecksum: SHA256: bda27c056b240cfa58131d5a7190fcb740280316c71b068975d4d24837185a33
+
+
+PackageName: SQL 2005 Express
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-49b344e5-08ab-2159-65bd-37473ee747e1
+PackageComment:  <text>PURL is pkg:supplier/Microsoft/SQL%202005%20Express@9.00.5000.00,SP4  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Microsoft/SQL%202005%20Express@9.00.5000.00,SP4
+PackageVersion: 9.00.5000.00,SP4
+PackageSupplier: Organization: Microsoft
+Relationship: SPDXRef-d82f5914-77fe-0485-71b2-4cc3e073e963 CONTAINS SPDXRef-49b344e5-08ab-2159-65bd-37473ee747e1
+Relationship: SPDXRef-49b344e5-08ab-2159-65bd-37473ee747e1 CONTAINS NOASSERTION
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: true
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+FileName: SQL-2005-Express.msi
+FileChecksum: SHA256: 331fab3f16a9574ff6d74b5cd2d0b96f22b600a3a8d2aed67f4aade71e13f52c
+
+
+PackageName: .Net Frame Work
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-04868cac-deab-46fe-89f2-0b22b7885d4e
+PackageComment:  <text>PURL is pkg:supplier/Microsoft/.Net%20Frame%20Work@V2.1.21022.8,SP2  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Microsoft/.Net%20Frame%20Work@V2.1.21022.8,SP2
+PackageVersion: V2.1.21022.8,SP2
+PackageSupplier: Organization: Microsoft
+Relationship: SPDXRef-10674e24-86c7-9d74-5e20-41cc3d053134 CONTAINS SPDXRef-04868cac-deab-46fe-89f2-0b22b7885d4e
+Relationship: SPDXRef-04868cac-deab-46fe-89f2-0b22b7885d4e CONTAINS NOASSERTION
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: true
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageFileName: Windows-NET-Framework.exe
+PackageChecksum: SHA256: 05bce5865a723ab96c5ec3e8d99ac6d8324614232f720104308594c6fce873d0
+
+
+PackageName: Java 8
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-4ef4ff98-ec2a-7460-dee1-dce2c4ecc6f5
+PackageComment:  <text>PURL is pkg:supplier/Oracle/Java%208@v1.8  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Oracle/Java%208@v1.8
+PackageVersion: v1.8
+PackageSupplier: Organization: Oracle
+Relationship: SPDXRef-d82f5914-77fe-0485-71b2-4cc3e073e963 CONTAINS SPDXRef-4ef4ff98-ec2a-7460-dee1-dce2c4ecc6f5
+Relationship: SPDXRef-4ef4ff98-ec2a-7460-dee1-dce2c4ecc6f5 CONTAINS NOASSERTION
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: true
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageFileName: java-8.3.1-re.exe
+PackageChecksum: SHA256: 589a843d4d2bf26154573f5ec246bb0bf0bb7030922b3ef272bd7adf16ff521e
+
+
+PackageName: Tomcat 9
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-749734ed-b646-d31c-304e-81d55cc50e4f
+PackageComment:  <text>PURL is pkg:supplier/Apache%20Foundation/Tomcat%209@v9.037  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Apache%20Foundation/Tomcat%209@v9.037
+PackageVersion: v9.037
+PackageSupplier: Organization: Apache Foundation
+Relationship: SPDXRef-4ef4ff98-ec2a-7460-dee1-dce2c4ecc6f5 CONTAINS SPDXRef-749734ed-b646-d31c-304e-81d55cc50e4f
+Relationship: SPDXRef-749734ed-b646-d31c-304e-81d55cc50e4f CONTAINS NOASSERTION
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: true
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageFileName: apache-tomcat-8.5.69.zip
+PackageChecksum: SHA256: c80f1fdbcfbd54c99bf89a7c29ab33a02cb3da26007d2dc76fed6b24b8165da5
+
+
+PackageName: Spring Framework
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+PackageSupplier: Organization: tag_fixed
+PackageComment: tag_fixed
+SPDXID: SPDXRef-84e8726a-a3f5-4d1f-818c-c7f9cc16d494
+PackageComment:  <text>PURL is pkg:supplier/Apache%20Foundation/Spring%20Framework@v4.7  </text>
+ExternalRef: PACKAGE-MANAGER purl pkg:supplier/Apache%20Foundation/Spring%20Framework@v4.7
+PackageVersion: v4.7
+PackageSupplier: Organization: Apache Foundation
+Relationship: SPDXRef-4ef4ff98-ec2a-7460-dee1-dce2c4ecc6f5 CONTAINS SPDXRef-84e8726a-a3f5-4d1f-818c-c7f9cc16d494
+Relationship: SPDXRef-84e8726a-a3f5-4d1f-818c-c7f9cc16d494 CONTAINS NOASSERTION
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: true
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+FileName: spring-instrument.jar
+FileChecksum: SHA256: a509115a2d5b6675c642852c142427330877c31171a7cbe65a68b9f556d071ad
+AINS NOASSERTION
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: true
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+FileName: spring-instrument.jar
+FileChecksum: SHA256: a509115a2d5b6675c642852c142427330877c31171a7cbe65a68b9f556d071ad

@@ -1,0 +1,926 @@
+
+SPDXVersion: SPDX-2.1
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-sbomdemo2_product1
+DocumentName: sbomdemo2_product1
+DocumentNamespace: https://www.sbomdemo2.com
+
+
+
+
+
+
+Creator: Organization: sbomdemo2
+Created: 2020-05-13T10:00:00Z
+CreatorComment: <text>Draft sbomdemo2_product2 document in SPDX format. Unofficial content for demonstration purposes only.</text>
+
+
+
+PackageName: sbomdemo2_product1
+SPDXID: SPDXRef-sbomdemo2_product1
+PackageComment: <text>PURL is pkg:supplier/sbomdemo2/sbomdemo2_product1 </text>
+PackageVersion: 1.0
+PackageSupplier: Organization: sbomdemo2
+Relationship: SPDXRef-sbomdemo2_product1
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+
+
+
+
+
+
+PackageName: alsa-utils
+SPDXID: SPDXRef-alsa-utils
+PackageComment: <text>  Utilities for configuring and using ALSA </text>
+PackageVersion:  1.1.3-1ubuntu1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-alsa-utils
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: amqp-tools
+SPDXID: SPDXRef-amqp-tools
+PackageComment: <text>  Command-line utilities for interacting with AMQP servers </text>
+PackageVersion:  0.9.0-1mnavbionic2
+PackageSupplier: Organization: Debian
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-amqp-tools
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: Armadillo
+SPDXID: SPDXRef-Armadillo
+PackageComment: <text> Linear Algebra software library </text>
+PackageVersion: 8.400.0
+PackageSupplier: Organization: Open Source
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-Armadillo
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: build-essential
+SPDXID: SPDXRef-build-essential
+PackageComment: <text>  Informational list of build-essential packages </text>
+PackageVersion:  12.4ubuntu1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-build-essential
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: clamav
+SPDXID: SPDXRef-clamav
+PackageComment: <text>  anti-virus utility for Unix - command-line interface </text>
+PackageVersion:  0.101.4+dfsg-0ubuntu0.18.04.1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-clamav
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: config-package-dev
+SPDXID: SPDXRef-config-package-dev
+PackageComment: <text>  Debhelper (and CDBS) modules for building configuration packages </text>
+PackageVersion:  5.5
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-config-package-dev
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: DCMTK
+SPDXID: SPDXRef-DCMTK
+PackageComment: <text> Toolkit for working with DICOM data. </text>
+PackageVersion: 3.6.2-3build3
+PackageSupplier: Organization: OFFIS
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-DCMTK
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: dcmtk-jpeg2k
+SPDXID: SPDXRef-dcmtk-jpeg2k
+PackageComment: <text>  sbomdemo2 build of the OFFIS DCMTK JPEG 2000 library </text>
+PackageVersion:  3.6.2-mnav1
+PackageSupplier: Organization: OFFIS
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-dcmtk-jpeg2k
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: debhelper
+SPDXID: SPDXRef-debhelper
+PackageComment: <text>  helper programs for debian/rules </text>
+PackageVersion:  12.1.1ubuntu1~ubuntu18.04.1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-debhelper
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: devscripts
+SPDXID: SPDXRef-devscripts
+PackageComment: <text>  scripts to make the life of a Debian Package maintainer easier </text>
+PackageVersion:  2.17.12ubuntu1.1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-devscripts
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: exfat-fuse
+SPDXID: SPDXRef-exfat-fuse
+PackageComment: <text>  read and write exFAT driver for FUSE </text>
+PackageVersion:  1.2.8-1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-exfat-fuse
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: exfat-utils
+SPDXID: SPDXRef-exfat-utils
+PackageComment: <text>  utilities to create, check, label and dump exFAT filesystem </text>
+PackageVersion:  1.2.8-1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-exfat-utils
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: fakeroot
+SPDXID: SPDXRef-fakeroot
+PackageComment: <text>  tool for simulating superuser privileges </text>
+PackageVersion:  1.22-2ubuntu1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-fakeroot
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: ffmpeg
+SPDXID: SPDXRef-ffmpeg
+PackageComment: <text>  Tools for transcoding, streaming and playing of multimedia files </text>
+PackageVersion: 3.4.6-0ubuntu0.18.04.1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-ffmpeg
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: firefox
+SPDXID: SPDXRef-firefox
+PackageComment: <text>  Safe and easy web browser from Mozilla </text>
+PackageVersion:  68.0+build3-0ubuntu0.18.04.1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-firefox
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: gdb
+SPDXID: SPDXRef-gdb
+PackageComment: <text>  GNU Debugger </text>
+PackageVersion:  8.1-0ubuntu3
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-gdb
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: gedit
+SPDXID: SPDXRef-gedit
+PackageComment: <text>  official text editor of the GNOME desktop environment </text>
+PackageVersion:  3.28.1-1ubuntu1.2
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-gedit
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: GLEW
+SPDXID: SPDXRef-GLEW
+PackageComment: <text> The OpenGL Extension Wrangler Library (GLEW) is a cross-platform open-source C/C++ extension loading library </text>
+PackageVersion: 2.0.0
+PackageSupplier: Organization: Open Source
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-GLEW
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: glew
+SPDXID: SPDXRef-glew
+PackageComment: <text> OpenGL Extension Wrangler Library (GLEW) is a cross platform C/C++ extension loading library.  </text>
+PackageVersion: 2.0.0-5
+PackageSupplier: Organization: Open Source
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-glew
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: glewmx
+SPDXID: SPDXRef-glewmx
+PackageComment: <text> OpenGL Extension Wrangler Library (GLEW) is a cross platform C/C++ extension loading library.  </text>
+PackageVersion: 1.13.0-4ubuntu0.18.04.1
+PackageSupplier: Organization: Open Source
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-glewmx
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: glfw3
+SPDXID: SPDXRef-glfw3
+PackageComment: <text> Free open-source multi-platform library for OpenGL, OpenGL ES and Vulkan application development </text>
+PackageVersion: 3.2.1-1
+PackageSupplier: Organization: Open Source
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-glfw3
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: GLM
+SPDXID: SPDXRef-GLM
+PackageComment: <text> Open GL Mathematics library for graphics software </text>
+PackageVersion: 0.9.9
+PackageSupplier: Organization: Open Source
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-GLM
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: glm
+SPDXID: SPDXRef-glm
+PackageComment: <text> C++ library for OpenGL GLSL type-based mathematics </text>
+PackageVersion: 0.9.9~a2-2
+PackageSupplier: Organization: Open Source
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-glm
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: gnome-disk-utility
+SPDXID: SPDXRef-gnome-disk-utility
+PackageComment: <text>  manage and configure disk drives and media </text>
+PackageVersion:  3.28.3-0ubuntu1~18.04.1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-gnome-disk-utility
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: gnome-terminal
+SPDXID: SPDXRef-gnome-terminal
+PackageComment: <text>  GNOME terminal emulator application </text>
+PackageVersion:  3.28.2-1ubuntu1~18.04.1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-gnome-terminal
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: gvfs
+SPDXID: SPDXRef-gvfs
+PackageComment: <text>  userspace virtual filesystem - GIO module </text>
+PackageVersion:  1.36.1-0ubuntu1.3.3
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-gvfs
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: iconv
+SPDXID: SPDXRef-iconv
+PackageComment: <text> Program to convert the encoding of characters in inputfile from one coded character set to another.  </text>
+PackageVersion: 1.7-5build6
+PackageSupplier: Organization: Open Source
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-iconv
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: Insight Segmentation and Registration Toolkit (ITK)
+SPDXID: SPDXRef-Insight Segmentation and Registration Toolkit (ITK)
+PackageComment: <text> ITK is a cross-platform, open-source application development framework widely used for the development of image segmentation and image registration programs </text>
+PackageVersion: 4.12.2
+PackageSupplier: Organization: Insight Software Consortium
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-Insight Segmentation and Registration Toolkit (ITK)
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: jq
+SPDXID: SPDXRef-jq
+PackageComment: <text>  lightweight and flexible command-line JSON processor </text>
+PackageVersion:  1.5+dfsg-2
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-jq
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: language-pack-en
+SPDXID: SPDXRef-language-pack-en
+PackageComment: <text>  translation updates for language English </text>
+PackageVersion: 18.04+20180712
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-language-pack-en
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: language-selector-common
+SPDXID: SPDXRef-language-selector-common
+PackageComment: <text>  Language selector for Ubuntu </text>
+PackageVersion:  0.188.3
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-language-selector-common
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: libgl1-mesa-glx
+SPDXID: SPDXRef-libgl1-mesa-glx
+PackageComment: <text>  transitional dummy package </text>
+PackageVersion:  19.0.2-1ubuntu1.1~18.04.1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-libgl1-mesa-glx
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: libqt5-mnav
+SPDXID: SPDXRef-libqt5-mnav
+PackageComment: <text>  Qt 5 C++ GUI platform (MNav build) </text>
+PackageVersion:  5.6.3-0mnavbionic6
+PackageSupplier: Organization: The QT Company
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-libqt5-mnav
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: librabbitmq4:amd64
+SPDXID: SPDXRef-librabbitmq4:amd64
+PackageComment: <text>  AMQP client library written in C </text>
+PackageVersion:  0.9.0-1mnavbionic2
+PackageSupplier: Organization: Open Source
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-librabbitmq4:amd64
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: libsimpleamqpclient2
+SPDXID: SPDXRef-libsimpleamqpclient2
+PackageComment: <text>  SimpleAmqpClient API library </text>
+PackageVersion:  2.4.0-0mnavbionic3
+PackageSupplier: Organization: Open Source
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-libsimpleamqpclient2
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: libsqlapi4-mnav
+SPDXID: SPDXRef-libsqlapi4-mnav
+PackageComment: <text>  C++ API for SQL (runtime) </text>
+PackageVersion:  4.2.5-0mnavbionic2
+PackageSupplier: Organization: SQLAPI ++
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-libsqlapi4-mnav
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: linux-generic
+SPDXID: SPDXRef-linux-generic
+PackageComment: <text>  Complete Generic Linux kernel and headers </text>
+PackageVersion:  4.15.0.54.56
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-linux-generic
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: mesa-utils
+SPDXID: SPDXRef-mesa-utils
+PackageComment: <text>  Miscellaneous Mesa GL utilities </text>
+PackageVersion:  8.4.0-1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-mesa-utils
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: Moxa Serial Card Driver
+SPDXID: SPDXRef-Moxa Serial Card Driver
+PackageComment: <text> Linux Driver for the Moxa PCI Serial Card </text>
+PackageVersion: 1.16.25-4
+PackageSupplier: Organization: Moxa
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-Moxa Serial Card Driver
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: MSDriver
+SPDXID: SPDXRef-MSDriver
+PackageComment: <text> Executable used to generate CAD model and output files which FHC uses as inputs to build a Starfix platform </text>
+PackageVersion: 1.17
+PackageSupplier: Organization: FHC Inc.
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-MSDriver
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: NDIToolbox
+SPDXID: SPDXRef-NDIToolbox
+PackageComment: <text> Extensible signal and image processing application designed to assist with the analysis of complex NDI data. </text>
+PackageVersion: 5.1.17-2
+PackageSupplier: Organization: Northern Digital Inc.
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-NDIToolbox
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: netplan.io
+SPDXID: SPDXRef-netplan.io
+PackageComment: <text>  YAML network configuration abstraction for various backends </text>
+PackageVersion:  0.97-0ubuntu1~18.04.1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-netplan.io
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: net-tools
+SPDXID: SPDXRef-net-tools
+PackageComment: <text>  NET-3 networking toolkit </text>
+PackageVersion:  1.60+git20161116.90da8a0-1ubuntu1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-net-tools
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: NURBS++
+SPDXID: SPDXRef-NURBS++
+PackageComment: <text> C++ library that provides parametric functions for Non-Uniform Rational B-Splines (NURBS), which can represent any type of curves or surfaces.  </text>
+PackageVersion: 3.0.11
+PackageSupplier: Organization: Open Source
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-NURBS++
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: openssh-server
+SPDXID: SPDXRef-openssh-server
+PackageComment: <text>  secure shell (SSH) server, for secure access from remote machines </text>
+PackageVersion: 7.6p1-4ubuntu0.3
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-openssh-server
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: PCAN USB CanAdaptor driver
+SPDXID: SPDXRef-PCAN USB CanAdaptor driver
+PackageComment: <text> Driver to enable connection to CAN networks. </text>
+PackageVersion: 7.15.2
+PackageSupplier: Organization: Peak System
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-PCAN USB CanAdaptor driver
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: pcanview-ncurses
+SPDXID: SPDXRef-pcanview-ncurses
+PackageComment: <text>  pcanview-ncurses </text>
+PackageVersion:  0.8.7-0
+PackageSupplier: Organization: Peak System
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-pcanview-ncurses
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: pciutils
+SPDXID: SPDXRef-pciutils
+PackageComment: <text>  Linux PCI Utilities </text>
+PackageVersion: 1:3.5.2-1ubuntu1.1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-pciutils
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: Picolo capture card driver
+SPDXID: SPDXRef-Picolo capture card driver
+PackageComment: <text> Linux kernel module consisting of documentation, source code and configuration files </text>
+PackageVersion: 1.4.1.14-3
+PackageSupplier: Organization: Euresys
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-Picolo capture card driver
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: psmisc
+SPDXID: SPDXRef-psmisc
+PackageComment: <text>  utilities that use the proc file system </text>
+PackageVersion:  23.1-1ubuntu0.1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-psmisc
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: python
+SPDXID: SPDXRef-python
+PackageComment: <text>  interactive high-level object-oriented language (default version) </text>
+PackageVersion:  2.7.15~rc1-1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-python
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: python3
+SPDXID: SPDXRef-python3
+PackageComment: <text>  interactive high-level object-oriented language (default python3 version) </text>
+PackageVersion:  3.6.7-1~18.04
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-python3
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: Qt
+SPDXID: SPDXRef-Qt
+PackageComment: <text> Framework cross-platform graphical user interface development. </text>
+PackageVersion: 5.6.3
+PackageSupplier: Organization: The QT Company
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-Qt
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: rabbitmq-server
+SPDXID: SPDXRef-rabbitmq-server
+PackageComment: <text>  AMQP server written in Erlang </text>
+PackageVersion:  3.6.10-1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-rabbitmq-server
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: Touchinteraction
+SPDXID: SPDXRef-Touchinteraction
+PackageComment: <text> Collection of small QML examples relating to touch interaction methods </text>
+PackageVersion: 1.0.0-5
+PackageSupplier: Organization: The Qt Company
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-Touchinteraction
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: tree
+SPDXID: SPDXRef-tree
+PackageComment: <text>  displays an indented directory tree, in color </text>
+PackageVersion:  1.7.0-5
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-tree
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: Ubuntu
+SPDXID: SPDXRef-Ubuntu
+PackageComment: <text> Linux Operating system </text>
+PackageVersion: 18.04
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-Ubuntu
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: udev
+SPDXID: SPDXRef-udev
+PackageComment: <text>  /dev/ and hotplug management daemon </text>
+PackageVersion:  237-3ubuntu10.24
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-udev
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: v4l-utils
+SPDXID: SPDXRef-v4l-utils
+PackageComment: <text>  Collection of command line video4linux utilities </text>
+PackageVersion:  1.14.2-1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-v4l-utils
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: vim-gtk3
+SPDXID: SPDXRef-vim-gtk3
+PackageComment: <text>  Vi IMproved - enhanced vi editor - with GTK3 GUI </text>
+PackageVersion:  2
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-vim-gtk3
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: vlc
+SPDXID: SPDXRef-vlc
+PackageComment: <text>  multimedia player and streamer </text>
+PackageVersion:  3.0.4-1ubuntu0.2
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-vlc
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: xserver-common
+SPDXID: SPDXRef-xserver-common
+PackageComment: <text>  common files used by various X servers </text>
+PackageVersion: 1.19.6-1ubuntu4.3-mnav7
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-xserver-common
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: xserver-xorg-core
+SPDXID: SPDXRef-xserver-xorg-core
+PackageComment: <text>  Xorg X server - core server </text>
+PackageVersion:  1.19.6-1ubuntu4.3-mnav7
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-xserver-xorg-core
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: xserver-xorg-input-evdev
+SPDXID: SPDXRef-xserver-xorg-input-evdev
+PackageComment: <text>  X.Org X server -- evdev input driver </text>
+PackageVersion: 2.10.5-1ubuntu1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-xserver-xorg-input-evdev
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: xserver-xorg-legacy
+SPDXID: SPDXRef-xserver-xorg-legacy
+PackageComment: <text>  setuid root Xorg server wrapper </text>
+PackageVersion:  1.19.6-1ubuntu4.3-mnav7
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-xserver-xorg-legacy
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: zip
+SPDXID: SPDXRef-zip
+PackageComment: <text>  Archiver for .zip files </text>
+PackageVersion:  3.0-11build1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-zip
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+ Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-xserver-xorg-input-evdev
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: xserver-xorg-legacy
+SPDXID: SPDXRef-xserver-xorg-legacy
+PackageComment: <text>  setuid root Xorg server wrapper </text>
+PackageVersion:  1.19.6-1ubuntu4.3-mnav7
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-xserver-xorg-legacy
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+
+PackageName: zip
+SPDXID: SPDXRef-zip
+PackageComment: <text>  Archiver for .zip files </text>
+PackageVersion:  3.0-11build1
+PackageSupplier: Organization: Canonical
+Relationship: SPDXRef-sbomdemo2_product1 CONTAINS SPDXID: SPDXRef-zip
+PackageDownloadLocation: NOASSERTION
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
