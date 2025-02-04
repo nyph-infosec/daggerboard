@@ -284,7 +284,7 @@ Their dedication and hard work have been instrumental in the development and suc
 
 ---
 
-This project is licensed under the terms of the [MIT license](LICENSE.md).
+This project is licensed under the terms of the [MIT license](LICENSE).
 
 
 #### Release Notes
